@@ -83,10 +83,19 @@ function switchDrawerTab(tabId) {
 
 function toggleIntelDrawer(open) {
   const drawer = document.getElementById('intel-drawer');
+  const restoreBtn = document.getElementById('drawer-restore-btn');
   if (open) {
-    drawer.classList.remove('collapsed');
+    if (drawer) drawer.classList.remove('collapsed');
+    if (restoreBtn) {
+      restoreBtn.classList.remove('visible');
+      restoreBtn.style.display = 'none';
+    }
   } else {
-    drawer.classList.add('collapsed');
+    if (drawer) drawer.classList.add('collapsed');
+    if (restoreBtn) {
+      restoreBtn.classList.add('visible');
+      restoreBtn.style.display = 'flex';
+    }
   }
 }
 
@@ -605,4 +614,18 @@ function zoomTo(coords) {
 document.addEventListener('DOMContentLoaded', () => {
   initMap();
   loadLakehouseData();
+
+  // Global Keyboard Shortcuts: '[' or 'i' to toggle intelligence drawer
+  document.addEventListener('keydown', (e) => {
+    if (document.activeElement && (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA')) {
+      return;
+    }
+    if (e.key === '[' || e.key === 'i' || e.key === 'I') {
+      const drawer = document.getElementById('intel-drawer');
+      if (drawer) {
+        const isCollapsed = drawer.classList.contains('collapsed');
+        toggleIntelDrawer(isCollapsed);
+      }
+    }
+  });
 });
