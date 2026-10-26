@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARAKAN GEOINT LAKEHOUSE — Intelligence Operations Dashboard</title>
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  
+  <style>
+    :root {
+      --bg-base: #0a0d14;
+      --bg-panel: rgba(16, 21, 33, 0.88);
+      --bg-card: rgba(23, 31, 48, 0.75);
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-glow: rgba(0, 240, 255, 0.3);
+      --text-main: #f0f4fc;
+      --text-muted: #8b9bb4;
+      --accent-cyan: #00f0ff;
+      --accent-red: #ff3366;
+      --accent-amber: #ffaa00;
+      --accent-green: #00ffaa;
+      --font-ui: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: var(--bg-base);
+      color: var(--text-main);
+      font-family: var(--font-ui);
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Top Bar */
+    header {
+      background: var(--bg-panel);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 10px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 1000;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .radar-pulse {
+      width: 12px;
+      height: 12px;
+      background: var(--accent-cyan);
+      border-radius: 50%;
+      box-shadow: 0 0 12px var(--accent-cyan);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(0, 240, 255, 0.7); }
+      70% { transform: scale(1.2); box-shadow: 0 0 0 10px rgba(0, 240, 255, 0); }
+      100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(0, 240, 255, 0); }
+    }
+
+    .title-group h1 {
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #fff;
+    }
+
+    .title-group p {
+      font-size: 11px;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+    }
+
+    .kpi-strip {
+      display: flex;
+      gap: 16px;
+    }
+
+    .kpi-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 6px;
+      padding: 6px 14px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .kpi-card .label {
+      font-size: 10px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+    }
+
+    .kpi-card .val {
+      font-size: 16px;
+      font-weight: 700;
+      font-family: var(--font-mono);
+      color: var(--accent-cyan);
+    }
+
+    .kpi-card.alert .val { color: var(--accent-red); }
+    .kpi-card.warn .val { color: var(--accent-amber); }
+
+    .transparency-badge {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 170, 0, 0.12);
+      border: 1px solid rgba(255, 170, 0, 0.3);
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 11px;
+      color: var(--accent-amber);
+      font-family: var(--font-mono);
+    }
+
+    /* Main Container: Map + Left/Right Panels */
+    .workspace {
+      display: flex;
+      flex: 1;
+      height: calc(100vh - 65px);
+      position: relative;
+    }
+
+    /* Side Panel */
+    .intel-panel {
+      width: 480px;
+      background: var(--bg-panel);
+      backdrop-filter: blur(16px);
+      border-right: 1px solid var(--border-subtle);
+      display: flex;
+      flex-direction: column;
+      z-index: 900;
+    }
+
+    /* Module Tabs */
+    .module-tabs {
+      display: flex;
+      background: rgba(10, 13, 20, 0.7);
+      border-bottom: 1px solid var(--border-subtle);
+      overflow-x: auto;
+    }
+
+    .tab-btn {
+      flex: 1;
+      padding: 12px 10px;
+      background: none;
+      border: none;
+      border-bottom: 2px solid transparent;
+      color: var(--text-muted);
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.2s ease;
+    }
+
+    .tab-btn:hover { color: #fff; background: rgba(255, 255, 255, 0.03); }
+    .tab-btn.active {
+      color: var(--accent-cyan);
+      border-bottom-color: var(--accent-cyan);
+      background: rgba(0, 240, 255, 0.05);
+    }
+
+    .tab-content {
+      flex: 1;
+      overflow-y: auto;
+      padding: 16px;
+    }
+
+    /* Map View */
+    #map {
+      flex: 1;
+      height: 100%;
+      background: #0d1117;
+    }
+
+    /* Map Overlay Legend */
+    .map-legend {
+      position: absolute;
+      bottom: 24px;
+      right: 24px;
+      background: var(--bg-panel);
+      border: 1px solid var(--border-subtle);
+      padding: 12px 16px;
+      border-radius: 8px;
+      backdrop-filter: blur(12px);
+      font-size: 11px;
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .legend-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .legend-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+
+    /* Cards & List Items in Panel */
+    .event-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-left: 3px solid var(--accent-cyan);
+      border-radius: 6px;
+      padding: 12px;
+      margin-bottom: 12px;
+      transition: border-color 0.2s;
+    }
+
+    .event-card:hover {
+      border-color: var(--accent-cyan);
+    }
+
+    .event-card.airstrike { border-left-color: var(--accent-red); }
+    .event-card.clash { border-left-color: var(--accent-amber); }
+    .event-card.naval { border-left-color: #3b82f6; }
+
+    .card-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 10px;
+      font-family: var(--font-mono);
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    .badge {
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 9px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .badge.red { background: rgba(255, 51, 102, 0.2); color: var(--accent-red); }
+    .badge.amber { background: rgba(255, 170, 0, 0.2); color: var(--accent-amber); }
+    .badge.cyan { background: rgba(0, 240, 255, 0.2); color: var(--accent-cyan); }
+
+    .card-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 6px;
+      line-height: 1.4;
+    }
+
+    .card-desc {
+      font-size: 11px;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 8px;
+    }
+
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 10px;
+      font-family: var(--font-mono);
+      color: var(--accent-cyan);
+    }
+
+    .card-footer a {
+      color: var(--accent-cyan);
+      text-decoration: none;
+    }
+
+    .card-footer a:hover { text-decoration: underline; }
+
+    /* Tables */
+    .intel-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 11px;
+      margin-top: 10px;
+    }
+
+    .intel-table th {
+      text-align: left;
+      padding: 8px;
+      background: rgba(0, 0, 0, 0.4);
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .intel-table td {
+      padding: 10px 8px;
+      border-bottom: 1px solid var(--border-subtle);
+      font-family: var(--font-mono);
+    }
+
+    .threat-tag {
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-size: 9px;
+      font-weight: 700;
+    }
+
+    .threat-tag.danger { background: rgba(255, 51, 102, 0.25); color: var(--accent-red); }
+    .threat-tag.warning { background: rgba(255, 170, 0, 0.25); color: var(--accent-amber); }
+    .threat-tag.safe { background: rgba(0, 255, 170, 0.15); color: var(--accent-green); }
+  </style>
+</head>
+<body>
+
+  <!-- Top Header Telemetry -->
+  <header>
+    <div class="brand">
+      <div class="radar-pulse"></div>
+      <div class="title-group">
+        <h1>Arakan GEOINT Lakehouse</h1>
+        <p>MEDALLION ARCHITECTURE • ULA/AA THEATER COMMS • UN MIMU STANDARDS</p>
+      </div>
+    </div>
+
+    <div class="kpi-strip">
+      <div class="kpi-card">
+        <span class="label">Total Events</span>
+        <span class="val" id="kpi-total-events">--</span>
+      </div>
+      <div class="kpi-card alert">
+        <span class="label">Airstrikes</span>
+        <span class="val" id="kpi-airstrikes">--</span>
+      </div>
+      <div class="kpi-card warn">
+        <span class="label">Corridor Buffer Alerts</span>
+        <span class="val" id="kpi-corridor-alerts">--</span>
+      </div>
+      <div class="kpi-card">
+        <span class="label">Claimed KIA</span>
+        <span class="val" id="kpi-kia-claims">--</span>
+      </div>
+    </div>
+
+    <div class="transparency-badge">
+      <span>⚠️ IS_ACTOR_CLAIM: TRUE</span>
+    </div>
+  </header>
+
+  <!-- Main View -->
+  <div class="workspace">
+    
+    <!-- Left Intelligence Module Panels -->
+    <div class="intel-panel">
+      <div class="module-tabs">
+        <button class="tab-btn active" onclick="switchTab('tab-corridors')">1. Corridors</button>
+        <button class="tab-btn" onclick="switchTab('tab-events')">2. Events</button>
+        <button class="tab-btn" onclick="switchTab('tab-risk')">3. Townships</button>
+        <button class="tab-btn" onclick="switchTab('tab-intel')">4. Narrative</button>
+        <button class="tab-btn" onclick="switchTab('tab-osint')">5. OSINT/Units</button>
+      </div>
+
+      <!-- Tab 1: Geopolitical Corridors Monitor -->
+      <div id="tab-corridors" class="tab-content">
+        <div style="margin-bottom: 12px;">
+          <h2 style="font-size: 13px; text-transform: uppercase; color: var(--accent-cyan); letter-spacing: 0.05em;">
+            Strategic Asset Proximity Matrix
+          </h2>
+          <p style="font-size: 11px; color: var(--text-muted); margin-top: 4px;">
+            Monitors distance between conflict incidents and Chinese/Indian geopolitical investments.
+          </p>
+        </div>
+        <div id="corridor-threat-list">Loading corridor matrix...</div>
+      </div>
+
+      <!-- Tab 2: Conflict & Incident Tracker -->
+      <div id="tab-events" class="tab-content" style="display: none;">
+        <div style="margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+          <h2 style="font-size: 13px; text-transform: uppercase; color: var(--accent-cyan);">
+            Chronological Incident Feed
+          </h2>
+          <span style="font-size: 10px; color: var(--text-muted); font-family: var(--font-mono);" id="event-feed-count"></span>
+        </div>
+        <div id="events-feed-list">Loading incidents...</div>
+      </div>
+
+      <!-- Tab 3: Township Risk Analytics -->
+      <div id="tab-risk" class="tab-content" style="display: none;">
+        <div style="margin-bottom: 12px;">
+          <h2 style="font-size: 13px; text-transform: uppercase; color: var(--accent-cyan);">
+            MIMU Township Risk Hierarchy
+          </h2>
+          <p style="font-size: 11px; color: var(--text-muted); margin-top: 4px;">
+            Aggregated incident severity categorized by official UN P-Codes.
+          </p>
+        </div>
+        <div id="township-risk-table">Loading risk table...</div>
+      </div>
+
+      <!-- Tab 4: Strategic Narrative & Early Warning -->
+      <div id="tab-intel" class="tab-content" style="display: none;">
+        <div style="margin-bottom: 12px;">
+          <h2 style="font-size: 13px; text-transform: uppercase; color: var(--accent-cyan);">
+            Strategic Comms & Narrative Digest
+          </h2>
+          <p style="font-size: 11px; color: var(--text-muted); margin-top: 4px;">
+            Official communications, air raid warnings, and civilian advisory notices.
+          </p>
+        </div>
+        <div id="narrative-feed-list">Loading digest...</div>
+      </div>
+
+      <!-- Tab 5: OSINT Materiel & Unit Catalog -->
+      <div id="tab-osint" class="tab-content" style="display: none;">
+        <div style="margin-bottom: 12px;">
+          <h2 style="font-size: 13px; text-transform: uppercase; color: var(--accent-cyan);">
+            OSINT Materiel & Unit ORBAT Catalog
+          </h2>
+          <p style="font-size: 11px; color: var(--text-muted); margin-top: 4px;">
+            Identified opponent formations (LIB/LID) and captured materiel categories.
+          </p>
+        </div>
+        <div id="osint-catalog-list">Loading order of battle...</div>
+      </div>
+    </div>
+
+    <!-- Map Canvas -->
+    <div id="map"></div>
+
+    <!-- Map Legend -->
+    <div class="map-legend">
+      <div style="font-weight: 700; color: #fff; margin-bottom: 2px;">MAP OVERLAY</div>
+      <div class="legend-row">
+        <div class="legend-dot" style="background: var(--accent-red); box-shadow: 0 0 6px var(--accent-red);"></div>
+        <span>Airstrike / Heavy Artillery</span>
+      </div>
+      <div class="legend-row">
+        <div class="legend-dot" style="background: var(--accent-amber);"></div>
+        <span>Ground Clash / Camp Seizure</span>
+      </div>
+      <div class="legend-row">
+        <div class="legend-dot" style="background: var(--accent-cyan); box-shadow: 0 0 6px var(--accent-cyan);"></div>
+        <span>Strategic Corridor (CMEC/Kaladan)</span>
+      </div>
+      <div class="legend-row">
+        <div style="width: 14px; height: 14px; border: 1px dashed var(--accent-cyan); border-radius: 50%;"></div>
+        <span>25km Buffer Alert Radius</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+corridor_id,corridor_name,incident_count_within_vicinity,critical_threat_5km,operational_threat_25km,theater_threat_50km,closest_incident_km
+KYAUKPHYU_SEZ,Kyaukphyu Deep Sea Port & SEZ,2,2,2,2,0.0
+KALADAN_CORRIDOR,Kaladan Multi-Modal Transit Transport Project,5,1,2,5,0.0
+PALETWA_KALADAN_HUB,Paletwa Kaladan Inland Waterway Terminal,1,0,0,0,52.5

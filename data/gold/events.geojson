@@ -1,0 +1,242 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "generated_at": "2026-10-26T17:23:02.804771+00:00",
+    "total_features": 8,
+    "data_layer": "Gold Incident Layer"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.012,
+          20.352
+        ]
+      },
+      "properties": {
+        "event_id": "AA-2471",
+        "source_message_id": 2471,
+        "source_url": "https://t.me/aainfodesk/2471",
+        "incident_date": "2026-10-04",
+        "category": "AIRSTRIKE",
+        "township": "Ponnagyun",
+        "mimu_pcode": "MMR012002",
+        "headline": "Breaking News!   ၂၀၂၆ ခုနှစ်၊ အောက်တိုဘာလ (၄) ရက်   အာရက္ခပြည်၊ ပုဏ္ဏားကျွန်းမြို့နယ်၊ သရက်ချို နှင့် ယိုးငူကျေးရွာကြားတွင်ရှိသည့် ယိုးငူ၊ ဗျာလစစ်ဘေးရှောင်စခန်းအား ယနေ့ အောက်တိုဘာလ (၄) ရက်၊ ညနေ (၅) နာ",
+        "summary": "Reported Airstrike in သရက်ချို (Ponnagyun) involving SAC Military Junta (6 claimed KIA). Source: AA official communique.",
+        "opposing_actors": "SAC Military Junta",
+        "kia_reported": 6,
+        "wounded_reported": 0,
+        "nearest_corridor": "Kaladan Multi-Modal Transit Transport Project",
+        "corridor_dist_km": 26.02,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.0,
+          20.3333
+        ]
+      },
+      "properties": {
+        "event_id": "AA-2488",
+        "source_message_id": 2488,
+        "source_url": "https://t.me/aainfodesk/2488",
+        "incident_date": "2026-10-05",
+        "category": "AIRSTRIKE",
+        "township": "Ponnagyun",
+        "mimu_pcode": "MMR012002",
+        "headline": "၂၀၂၆ ခုနှစ်၊ အောက်တိုဘာလ (၄) ရက်နှင့် (၅) ရက်နေ့တို့တွင် အာရက္ခပြည်၊ ပုဏ္ဏားကျွန်းမြို့နယ်၊ ဗျာလစစ်ဘေးရှောင်(IDP)စခန်း၊ ပန်းနီလာစစ်ဘေးရှောင်(IDP)စခန်းနှင့် အောင်ဖြူပြင်ကျေးရွာ တို့အား ဖက်ဆစ် အကြမ်းဖက်",
+        "summary": "Reported Airstrike in Ponnagyun involving SAC Military Junta, Myanmar Military Air Force. Source: AA official communique.",
+        "opposing_actors": "SAC Military Junta,Myanmar Military Air Force",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": "Kaladan Multi-Modal Transit Transport Project",
+        "corridor_dist_km": 23.6,
+        "within_5km": false,
+        "within_25km": true,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.9667,
+          20.8406
+        ]
+      },
+      "properties": {
+        "event_id": "AA-2489",
+        "source_message_id": 2489,
+        "source_url": "https://t.me/aainfodesk/2489",
+        "incident_date": "2026-10-07",
+        "category": "AIRSTRIKE",
+        "township": "Kyauktaw",
+        "mimu_pcode": "MMR012004",
+        "headline": "ကျေးဇူးတင်လွှာ   ၂၀၂၆ ခုနှစ်၊ အောက်တိုဘာလ (၇) ရက်                ၂၀၂၆ ခုနှစ်၊ စက်တင်ဘာလ (၂၈) ရက်နေ့၊ နေ့လယ် (၁၂) နာရီကျော်ခန့်အချိန်တွင် အာရက္ခပြည်၊ ကျောက်တော်မြို့ရှိ အိန္ဒိယဈေးနှင့် ကစ္ဆပနဒီတံတားဝန်",
+        "summary": "Reported Airstrike in Kyauktaw involving SAC Military Junta, Myanmar Military Air Force (57 claimed KIA). Source: AA official communique.",
+        "opposing_actors": "SAC Military Junta,Myanmar Military Air Force",
+        "kia_reported": 57,
+        "wounded_reported": 0,
+        "nearest_corridor": "Paletwa Kaladan Inland Waterway Terminal",
+        "corridor_dist_km": 52.5,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.5583,
+          19.4267
+        ]
+      },
+      "properties": {
+        "event_id": "AA-2490",
+        "source_message_id": 2490,
+        "source_url": "https://t.me/aainfodesk/2490",
+        "incident_date": null,
+        "category": "ARMED_CLASH",
+        "township": "Kyaukphyu",
+        "mimu_pcode": "MMR012011",
+        "headline": "အာရက္ခပြည်၊ ကျောက်ဖြူစစ်မျက်နှာ တိုက်ပွဲများအတွင်း ဖက်ဆစ် အကြမ်းဖက် စစ်ကော်မရှင်တပ်ဘက်မှ အာရက္ခတပ်တော်ထံသို့ ဘက်ပြောင်းအလင်းဝင်ရောက်လာသော ကိုယ်ပိုင်နံပါတ် ပစ -၂၁၉၇၆၀ တပ်သား စိုးမင်းသိန်း၏ ထွက်ဆိုချက်",
+        "summary": "Reported Armed Clash in Kyaukphyu involving SAC Military Junta. Source: AA official communique.",
+        "opposing_actors": "SAC Military Junta",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": "Kyaukphyu Deep Sea Port & SEZ",
+        "corridor_dist_km": 0.0,
+        "within_5km": true,
+        "within_25km": true,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.5583,
+          19.4267
+        ]
+      },
+      "properties": {
+        "event_id": "AA-2491",
+        "source_message_id": 2491,
+        "source_url": "https://t.me/aainfodesk/2491",
+        "incident_date": null,
+        "category": "ARMED_CLASH",
+        "township": "Kyaukphyu",
+        "mimu_pcode": "MMR012011",
+        "headline": "အာရက္ခပြည်၊ ကျောက်ဖြူစစ်မျက်နှာ တိုက်ပွဲများအတွင်း ဖက်ဆစ် အကြမ်းဖက် စစ်ကော်မရှင်တပ်ဘက်မှ အာရက္ခတပ်တော်ထံသို့ ဘက်ပြောင်းအလင်းဝင်ရောက်လာသော ကိုယ်ပိုင်နံပါတ် ပစ-၂၁၇၅၉၆ တပ်သား အောင်ကျော်နိုင်၏ ထွက်ဆိုချက်",
+        "summary": "Reported Armed Clash in Kyaukphyu involving SAC Military Junta. Source: AA official communique.",
+        "opposing_actors": "SAC Military Junta",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": "Kyaukphyu Deep Sea Port & SEZ",
+        "corridor_dist_km": 0.0,
+        "within_5km": true,
+        "within_25km": true,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.75,
+          20.4833
+        ]
+      },
+      "properties": {
+        "event_id": "AA-2463",
+        "source_message_id": 2463,
+        "source_url": "https://t.me/aainfodesk/2463",
+        "incident_date": "2026-10-03",
+        "category": "AIRSTRIKE",
+        "township": "Rathedaung",
+        "mimu_pcode": "MMR012008",
+        "headline": "၂၀၂၆ ခုနှစ်၊ အောက်တိုဘာလ (၃) ရက်နေ့တွင် အာရက္ခပြည်၊ ရသေ့တောင်မြို့ရှိ မြို့ပေါ်ရပ်ကွက်များနှင့် ပြားချောင်းကြီးကျေးရွာ၊ ပြင်ခေါင်ကျေးရွာ၊ အငူမော်ကျေးရွာတို့ကို နံနက် (၁) နာရီကျော်အချိန်ခန့်တွင် ဖက်ဆစ်",
+        "summary": "Reported Airstrike in Rathedaung involving SAC Military Junta. Source: AA official communique.",
+        "opposing_actors": "SAC Military Junta",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": "Kaladan Multi-Modal Transit Transport Project",
+        "corridor_dist_km": 40.68,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8969,
+          20.1444
+        ]
+      },
+      "properties": {
+        "event_id": "AA-2433",
+        "source_message_id": 2433,
+        "source_url": "https://t.me/aainfodesk/2433",
+        "incident_date": "2026-10-02",
+        "category": "AIRSTRIKE",
+        "township": NaN,
+        "mimu_pcode": NaN,
+        "headline": "၂၀၂၆ ခုနှစ်၊ စက်တင်ဘာလ (၃၀) ရက်မှ အောက်တိုဘာလ (၂) ရက်နေ့အထိ ဖက်ဆစ် အကြမ်းဖက် စစ်ကော်မရှင်၏ အာရက္ခပြည်အနှံ့ စစ်ရေးပစ်မှတ်မဟုတ်သော နေရာများအား လေကြောင်းမှ အကြမ်းဖက် ဗုံးကြဲတိုက်ခိုက်ခဲ့မှုကြောင့် အပြစ်မ",
+        "summary": "Reported Airstrike in Rakhine State (General Theater) involving SAC Military Junta, Myanmar Military Air Force. Source: AA official communique.",
+        "opposing_actors": "SAC Military Junta,Myanmar Military Air Force",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": "Kaladan Multi-Modal Transit Transport Project",
+        "corridor_dist_km": 0.0,
+        "within_5km": true,
+        "within_25km": true,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.75,
+          20.4833
+        ]
+      },
+      "properties": {
+        "event_id": "AA-2442",
+        "source_message_id": 2442,
+        "source_url": "https://t.me/aainfodesk/2442",
+        "incident_date": "2026-10-03",
+        "category": "AIRSTRIKE",
+        "township": "Rathedaung",
+        "mimu_pcode": "MMR012008",
+        "headline": "အာရက္ခပြည်၊ ရသေ့တောင်မြို့နယ်ကို ဖက်ဆစ်အကြမ်းဖက် စစ်ကော်မရှင်မှ ညအချိန်၌ ထပ်မံအကြမ်းဖက်ဗုံးကြဲတိုက်ခိုက်ခဲ့မှုကြောင့် အပြစ်မဲ့အရပ်သားပြည်သူ (၂) ဦးသေဆုံးပြီး (၁၃) ဦးဒဏ်ရာရ ၂၀၂၆ ခုနှစ်၊ အောက်တိုဘာလ (၃)",
+        "summary": "Reported Airstrike in Rathedaung involving SAC Military Junta, Myanmar Military Air Force (13 claimed KIA). Source: AA official communique.",
+        "opposing_actors": "SAC Military Junta,Myanmar Military Air Force",
+        "kia_reported": 13,
+        "wounded_reported": 0,
+        "nearest_corridor": "Kaladan Multi-Modal Transit Transport Project",
+        "corridor_dist_km": 40.68,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    }
+  ]
+}

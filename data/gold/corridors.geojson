@@ -1,0 +1,112 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "generated_at": "2026-10-26T17:23:02.805399+00:00",
+    "total_corridors": 6,
+    "data_layer": "Strategic Geopolitical Assets"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.6385,
+          19.4312
+        ]
+      },
+      "properties": {
+        "corridor_id": "CMEC_PIPELINE",
+        "corridor_name": "China-Myanmar Oil & Gas Pipelines (CMEC)",
+        "sponsor_nation": "China (CNPC / PetroChina)",
+        "asset_type": "ENERGY_PIPELINE",
+        "description": "Crucial energy pipeline connecting Made Island / Kyaukphyu deep sea terminal to Kunming, Yunnan Province."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.5583,
+          19.4267
+        ]
+      },
+      "properties": {
+        "corridor_id": "KYAUKPHYU_SEZ",
+        "corridor_name": "Kyaukphyu Deep Sea Port & SEZ",
+        "sponsor_nation": "China (CITIC Group)",
+        "asset_type": "DEEP_SEA_PORT",
+        "description": "Major Belt and Road Initiative (BRI) maritime hub providing China direct access to the Bay of Bengal."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8969,
+          20.1444
+        ]
+      },
+      "properties": {
+        "corridor_id": "KALADAN_CORRIDOR",
+        "corridor_name": "Kaladan Multi-Modal Transit Transport Project",
+        "sponsor_nation": "India (Ministry of External Affairs)",
+        "asset_type": "TRANSIT_RIVER_PORT",
+        "description": "Indian strategic link connecting Kolkata seaport with Sittwe port and riverine highway to Mizoram, Northeast India."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.0333,
+          19.7833
+        ]
+      },
+      "properties": {
+        "corridor_id": "ANN_WESTERN_CMD",
+        "corridor_name": "Western Command Headquarters (Ann)",
+        "sponsor_nation": "Myanmar Military (SAC)",
+        "asset_type": "MILITARY_HQ",
+        "description": "Operational military headquarters overseeing all Junta operations across Rakhine and Chin states."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.3667,
+          20.8167
+        ]
+      },
+      "properties": {
+        "corridor_id": "MAUNGDAW_BORDER",
+        "corridor_name": "Maungdaw Border Trade & Naf River Crossing",
+        "sponsor_nation": "Myanmar / Bangladesh",
+        "asset_type": "BORDER_TRADE",
+        "description": "Strategic international land border and river crossing adjacent to Cox's Bazar, Bangladesh."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.85,
+          21.3
+        ]
+      },
+      "properties": {
+        "corridor_id": "PALETWA_KALADAN_HUB",
+        "corridor_name": "Paletwa Kaladan Inland Waterway Terminal",
+        "sponsor_nation": "India / Myanmar",
+        "asset_type": "INLAND_PORT",
+        "description": "Transit junction where Kaladan river transport shifts to overland road into Mizoram."
+      }
+    }
+  ]
+}

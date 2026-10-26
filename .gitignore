@@ -21,6 +21,8 @@ ENV/
 
 # Logs & temp
 *.log
+*.duckdb
+*.duckdb.tmp
 
 # Large reference books (keep local, exclude from git repo)
 *.pdf

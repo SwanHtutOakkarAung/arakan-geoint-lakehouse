@@ -1,0 +1,7 @@
+corridor_id,corridor_name,sponsor_nation,asset_type,latitude,longitude,description
+CMEC_PIPELINE,China-Myanmar Oil & Gas Pipelines (CMEC),China (CNPC / PetroChina),ENERGY_PIPELINE,19.4312,93.6385,"Crucial energy pipeline connecting Made Island / Kyaukphyu deep sea terminal to Kunming, Yunnan Province."
+KYAUKPHYU_SEZ,Kyaukphyu Deep Sea Port & SEZ,China (CITIC Group),DEEP_SEA_PORT,19.4267,93.5583,Major Belt and Road Initiative (BRI) maritime hub providing China direct access to the Bay of Bengal.
+KALADAN_CORRIDOR,Kaladan Multi-Modal Transit Transport Project,India (Ministry of External Affairs),TRANSIT_RIVER_PORT,20.1444,92.8969,"Indian strategic link connecting Kolkata seaport with Sittwe port and riverine highway to Mizoram, Northeast India."
+ANN_WESTERN_CMD,Western Command Headquarters (Ann),Myanmar Military (SAC),MILITARY_HQ,19.7833,94.0333,Operational military headquarters overseeing all Junta operations across Rakhine and Chin states.
+MAUNGDAW_BORDER,Maungdaw Border Trade & Naf River Crossing,Myanmar / Bangladesh,BORDER_TRADE,20.8167,92.3667,"Strategic international land border and river crossing adjacent to Cox's Bazar, Bangladesh."
+PALETWA_KALADAN_HUB,Paletwa Kaladan Inland Waterway Terminal,India / Myanmar,INLAND_PORT,21.3,92.85,Transit junction where Kaladan river transport shifts to overland road into Mizoram.
