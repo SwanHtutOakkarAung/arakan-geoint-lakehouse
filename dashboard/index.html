@@ -3,167 +3,287 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ARAKAN GEOINT LAKEHOUSE — Intelligence Operations Dashboard</title>
+  <title>ARAKAN GEOINT LAKEHOUSE — Geospatial Intelligence Operations</title>
   
-  <!-- Fonts & Icons -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Myanmar:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
   <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   
   <style>
     :root {
-      --bg-base: #0a0d14;
-      --bg-panel: rgba(16, 21, 33, 0.88);
-      --bg-card: rgba(23, 31, 48, 0.75);
-      --border-subtle: rgba(255, 255, 255, 0.08);
-      --border-glow: rgba(0, 240, 255, 0.3);
-      --text-main: #f0f4fc;
-      --text-muted: #8b9bb4;
+      --bg-canvas: #07090e;
+      --bg-glass: rgba(11, 16, 26, 0.85);
+      --bg-glass-card: rgba(18, 25, 40, 0.72);
+      --bg-glass-hover: rgba(28, 38, 60, 0.9);
+      --border-glass: rgba(255, 255, 255, 0.08);
+      --border-accent: rgba(0, 240, 255, 0.35);
+      --text-main: #f1f5fc;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
       --accent-cyan: #00f0ff;
+      --accent-emerald: #00ffaa;
       --accent-red: #ff3366;
       --accent-amber: #ffaa00;
-      --accent-green: #00ffaa;
-      --font-ui: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      --accent-blue: #38bdf8;
+      --font-sans: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      --font-burmese: 'Noto Sans Myanmar', -apple-system, sans-serif;
       --font-mono: 'JetBrains Mono', monospace;
+      --shadow-hud: 0 16px 36px -8px rgba(0, 0, 0, 0.65), 0 0 1px 1px rgba(255, 255, 255, 0.05);
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      background-color: var(--bg-base);
+      background: var(--bg-canvas);
       color: var(--text-main);
-      font-family: var(--font-ui);
+      font-family: var(--font-sans);
+      width: 100vw;
       height: 100vh;
       overflow: hidden;
-      display: flex;
-      flex-direction: column;
+      position: relative;
     }
 
-    /* Top Bar */
-    header {
-      background: var(--bg-panel);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--border-subtle);
-      padding: 10px 24px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+    /* ── 1. Full-Bleed Map Canvas (The Hero) ─────────────────────────────────── */
+    #map {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      background: #05070a;
+    }
+
+    /* Prevent Leaflet zoom control from colliding with bottom timeline */
+    .leaflet-bottom.leaflet-right {
+      margin-bottom: 76px;
+      margin-right: 14px;
+    }
+
+    .leaflet-bar {
+      border: 1px solid var(--border-glass) !important;
+      box-shadow: var(--shadow-hud) !important;
+      border-radius: 8px !important;
+      overflow: hidden;
+    }
+
+    .leaflet-bar a {
+      background: var(--bg-glass) !important;
+      color: var(--accent-cyan) !important;
+      border-bottom: 1px solid var(--border-glass) !important;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+
+    .leaflet-bar a:hover {
+      background: var(--bg-glass-hover) !important;
+      color: #fff !important;
+    }
+
+    /* ── 2. Floating Island Header (Top Center HUD) ─────────────────────────── */
+    .floating-header {
+      position: absolute;
+      top: 14px;
+      left: 50%;
+      transform: translateX(-50%);
       z-index: 1000;
-    }
-
-    .brand {
       display: flex;
       align-items: center;
       gap: 14px;
+      background: var(--bg-glass);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid var(--border-glass);
+      border-radius: 40px;
+      padding: 7px 18px;
+      box-shadow: var(--shadow-hud);
+      transition: all 0.3s ease;
+      max-width: calc(100vw - 28px);
+      white-space: nowrap;
     }
 
-    .radar-pulse {
-      width: 12px;
-      height: 12px;
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      padding-right: 12px;
+      border-right: 1px solid var(--border-glass);
+    }
+
+    .live-pulse {
+      width: 9px;
+      height: 9px;
       background: var(--accent-cyan);
       border-radius: 50%;
-      box-shadow: 0 0 12px var(--accent-cyan);
-      animation: pulse 2s infinite;
+      box-shadow: 0 0 10px var(--accent-cyan);
+      animation: pulse-ring 2s infinite;
+      flex-shrink: 0;
     }
 
-    @keyframes pulse {
-      0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(0, 240, 255, 0.7); }
-      70% { transform: scale(1.2); box-shadow: 0 0 0 10px rgba(0, 240, 255, 0); }
-      100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(0, 240, 255, 0); }
+    @keyframes pulse-ring {
+      0% { transform: scale(0.9); box-shadow: 0 0 0 0 rgba(0, 240, 255, 0.7); }
+      70% { transform: scale(1.2); box-shadow: 0 0 0 8px rgba(0, 240, 255, 0); }
+      100% { transform: scale(0.9); box-shadow: 0 0 0 0 rgba(0, 240, 255, 0); }
     }
 
-    .title-group h1 {
-      font-size: 16px;
-      font-weight: 700;
+    .brand-title {
+      font-size: 12px;
+      font-weight: 800;
       letter-spacing: 0.08em;
       text-transform: uppercase;
       color: #fff;
     }
 
-    .title-group p {
-      font-size: 11px;
-      color: var(--text-muted);
-      font-family: var(--font-mono);
-    }
-
-    .kpi-strip {
+    .telemetry-pills {
       display: flex;
-      gap: 16px;
-    }
-
-    .kpi-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border-subtle);
-      border-radius: 6px;
-      padding: 6px 14px;
-      display: flex;
-      flex-direction: column;
       align-items: center;
+      gap: 12px;
     }
 
-    .kpi-card .label {
-      font-size: 10px;
-      text-transform: uppercase;
-      color: var(--text-muted);
-      font-family: var(--font-mono);
-    }
-
-    .kpi-card .val {
-      font-size: 16px;
-      font-weight: 700;
-      font-family: var(--font-mono);
-      color: var(--accent-cyan);
-    }
-
-    .kpi-card.alert .val { color: var(--accent-red); }
-    .kpi-card.warn .val { color: var(--accent-amber); }
-
-    .transparency-badge {
+    .kpi-pill {
       display: flex;
       align-items: center;
       gap: 6px;
-      background: rgba(255, 170, 0, 0.12);
-      border: 1px solid rgba(255, 170, 0, 0.3);
-      padding: 6px 12px;
-      border-radius: 20px;
       font-size: 11px;
-      color: var(--accent-amber);
       font-family: var(--font-mono);
+      color: var(--text-secondary);
     }
 
-    /* Main Container: Map + Left/Right Panels */
-    .workspace {
-      display: flex;
-      flex: 1;
-      height: calc(100vh - 65px);
-      position: relative;
+    .kpi-pill strong {
+      color: #fff;
+      font-weight: 700;
+      font-size: 12px;
     }
 
-    /* Side Panel */
-    .intel-panel {
-      width: 480px;
-      background: var(--bg-panel);
-      backdrop-filter: blur(16px);
-      border-right: 1px solid var(--border-subtle);
+    .kpi-pill.red strong { color: var(--accent-red); }
+    .kpi-pill.amber strong { color: var(--accent-amber); }
+    .kpi-pill.cyan strong { color: var(--accent-cyan); }
+
+    .claim-badge {
+      font-size: 10px;
+      font-family: var(--font-mono);
+      color: var(--accent-amber);
+      background: rgba(255, 170, 0, 0.12);
+      border: 1px solid rgba(255, 170, 0, 0.35);
+      border-radius: 20px;
+      padding: 3px 9px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+    }
+
+    /* ── 3. Floating Intelligence Drawer (Left Side) ────────────────────────── */
+    .intel-drawer {
+      position: absolute;
+      top: 68px;
+      left: 18px;
+      bottom: 80px;
+      width: 420px;
+      max-width: calc(100vw - 36px);
+      z-index: 900;
+      background: var(--bg-glass);
+      backdrop-filter: blur(28px);
+      -webkit-backdrop-filter: blur(28px);
+      border: 1px solid var(--border-glass);
+      border-radius: 16px;
+      box-shadow: var(--shadow-hud);
       display: flex;
       flex-direction: column;
-      z-index: 900;
+      overflow: hidden;
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
     }
 
-    /* Module Tabs */
-    .module-tabs {
+    .intel-drawer.collapsed {
+      transform: translateX(-460px);
+      pointer-events: none;
+      opacity: 0;
+    }
+
+    /* Floating Drawer Toggle Button */
+    .drawer-toggle-btn {
+      position: absolute;
+      top: 72px;
+      left: 18px;
+      z-index: 901;
+      background: var(--bg-glass);
+      backdrop-filter: blur(20px);
+      border: 1px solid var(--border-accent);
+      color: var(--accent-cyan);
+      border-radius: 12px;
+      padding: 8px 14px;
+      font-size: 11px;
+      font-weight: 700;
+      font-family: var(--font-mono);
+      cursor: pointer;
+      box-shadow: var(--shadow-hud);
+      display: none;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s;
+    }
+
+    .drawer-toggle-btn:hover {
+      background: var(--bg-glass-hover);
+      border-color: var(--accent-cyan);
+      transform: translateY(-1px);
+    }
+
+    .intel-drawer.collapsed + .drawer-toggle-btn {
       display: flex;
-      background: rgba(10, 13, 20, 0.7);
-      border-bottom: 1px solid var(--border-subtle);
-      overflow-x: auto;
     }
 
-    .tab-btn {
+    .drawer-header {
+      padding: 12px 16px 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border-glass);
+    }
+
+    .drawer-header h2 {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #fff;
+    }
+
+    .drawer-close-btn {
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      cursor: pointer;
+      font-size: 11px;
+      font-family: var(--font-mono);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      padding: 4px 8px;
+      border-radius: 6px;
+      transition: all 0.2s;
+    }
+
+    .drawer-close-btn:hover {
+      color: #fff;
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    /* Module Navigation Tabs */
+    .module-nav {
+      display: flex;
+      background: rgba(0, 0, 0, 0.35);
+      border-bottom: 1px solid var(--border-glass);
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .module-nav::-webkit-scrollbar { display: none; }
+
+    .nav-tab {
       flex: 1;
-      padding: 12px 10px;
+      padding: 9px 10px;
       background: none;
       border: none;
       border-bottom: 2px solid transparent;
@@ -174,340 +294,596 @@
       letter-spacing: 0.04em;
       cursor: pointer;
       white-space: nowrap;
-      transition: all 0.2s ease;
+      transition: all 0.2s;
+      text-align: center;
     }
 
-    .tab-btn:hover { color: #fff; background: rgba(255, 255, 255, 0.03); }
-    .tab-btn.active {
+    .nav-tab:hover { color: #fff; background: rgba(255, 255, 255, 0.03); }
+    .nav-tab.active {
       color: var(--accent-cyan);
       border-bottom-color: var(--accent-cyan);
-      background: rgba(0, 240, 255, 0.05);
+      background: rgba(0, 240, 255, 0.06);
+      font-weight: 700;
     }
 
-    .tab-content {
+    /* Drawer Scrollable Content */
+    .drawer-body {
       flex: 1;
       overflow-y: auto;
       padding: 16px;
     }
 
-    /* Map View */
-    #map {
-      flex: 1;
-      height: 100%;
-      background: #0d1117;
-    }
-
-    /* Map Overlay Legend */
-    .map-legend {
-      position: absolute;
-      bottom: 24px;
-      right: 24px;
-      background: var(--bg-panel);
-      border: 1px solid var(--border-subtle);
-      padding: 12px 16px;
-      border-radius: 8px;
-      backdrop-filter: blur(12px);
-      font-size: 11px;
-      z-index: 1000;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-
-    .legend-row {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .legend-dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-    }
-
-    /* Cards & List Items in Panel */
-    .event-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border-subtle);
-      border-left: 3px solid var(--accent-cyan);
-      border-radius: 6px;
-      padding: 12px;
+    /* Search & Filter Controls */
+    .search-box {
+      position: relative;
       margin-bottom: 12px;
+    }
+
+    .search-input {
+      width: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      border: 1px solid var(--border-glass);
+      border-radius: 8px;
+      padding: 8px 12px 8px 32px;
+      font-size: 12px;
+      font-family: var(--font-sans);
+      color: #fff;
+      outline: none;
       transition: border-color 0.2s;
     }
 
-    .event-card:hover {
+    .search-input:focus {
       border-color: var(--accent-cyan);
+      box-shadow: 0 0 10px rgba(0, 240, 255, 0.15);
     }
 
-    .event-card.airstrike { border-left-color: var(--accent-red); }
-    .event-card.clash { border-left-color: var(--accent-amber); }
-    .event-card.naval { border-left-color: #3b82f6; }
+    .search-icon {
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 12px;
+      color: var(--text-muted);
+      pointer-events: none;
+    }
 
-    .card-meta {
+    .filter-chips {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 10px;
-      font-family: var(--font-mono);
-      color: var(--text-muted);
-      margin-bottom: 6px;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
     }
 
-    .badge {
-      padding: 2px 6px;
-      border-radius: 4px;
-      font-size: 9px;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
-
-    .badge.red { background: rgba(255, 51, 102, 0.2); color: var(--accent-red); }
-    .badge.amber { background: rgba(255, 170, 0, 0.2); color: var(--accent-amber); }
-    .badge.cyan { background: rgba(0, 240, 255, 0.2); color: var(--accent-cyan); }
-
-    .card-title {
-      font-size: 13px;
-      font-weight: 600;
-      color: #fff;
-      margin-bottom: 6px;
-      line-height: 1.4;
-    }
-
-    .card-desc {
-      font-size: 11px;
-      color: var(--text-muted);
-      line-height: 1.5;
-      margin-bottom: 8px;
-    }
-
-    .card-footer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 10px;
-      font-family: var(--font-mono);
-      color: var(--accent-cyan);
-    }
-
-    .card-footer a {
-      color: var(--accent-cyan);
-      text-decoration: none;
-    }
-
-    .card-footer a:hover { text-decoration: underline; }
-
-    /* Tables */
-    .intel-table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 11px;
-      margin-top: 10px;
-    }
-
-    .intel-table th {
-      text-align: left;
-      padding: 8px;
-      background: rgba(0, 0, 0, 0.4);
-      color: var(--text-muted);
-      font-family: var(--font-mono);
-      border-bottom: 1px solid var(--border-subtle);
-    }
-
-    .intel-table td {
-      padding: 10px 8px;
-      border-bottom: 1px solid var(--border-subtle);
-      font-family: var(--font-mono);
-    }
-
-    .threat-tag {
-      padding: 2px 6px;
-      border-radius: 3px;
-      font-size: 9px;
-      font-weight: 700;
-    }
-
-    .threat-tag.danger { background: rgba(255, 51, 102, 0.25); color: var(--accent-red); }
-    .threat-tag.warning { background: rgba(255, 170, 0, 0.25); color: var(--accent-amber); }
-    .threat-tag.safe { background: rgba(0, 255, 170, 0.15); color: var(--accent-green); }
-
-    .filter-pill {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid var(--border-subtle);
-      color: var(--text-muted);
+    .chip {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border-glass);
+      color: var(--text-secondary);
       border-radius: 14px;
       padding: 4px 10px;
       font-size: 10px;
       font-weight: 600;
       font-family: var(--font-mono);
       cursor: pointer;
-      transition: all 0.15s ease;
+      transition: all 0.2s;
     }
-    .filter-pill:hover {
-      background: rgba(0, 240, 255, 0.1);
+
+    .chip:hover {
       color: #fff;
+      background: rgba(255, 255, 255, 0.08);
     }
-    .filter-pill.active {
-      background: rgba(0, 240, 255, 0.2);
+
+    .chip.active {
+      background: rgba(0, 240, 255, 0.18);
       border-color: var(--accent-cyan);
       color: var(--accent-cyan);
+    }
+
+    /* Airy Event Card */
+    .event-card {
+      background: var(--bg-glass-card);
+      border: 1px solid var(--border-glass);
+      border-left: 3px solid var(--accent-cyan);
+      border-radius: 10px;
+      padding: 12px 14px;
+      margin-bottom: 10px;
+      transition: transform 0.15s ease, border-color 0.2s, background 0.2s;
+      cursor: pointer;
+    }
+
+    .event-card:hover {
+      background: var(--bg-glass-hover);
+      transform: translateY(-1px);
+      border-color: rgba(255, 255, 255, 0.18);
+    }
+
+    .event-card.airstrike { border-left-color: var(--accent-red); }
+    .event-card.clash { border-left-color: var(--accent-amber); }
+    .event-card.inception { border-left-color: var(--accent-emerald); }
+
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 6px;
+    }
+
+    .tag-badge {
+      font-size: 9px;
+      font-family: var(--font-mono);
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 2px 7px;
+      border-radius: 4px;
+    }
+
+    .tag-badge.red { background: rgba(255, 51, 102, 0.2); color: var(--accent-red); }
+    .tag-badge.amber { background: rgba(255, 170, 0, 0.2); color: var(--accent-amber); }
+    .tag-badge.cyan { background: rgba(0, 240, 255, 0.2); color: var(--accent-cyan); }
+    .tag-badge.emerald { background: rgba(0, 255, 170, 0.2); color: var(--accent-emerald); }
+
+    .card-date {
+      font-size: 10px;
+      font-family: var(--font-mono);
+      color: var(--text-muted);
+    }
+
+    .card-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 6px;
+      line-height: 1.5;
+      font-family: var(--font-burmese);
+    }
+
+    .card-summary {
+      font-size: 11px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin-bottom: 8px;
+      font-family: var(--font-burmese);
+    }
+
+    .card-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 10px;
+      font-family: var(--font-mono);
+      color: var(--text-muted);
+      border-top: 1px solid rgba(255, 255, 255, 0.04);
+      padding-top: 6px;
+    }
+
+    .accordion-toggle {
+      color: var(--accent-cyan);
+      background: none;
+      border: none;
+      font-size: 10px;
+      font-family: var(--font-mono);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 3px;
+    }
+
+    .accordion-toggle:hover { text-decoration: underline; }
+
+    .card-details-drawer {
+      display: none;
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px dashed rgba(255, 255, 255, 0.08);
+      font-size: 11px;
+      color: #cbd5e1;
+      line-height: 1.6;
+      font-family: var(--font-burmese);
+    }
+
+    .card-details-drawer.open { display: block; }
+
+    /* ── 4. Tactical Event Briefing Drawer (Right Side Flyout) ───────────────── */
+    .briefing-flyout {
+      position: absolute;
+      top: 76px;
+      right: 20px;
+      width: 360px;
+      max-width: calc(100vw - 40px);
+      z-index: 950;
+      background: var(--bg-glass);
+      backdrop-filter: blur(28px);
+      -webkit-backdrop-filter: blur(28px);
+      border: 1px solid var(--border-accent);
+      border-radius: 16px;
+      box-shadow: var(--shadow-hud);
+      padding: 18px;
+      display: none;
+      animation: slide-in-right 0.25s ease-out;
+    }
+
+    @keyframes slide-in-right {
+      from { transform: translateX(30px); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    .briefing-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 12px;
+      border-bottom: 1px solid var(--border-glass);
+      padding-bottom: 10px;
+    }
+
+    .briefing-close {
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .briefing-close:hover { color: #fff; }
+
+    .briefing-stat-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 6px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+      font-size: 11px;
+      font-family: var(--font-mono);
+    }
+
+    .briefing-stat-row span:first-child { color: var(--text-muted); }
+    .briefing-stat-row span:last-child { color: #fff; font-weight: 600; }
+
+    /* ── 5. Floating Interactive Bottom Timeline Scrubber ───────────────────── */
+    .timeline-bar {
+      position: absolute;
+      bottom: 18px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1000;
+      width: min(780px, calc(100vw - 40px));
+      background: var(--bg-glass);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid var(--border-glass);
+      border-radius: 30px;
+      padding: 10px 22px;
+      box-shadow: var(--shadow-hud);
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .timeline-play-btn {
+      width: 32px;
+      height: 32px;
+      background: rgba(0, 240, 255, 0.15);
+      border: 1px solid var(--accent-cyan);
+      border-radius: 50%;
+      color: var(--accent-cyan);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 12px;
+      transition: all 0.2s;
+    }
+
+    .timeline-play-btn:hover {
+      background: var(--accent-cyan);
+      color: #000;
+      transform: scale(1.05);
+    }
+
+    .timeline-slider-track {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .timeline-labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 10px;
+      font-family: var(--font-mono);
+      color: var(--text-muted);
+    }
+
+    .timeline-slider {
+      width: 100%;
+      -webkit-appearance: none;
+      appearance: none;
+      height: 4px;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 2px;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .timeline-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--accent-cyan);
+      box-shadow: 0 0 8px var(--accent-cyan);
+      cursor: pointer;
+      transition: transform 0.1s;
+    }
+
+    .timeline-slider::-webkit-slider-thumb:hover {
+      transform: scale(1.3);
+    }
+
+    .current-date-badge {
+      font-size: 11px;
+      font-family: var(--font-mono);
+      color: #fff;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 4px 10px;
+      border-radius: 20px;
+      border: 1px solid var(--border-glass);
+      white-space: nowrap;
+    }
+
+    /* ── Table Styles ───────────────────────────────────────────────────────── */
+    .intel-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 11px;
+      margin-top: 6px;
+    }
+
+    .intel-table th {
+      text-align: left;
+      padding: 8px 6px;
+      background: rgba(0, 0, 0, 0.4);
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+      border-bottom: 1px solid var(--border-glass);
+    }
+
+    .intel-table td {
+      padding: 8px 6px;
+      border-bottom: 1px solid var(--border-glass);
+      font-family: var(--font-mono);
+    }
+
+    /* ── Responsive Adaptations for Small & Mobile Viewports ─────────── */
+    @media (max-width: 768px) {
+      .floating-header {
+        top: 10px;
+        padding: 5px 12px;
+        gap: 8px;
+        max-width: calc(100vw - 20px);
+      }
+      .brand-title {
+        font-size: 11px;
+      }
+      .telemetry-pills {
+        gap: 8px;
+      }
+      .kpi-pill span {
+        display: none;
+      }
+      .kpi-pill strong {
+        font-size: 11px;
+      }
+      .claim-badge {
+        display: none;
+      }
+      .intel-drawer {
+        top: 56px;
+        left: 10px;
+        bottom: 68px;
+        width: calc(100vw - 20px);
+        max-width: 360px;
+      }
+      .drawer-toggle-btn {
+        top: 56px;
+        left: 10px;
+        padding: 6px 10px;
+        font-size: 10px;
+      }
+      .briefing-flyout {
+        top: 56px;
+        right: 10px;
+        left: 10px;
+        width: auto;
+        max-width: none;
+      }
+      .timeline-bar {
+        bottom: 10px;
+        padding: 6px 12px;
+        gap: 8px;
+        width: calc(100vw - 20px);
+      }
+      .timeline-labels {
+        font-size: 8px;
+      }
+      .current-date-badge {
+        font-size: 9px;
+        padding: 2px 6px;
+      }
+      .leaflet-bottom.leaflet-right {
+        margin-bottom: 64px;
+        margin-right: 8px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <!-- Top Header Telemetry -->
-  <header>
-    <div class="brand">
-      <div class="radar-pulse"></div>
-      <div class="title-group">
-        <h1>Arakan GEOINT Lakehouse</h1>
-        <p>MEDALLION ARCHITECTURE • ULA/AA THEATER COMMS • UN MIMU STANDARDS</p>
+  <!-- 1. Full-Bleed Map Canvas -->
+  <div id="map"></div>
+
+  <!-- 2. Floating Island Header (Center HUD) -->
+  <header class="floating-header">
+    <div class="brand-group">
+      <div class="live-pulse"></div>
+      <span class="brand-title">ARAKAN GEOINT</span>
+    </div>
+
+    <div class="telemetry-pills">
+      <div class="kpi-pill cyan">
+        <span>EVENTS:</span>
+        <strong id="kpi-total-events">--</strong>
+      </div>
+      <div class="kpi-pill red">
+        <span>AIRSTRIKES:</span>
+        <strong id="kpi-airstrikes">--</strong>
+      </div>
+      <div class="kpi-pill amber">
+        <span>CORRIDOR ALERTS:</span>
+        <strong id="kpi-corridor-alerts">--</strong>
+      </div>
+      <div class="kpi-pill">
+        <span>CLAIMED KIA:</span>
+        <strong id="kpi-kia-claims">--</strong>
       </div>
     </div>
 
-    <div class="kpi-strip">
-      <div class="kpi-card">
-        <span class="label">Total Events</span>
-        <span class="val" id="kpi-total-events">--</span>
-      </div>
-      <div class="kpi-card alert">
-        <span class="label">Airstrikes</span>
-        <span class="val" id="kpi-airstrikes">--</span>
-      </div>
-      <div class="kpi-card warn">
-        <span class="label">Corridor Buffer Alerts</span>
-        <span class="val" id="kpi-corridor-alerts">--</span>
-      </div>
-      <div class="kpi-card">
-        <span class="label">Claimed KIA</span>
-        <span class="val" id="kpi-kia-claims">--</span>
-      </div>
-    </div>
-
-    <div class="transparency-badge">
-      <span>⚠️ IS_ACTOR_CLAIM: TRUE</span>
-    </div>
+    <div class="claim-badge">⚠️ ACTOR_CLAIM: TRUE</div>
   </header>
 
-  <!-- Main View -->
-  <div class="workspace">
-    
-    <!-- Left Intelligence Module Panels -->
-    <div class="intel-panel">
-      <div class="module-tabs">
-        <button class="tab-btn active" onclick="switchTab('tab-corridors')">1. Corridors</button>
-        <button class="tab-btn" onclick="switchTab('tab-events')">2. Events</button>
-        <button class="tab-btn" onclick="switchTab('tab-risk')">3. Townships</button>
-        <button class="tab-btn" onclick="switchTab('tab-intel')">4. Narrative</button>
-        <button class="tab-btn" onclick="switchTab('tab-osint')">5. OSINT/Units</button>
+  <!-- Button to restore left panel when collapsed -->
+  <button class="drawer-toggle-btn" id="drawer-restore-btn" onclick="toggleIntelDrawer(true)">
+    <span>▶</span> <span>INTEL FEED</span>
+  </button>
+
+  <!-- 3. Floating Intelligence Drawer (Left Side) -->
+  <aside class="intel-drawer" id="intel-drawer">
+    <div class="drawer-header">
+      <h2>SITUATIONAL INTEL</h2>
+      <button class="drawer-close-btn" onclick="toggleIntelDrawer(false)">
+        <span>◀ Collapse Panel</span>
+      </button>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <nav class="module-nav">
+      <button class="nav-tab active" onclick="switchDrawerTab('tab-events')">Feed</button>
+      <button class="nav-tab" onclick="switchDrawerTab('tab-corridors')">Corridors</button>
+      <button class="nav-tab" onclick="switchDrawerTab('tab-risk')">Townships</button>
+      <button class="nav-tab" onclick="switchDrawerTab('tab-intel')">Narrative</button>
+      <button class="nav-tab" onclick="switchDrawerTab('tab-osint')">ORBAT</button>
+    </nav>
+
+    <!-- Drawer Body -->
+    <div class="drawer-body">
+
+      <!-- TAB: Chronological Events Feed -->
+      <div id="tab-events" class="tab-panel">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="event-search-input" class="search-input" placeholder="Search by town, battalion, weapon..." oninput="onSearchFilter()">
+        </div>
+
+        <div class="filter-chips">
+          <button class="chip active" id="chip-all" onclick="filterByChip('ALL')">All (40)</button>
+          <button class="chip" id="chip-airstrike" onclick="filterByChip('AIRSTRIKE')">🚨 Airstrikes</button>
+          <button class="chip" id="chip-clash" onclick="filterByChip('ARMED_CLASH')">⚔️ Clashes</button>
+          <button class="chip" id="chip-inception" onclick="filterByChip('INCEPTION')">🌱 2022 Inception</button>
+          <button class="chip" id="chip-sort" style="margin-left:auto;" onclick="toggleSortOrder()">⬇️ Newest</button>
+        </div>
+
+        <div id="events-feed-list">Loading intelligence feed...</div>
       </div>
 
-      <!-- Tab 1: Geopolitical Corridors Monitor -->
-      <div id="tab-corridors" class="tab-content">
-        <div style="margin-bottom: 12px;">
-          <h2 style="font-size: 13px; text-transform: uppercase; color: var(--accent-cyan); letter-spacing: 0.05em;">
-            Strategic Asset Proximity Matrix
-          </h2>
-          <p style="font-size: 11px; color: var(--text-muted); margin-top: 4px;">
-            Monitors distance between conflict incidents and Chinese/Indian geopolitical investments.
-          </p>
-        </div>
+      <!-- TAB: Corridors Proximity Monitor -->
+      <div id="tab-corridors" class="tab-panel" style="display: none;">
+        <p style="font-size:11px; color:var(--text-muted); margin-bottom:12px;">
+          Proximity alerts monitoring distance between conflict incidents and Chinese (CMEC) / Indian (Kaladan) assets.
+        </p>
         <div id="corridor-threat-list">Loading corridor matrix...</div>
       </div>
 
-      <!-- Tab 2: Conflict & Incident Tracker -->
-      <div id="tab-events" class="tab-content" style="display: none;">
-        <div style="margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center;">
-          <h2 style="font-size: 13px; text-transform: uppercase; color: var(--accent-cyan);">
-            Chronological Incident Feed
-          </h2>
-          <span style="font-size: 10px; color: var(--text-muted); font-family: var(--font-mono);" id="event-feed-count"></span>
-        </div>
-        
-        <!-- Filter and Sort Bar for Exploring Historical Inception vs Active Posts -->
-        <div class="filter-bar" style="display:flex; gap:6px; margin-bottom:12px; flex-wrap:wrap; align-items:center;">
-          <button class="filter-pill active" id="pill-all" onclick="filterEventsByYear('ALL')">All Years (40)</button>
-          <button class="filter-pill" id="pill-2022" onclick="filterEventsByYear('2022')">🌱 2022 Inception (31)</button>
-          <button class="filter-pill" id="pill-2026" onclick="filterEventsByYear('2026')">⚡ 2026 Active (9)</button>
-          <button class="filter-pill" id="sort-toggle-btn" style="margin-left:auto; border-color:rgba(0, 240, 255, 0.3);" onclick="toggleEventSort()">⬇️ Newest First</button>
-        </div>
-
-        <div id="events-feed-list">Loading incidents...</div>
+      <!-- TAB: Townships Risk Matrix -->
+      <div id="tab-risk" class="tab-panel" style="display: none;">
+        <p style="font-size:11px; color:var(--text-muted); margin-bottom:10px;">
+          Official UN MIMU P-Code hierarchy and casualty breakdown.
+        </p>
+        <div id="township-risk-table">Loading township table...</div>
       </div>
 
-      <!-- Tab 3: Township Risk Analytics -->
-      <div id="tab-risk" class="tab-content" style="display: none;">
-        <div style="margin-bottom: 12px;">
-          <h2 style="font-size: 13px; text-transform: uppercase; color: var(--accent-cyan);">
-            MIMU Township Risk Hierarchy
-          </h2>
-          <p style="font-size: 11px; color: var(--text-muted); margin-top: 4px;">
-            Aggregated incident severity categorized by official UN P-Codes.
-          </p>
-        </div>
-        <div id="township-risk-table">Loading risk table...</div>
+      <!-- TAB: Narrative & Strategic Communications -->
+      <div id="tab-intel" class="tab-panel" style="display: none;">
+        <p style="font-size:11px; color:var(--text-muted); margin-bottom:12px;">
+          Official communiques, alliance declarations, and civilian warning digests.
+        </p>
+        <div id="narrative-feed-list">Loading narrative digest...</div>
       </div>
 
-      <!-- Tab 4: Strategic Narrative & Early Warning -->
-      <div id="tab-intel" class="tab-content" style="display: none;">
-        <div style="margin-bottom: 8px;">
-          <h2 style="font-size: 13px; text-transform: uppercase; color: var(--accent-cyan);">
-            Strategic Comms & Narrative Digest
-          </h2>
-          <p style="font-size: 11px; color: var(--text-muted); margin-top: 4px;">
-            Official communications, Day 1 revolution greetings, and civilian advisory notices.
-          </p>
-        </div>
-
-        <div class="filter-bar" style="display:flex; gap:6px; margin-bottom:12px; flex-wrap:wrap;">
-          <button class="filter-pill active" id="npill-all" onclick="filterNarrativeByYear('ALL')">All Communiques (40)</button>
-          <button class="filter-pill" id="npill-2022" onclick="filterNarrativeByYear('2022')">📜 Day 1 Inception (2022)</button>
-          <button class="filter-pill" id="npill-2026" onclick="filterNarrativeByYear('2026')">🚨 Recent Alerts (2026)</button>
-        </div>
-
-        <div id="narrative-feed-list">Loading digest...</div>
-      </div>
-
-      <!-- Tab 5: OSINT Materiel & Unit Catalog -->
-      <div id="tab-osint" class="tab-content" style="display: none;">
-        <div style="margin-bottom: 12px;">
-          <h2 style="font-size: 13px; text-transform: uppercase; color: var(--accent-cyan);">
-            OSINT Materiel & Unit ORBAT Catalog
-          </h2>
-          <p style="font-size: 11px; color: var(--text-muted); margin-top: 4px;">
-            Identified opponent formations (LIB/LID) and captured materiel categories.
-          </p>
-        </div>
+      <!-- TAB: OSINT & Order of Battle -->
+      <div id="tab-osint" class="tab-panel" style="display: none;">
         <div id="osint-catalog-list">Loading order of battle...</div>
       </div>
+
+    </div>
+  </aside>
+
+  <!-- 4. Tactical Event Briefing Drawer (Right Side Flyout) -->
+  <div class="briefing-flyout" id="briefing-flyout">
+    <div class="briefing-header">
+      <div>
+        <div style="font-size:10px; font-family:var(--font-mono); color:var(--accent-cyan); text-transform:uppercase;" id="bf-category">AIRSTRIKE</div>
+        <h3 style="font-size:14px; font-weight:700; color:#fff; margin-top:2px;" id="bf-title">Ponnagyun Incident</h3>
+      </div>
+      <button class="briefing-close" onclick="closeBriefing()">✕</button>
     </div>
 
-    <!-- Map Canvas -->
-    <div id="map"></div>
+    <div style="margin-bottom:12px;">
+      <div style="font-size:11px; color:var(--text-secondary); line-height:1.5;" id="bf-summary">Summary text here...</div>
+    </div>
 
-    <!-- Map Legend -->
-    <div class="map-legend">
-      <div style="font-weight: 700; color: #fff; margin-bottom: 2px;">MAP OVERLAY</div>
-      <div class="legend-row">
-        <div class="legend-dot" style="background: var(--accent-red); box-shadow: 0 0 6px var(--accent-red);"></div>
-        <span>Airstrike / Heavy Artillery</span>
+    <div style="background:rgba(0,0,0,0.3); border-radius:8px; padding:10px; margin-bottom:12px;">
+      <div class="briefing-stat-row">
+        <span>Incident Date:</span>
+        <span id="bf-date">--</span>
       </div>
-      <div class="legend-row">
-        <div class="legend-dot" style="background: var(--accent-amber);"></div>
-        <span>Ground Clash / Camp Seizure</span>
+      <div class="briefing-stat-row">
+        <span>Township (MIMU):</span>
+        <span id="bf-township">--</span>
       </div>
-      <div class="legend-row">
-        <div class="legend-dot" style="background: var(--accent-cyan); box-shadow: 0 0 6px var(--accent-cyan);"></div>
-        <span>Strategic Corridor (CMEC/Kaladan)</span>
+      <div class="briefing-stat-row">
+        <span>Claimed Casualties:</span>
+        <span id="bf-casualties" style="color:var(--accent-red);">--</span>
       </div>
-      <div class="legend-row">
-        <div style="width: 14px; height: 14px; border: 1px dashed var(--accent-cyan); border-radius: 50%;"></div>
-        <span>25km Buffer Alert Radius</span>
+      <div class="briefing-stat-row">
+        <span>Nearest Corridor:</span>
+        <span id="bf-corridor" style="color:var(--accent-cyan);">--</span>
+      </div>
+      <div class="briefing-stat-row">
+        <span>Coordinates:</span>
+        <span id="bf-coords">--</span>
       </div>
     </div>
 
+    <div style="display:flex; justify-content:space-between; align-items:center;">
+      <span style="font-size:10px; font-family:var(--font-mono); color:var(--text-muted);" id="bf-event-id">AA-2471</span>
+      <a href="#" target="_blank" id="bf-source-link" style="color:var(--accent-cyan); font-size:11px; text-decoration:none; font-weight:600;">View Telegram Source ↗</a>
+    </div>
+  </div>
+
+  <!-- 5. Floating Interactive Bottom Timeline Scrubber -->
+  <div class="timeline-bar">
+    <button class="timeline-play-btn" id="timeline-play-btn" onclick="toggleTimelinePlay()">▶</button>
+    
+    <div class="timeline-slider-track">
+      <div class="timeline-labels">
+        <span style="cursor:pointer;" title="Jump to 2022 Inception" onclick="jumpTimeline(5)">🌱 Inception (Jan 2022)</span>
+        <span style="cursor:pointer;" title="Jump to Operation 1027" onclick="jumpTimeline(50)">Operation 1027 (Late 2023)</span>
+        <span style="cursor:pointer;" title="Jump to Frontline 2026" onclick="jumpTimeline(100)">⚡ Frontline (Oct 2026)</span>
+      </div>
+      <input type="range" id="timeline-slider" class="timeline-slider" min="0" max="100" value="100" oninput="onTimelineSlider(this.value)">
+    </div>
+
+    <div class="current-date-badge" id="timeline-current-label">ALL HISTORY</div>
   </div>
 
   <!-- Leaflet JS -->

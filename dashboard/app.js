@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────────────────────────────
-// ARAKAN GEOINT LAKEHOUSE — HIGH-SPEED CLIENT ENGINE
+// ARAKAN GEOINT LAKEHOUSE — HIGH-SPEED REDESIGNED ENGINE
 // ─────────────────────────────────────────────────────────────────────────────
 
 let map;
@@ -8,16 +8,19 @@ let corridorsLayer;
 let rawEvents = [];
 let rawCorridors = [];
 
-// Filtering & Sorting State
-let currentYearFilter = 'ALL';
-let currentSortOrder = 'DESC'; // 'DESC' = Newest first, 'ASC' = Oldest first (Day 1)
-let currentNarrativeFilter = 'ALL';
+// Filtering & UI State
+let activeChip = 'ALL';
+let searchQuery = '';
+let sortOrder = 'DESC'; // 'DESC' = newest first, 'ASC' = oldest first
+let timelinePercent = 100;
+let timelineInterval = null;
+let isPlaying = false;
 
 // 1. Initialize Map with Free, Reliable, Watermark-Free Basemaps
 function initMap() {
-  // A. ESRI Dark Tactical Canvas (Primary)
+  // A. ESRI Dark Tactical Canvas (Default)
   const esriDarkBase = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
-    attribution: 'Esri, HERE, Garmin, &copy; OpenStreetMap contributors | MIMU Standards',
+    attribution: 'Esri, HERE, Garmin, &copy; OpenStreetMap | MIMU Standards',
     maxZoom: 16
   });
 
@@ -27,7 +30,7 @@ function initMap() {
 
   const darkTacticalGroup = L.layerGroup([esriDarkBase, esriDarkLabels]);
 
-  // B. ESRI Satellite Reconnaissance (Secondary)
+  // B. ESRI Satellite Reconnaissance (Alternative)
   const esriSatellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
     attribution: 'Esri, Maxar, Earthstar Geographics | UN MIMU Standards',
     maxZoom: 18
@@ -39,12 +42,7 @@ function initMap() {
 
   const satelliteGroup = L.layerGroup([esriSatellite, esriBorders]);
 
-  // C. OpenStreetMap (Fallback)
-  const osmLayer = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; OpenStreetMap contributors',
-    maxZoom: 18
-  });
-
+  // Base map container
   map = L.map('map', {
     center: [20.0, 93.3],
     zoom: 8,
@@ -54,11 +52,9 @@ function initMap() {
 
   L.control.zoom({ position: 'bottomright' }).addTo(map);
 
-  // Basemap Switcher
   const baseMaps = {
     "🕶️ Dark Tactical": darkTacticalGroup,
-    "🛰️ Satellite Recon": satelliteGroup,
-    "🗺️ OpenStreetMap": osmLayer
+    "🛰️ Satellite Recon": satelliteGroup
   };
 
   eventsLayer = L.layerGroup().addTo(map);
@@ -72,17 +68,26 @@ function initMap() {
   L.control.layers(baseMaps, overlayMaps, { position: 'topright' }).addTo(map);
 }
 
-// 2. Tab Navigation
-function switchTab(tabId) {
-  document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
-  document.querySelectorAll('.tab-content').forEach(panel => panel.style.display = 'none');
+// 2. Drawer Navigation & Toggling
+function switchDrawerTab(tabId) {
+  document.querySelectorAll('.nav-tab').forEach(btn => btn.classList.remove('active'));
+  document.querySelectorAll('.tab-panel').forEach(panel => panel.style.display = 'none');
 
-  const activeBtn = Array.from(document.querySelectorAll('.tab-btn'))
+  const activeBtn = Array.from(document.querySelectorAll('.nav-tab'))
     .find(b => b.getAttribute('onclick') && b.getAttribute('onclick').includes(tabId));
   if (activeBtn) activeBtn.classList.add('active');
 
   const targetPanel = document.getElementById(tabId);
   if (targetPanel) targetPanel.style.display = 'block';
+}
+
+function toggleIntelDrawer(open) {
+  const drawer = document.getElementById('intel-drawer');
+  if (open) {
+    drawer.classList.remove('collapsed');
+  } else {
+    drawer.classList.add('collapsed');
+  }
 }
 
 // 3. Ultra-Fast Data Fetching Engine (Single-Trip /api/bundle)
@@ -128,20 +133,15 @@ async function loadLakehouseData() {
     // C. Render Events & Populate All Intelligence Tabs
     rawEvents = eventsGeo.features || [];
     renderEvents(rawEvents);
-    renderEventFeed(rawEvents);
+    renderEventFeed();
     renderNarrativeDigest(rawEvents);
     renderOSINTCatalog(rawEvents);
     renderTownshipRiskTable(rawEvents);
 
-    console.log(`🎉 Dashboard rendered in ${(performance.now() - startTime).toFixed(1)}ms (${rawEvents.length} events, ${rawCorridors.length} corridors)`);
+    console.log(`🎉 Redesigned Dashboard active (${rawEvents.length} events, ${rawCorridors.length} corridors)`);
 
   } catch (err) {
     console.error("❌ Failed to load lakehouse data:", err);
-    document.getElementById('events-feed-list').innerHTML = `
-      <div style="color:var(--accent-red); font-size:12px; padding:12px;">
-        Error loading intelligence feed: ${err.message}
-      </div>
-    `;
   }
 }
 
@@ -173,14 +173,9 @@ function renderCorridors(features) {
       fillOpacity: 0.05
     });
 
-    marker.bindPopup(`
-      <div style="font-family: var(--font-ui); color: #111; max-width: 250px;">
-        <div style="font-size: 10px; font-weight: 700; color: #0088cc; text-transform: uppercase;">Strategic Asset</div>
-        <div style="font-size: 14px; font-weight: 700; margin: 4px 0;">${p.corridor_name}</div>
-        <div style="font-size: 11px; color: #444; margin-bottom: 6px;">Sponsor: <strong>${p.sponsor_nation}</strong></div>
-        <div style="font-size: 11px; line-height: 1.4; color: #222;">${p.description}</div>
-      </div>
-    `);
+    marker.on('click', () => {
+      showCorridorBriefing(p, coords);
+    });
 
     corridorsLayer.addLayer(marker);
     corridorsLayer.addLayer(bufferCircle);
@@ -188,16 +183,21 @@ function renderCorridors(features) {
     const card = document.createElement('div');
     card.className = 'event-card';
     card.style.borderLeftColor = '#00f0ff';
+    card.onclick = () => {
+      zoomTo([coords[1], coords[0]]);
+      showCorridorBriefing(p, coords);
+    };
+
     card.innerHTML = `
-      <div class="card-meta">
-        <span class="badge cyan">${p.asset_type || 'CORRIDOR'}</span>
-        <span>${(p.sponsor_nation || '').split(' ')[0]}</span>
+      <div class="card-top">
+        <span class="tag-badge cyan">${p.asset_type || 'CORRIDOR'}</span>
+        <span class="card-date">${(p.sponsor_nation || '').split(' ')[0]}</span>
       </div>
       <div class="card-title">${p.corridor_name}</div>
-      <div class="card-desc">${p.description}</div>
-      <div class="card-footer">
+      <div class="card-summary">${p.description}</div>
+      <div class="card-bottom">
         <span>GPS: ${coords[1].toFixed(4)}, ${coords[0].toFixed(4)}</span>
-        <button style="background:none; border:none; color:var(--accent-cyan); cursor:pointer; font-size:11px; font-weight:600;" onclick="zoomTo([${coords[1]}, ${coords[0]}])">Focus Map ↗</button>
+        <span style="color:var(--accent-cyan); font-weight:600;">Focus Map ↗</span>
       </div>
     `;
     listContainer.appendChild(card);
@@ -209,15 +209,15 @@ function renderEvents(features) {
   eventsLayer.clearLayers();
 
   features.forEach(feat => {
-    const coords = feat.geometry.coordinates; // [lon, lat]
+    const coords = feat.geometry.coordinates;
     const p = feat.properties;
 
     const isAirstrike = p.category === 'AIRSTRIKE' || p.category === 'ARTILLERY_SHELLING';
     const isEarly2022 = (p.source_message_id <= 50) || (p.incident_date && p.incident_date.startsWith('2022'));
-    
-    let markerColor = '#ffaa00'; // Amber (ground clash)
-    if (isAirstrike) markerColor = '#ff3366'; // Red (airstrike)
-    if (isEarly2022) markerColor = '#00ffaa'; // Emerald/Green (2022 Inception & Political)
+
+    let markerColor = '#ffaa00';
+    if (isAirstrike) markerColor = '#ff3366';
+    if (isEarly2022) markerColor = '#00ffaa';
 
     const marker = L.circleMarker([coords[1], coords[0]], {
       radius: isAirstrike ? 8 : (isEarly2022 ? 5 : 6),
@@ -228,89 +228,106 @@ function renderEvents(features) {
       fillOpacity: 0.85
     });
 
-    const proximityStr = p.corridor_dist_km != null ? `${p.corridor_dist_km}km from ${p.nearest_corridor}` : 'In theater';
-    const eraBadge = isEarly2022 ? '<span style="color:#00ffaa; font-weight:700;">🌱 2022 Inception</span>' : `<span style="color:${markerColor}; font-weight:700;">${p.category}</span>`;
-
-    marker.bindPopup(`
-      <div style="font-family: var(--font-ui); color: #111; max-width: 270px;">
-        <div style="display:flex; justify-content:space-between; font-size:10px; margin-bottom:4px;">
-          ${eraBadge}
-          <span style="color:#666;">${p.incident_date || 'Undated'}</span>
-        </div>
-        <div style="font-size: 13px; font-weight: 700; margin: 4px 0;">
-          ${p.township || 'Rakhine'} ${p.mimu_pcode ? '(' + p.mimu_pcode + ')' : ''}
-        </div>
-        <div style="font-size: 11px; color: #333; margin-bottom: 6px; line-height: 1.4;">
-          ${p.summary}
-        </div>
-        <div style="font-size: 10px; color: #666; border-top: 1px solid #ddd; padding-top: 4px; display:flex; justify-content:space-between;">
-          <span>Post #${p.source_message_id}</span>
-          <a href="${p.source_url}" target="_blank" style="color:#0088cc; font-weight:600;">Telegram ↗</a>
-        </div>
-      </div>
-    `);
+    marker.on('click', () => {
+      showEventBriefing(p, coords);
+    });
 
     eventsLayer.addLayer(marker);
   });
 }
 
-// 6. Chronological Incident Feed (Tab 2) with Filtering & Sorting
-function renderEventFeed(features) {
+// 6. Chronological Incident Feed with Search & Filters
+function renderEventFeed() {
   const container = document.getElementById('events-feed-list');
-  const countSpan = document.getElementById('event-feed-count');
   container.innerHTML = '';
 
-  // Filter by Year
-  let filtered = features.filter(feat => {
+  let filtered = rawEvents.filter(feat => {
     const p = feat.properties;
     const is2022 = (p.source_message_id <= 50) || (p.incident_date && p.incident_date.startsWith('2022'));
-    if (currentYearFilter === '2022') return is2022;
-    if (currentYearFilter === '2026') return !is2022;
-    return true; // 'ALL'
+
+    // Category Chip Filter
+    if (activeChip === 'AIRSTRIKE' && p.category !== 'AIRSTRIKE' && p.category !== 'ARTILLERY_SHELLING') return false;
+    if (activeChip === 'ARMED_CLASH' && p.category !== 'ARMED_CLASH') return false;
+    if (activeChip === 'INCEPTION' && !is2022) return false;
+
+    // Search Query Filter
+    if (searchQuery) {
+      const q = searchQuery.toLowerCase();
+      const inText = (p.headline || '').toLowerCase().includes(q) ||
+                     (p.summary || '').toLowerCase().includes(q) ||
+                     (p.township || '').toLowerCase().includes(q) ||
+                     (p.opposing_actors || '').toLowerCase().includes(q);
+      if (!inText) return false;
+    }
+
+    return true;
   });
 
   // Sort
   filtered.sort((a, b) => {
     const idA = a.properties.source_message_id;
     const idB = b.properties.source_message_id;
-    return currentSortOrder === 'ASC' ? (idA - idB) : (idB - idA);
+    return sortOrder === 'ASC' ? (idA - idB) : (idB - idA);
   });
 
-  countSpan.innerText = `${filtered.length} of ${features.length} Displayed`;
+  if (filtered.length === 0) {
+    container.innerHTML = `
+      <div style="text-align:center; padding:30px 10px; color:var(--text-muted); font-size:12px;">
+        No incidents match your filter.
+      </div>
+    `;
+    return;
+  }
 
-  filtered.forEach(feat => {
+  filtered.forEach((feat, index) => {
     const coords = feat.geometry.coordinates;
     const p = feat.properties;
     const is2022 = (p.source_message_id <= 50) || (p.incident_date && p.incident_date.startsWith('2022'));
 
-    let catClass = p.category === 'AIRSTRIKE' ? 'airstrike' : (p.category === 'NAVAL_ENGAGEMENT' ? 'naval' : 'clash');
-    let badgeColor = p.category === 'AIRSTRIKE' ? 'red' : 'amber';
-    let eraLabel = `${p.category}`;
+    let catClass = p.category === 'AIRSTRIKE' ? 'airstrike' : (p.category === 'ARMED_CLASH' ? 'clash' : '');
+    let tagColor = p.category === 'AIRSTRIKE' ? 'red' : 'amber';
+    let tagText = p.category;
 
     if (is2022) {
-      catClass = 'event-card';
-      badgeColor = 'cyan';
-      eraLabel = `🌱 2022 INCEPTION • #${p.source_message_id}`;
+      catClass = 'inception';
+      tagColor = 'emerald';
+      tagText = `🌱 INCEPTION • #${p.source_message_id}`;
     }
 
     const proximityStr = p.corridor_dist_km != null ? `${p.corridor_dist_km}km from ${p.nearest_corridor}` : (is2022 ? 'Political / Strategic' : 'Rakhine Theater');
 
     const card = document.createElement('div');
     card.className = `event-card ${catClass}`;
-    if (is2022) card.style.borderLeftColor = 'var(--accent-green)';
+    card.onclick = (e) => {
+      if (e.target.closest('.accordion-toggle') || e.target.closest('.card-details-drawer')) return;
+      zoomTo([coords[1], coords[0]]);
+      showEventBriefing(p, coords);
+    };
+
+    const cardId = `drawer-detail-${p.source_message_id}`;
 
     card.innerHTML = `
-      <div class="card-meta">
-        <span class="badge ${badgeColor}">${eraLabel}</span>
-        <span>${p.incident_date || 'Date N/A'} • ${p.township || 'Rakhine'}</span>
+      <div class="card-top">
+        <span class="tag-badge ${tagColor}">${tagText}</span>
+        <span class="card-date">${p.incident_date || 'Date N/A'}</span>
       </div>
       <div class="card-title">${p.headline || p.summary}</div>
-      <div class="card-desc">${p.summary}</div>
-      <div class="card-footer">
-        <span>${proximityStr}</span>
-        <div style="display:flex; gap:12px;">
-          <button style="background:none; border:none; color:var(--accent-cyan); cursor:pointer; font-size:11px; font-weight:600;" onclick="zoomTo([${coords[1]}, ${coords[0]}])">Focus Map ↗</button>
-          <a href="${p.source_url}" target="_blank">Telegram #${p.source_message_id} ↗</a>
+      <div class="card-summary">${p.summary}</div>
+      
+      <div class="card-bottom">
+        <span>${p.township || 'Rakhine'}</span>
+        <button class="accordion-toggle" onclick="toggleCardAccordion('${cardId}', event)">
+          <span>Details</span> <span>▾</span>
+        </button>
+      </div>
+
+      <div class="card-details-drawer" id="${cardId}">
+        <div style="margin-bottom:6px;"><strong>Proximity:</strong> ${proximityStr}</div>
+        <div style="margin-bottom:6px;"><strong>Reported Opponents:</strong> ${p.opposing_actors || 'None specified'}</div>
+        <div style="margin-bottom:6px;"><strong>Claimed Casualties:</strong> ${p.kia_reported || 0} KIA, ${p.wounded_reported || 0} Wounded</div>
+        <div style="margin-top:6px; display:flex; justify-content:space-between; align-items:center;">
+          <span style="font-size:10px; color:var(--text-muted);">MIMU: ${p.mimu_pcode || 'THEATER'}</span>
+          <a href="${p.source_url}" target="_blank" style="color:var(--accent-cyan); text-decoration:none; font-weight:600;">Telegram #${p.source_message_id} ↗</a>
         </div>
       </div>
     `;
@@ -318,28 +335,135 @@ function renderEventFeed(features) {
   });
 }
 
-// Filter helpers for Tab 2
-function filterEventsByYear(year) {
-  currentYearFilter = year;
-  document.querySelectorAll('#tab-events .filter-pill').forEach(el => el.classList.remove('active'));
-  if (year === 'ALL') document.getElementById('pill-all').classList.add('active');
-  if (year === '2022') document.getElementById('pill-2022').classList.add('active');
-  if (year === '2026') document.getElementById('pill-2026').classList.add('active');
-  renderEventFeed(rawEvents);
-}
-
-function toggleEventSort() {
-  currentSortOrder = (currentSortOrder === 'DESC') ? 'ASC' : 'DESC';
-  const btn = document.getElementById('sort-toggle-btn');
-  if (currentSortOrder === 'ASC') {
-    btn.innerText = '⬆️ Oldest First (Day 1)';
-  } else {
-    btn.innerText = '⬇️ Newest First';
+function toggleCardAccordion(drawerId, evt) {
+  evt.stopPropagation();
+  const el = document.getElementById(drawerId);
+  if (el) {
+    el.classList.toggle('open');
   }
-  renderEventFeed(rawEvents);
 }
 
-// 7. Township Risk Hierarchy (Tab 3)
+// 7. Tactical Briefing Flyout (Right Side)
+function showEventBriefing(p, coords) {
+  const flyout = document.getElementById('briefing-flyout');
+  document.getElementById('bf-category').innerText = p.category;
+  document.getElementById('bf-title').innerText = `${p.township || 'Rakhine'} Incident`;
+  document.getElementById('bf-summary').innerText = p.summary || p.headline;
+  document.getElementById('bf-date').innerText = p.incident_date || 'Undated';
+  document.getElementById('bf-township').innerText = `${p.township || 'Rakhine'} (${p.mimu_pcode || 'THEATER'})`;
+  document.getElementById('bf-casualties').innerText = `${p.kia_reported || 0} KIA claimed, ${p.wounded_reported || 0} wounded`;
+  document.getElementById('bf-corridor').innerText = p.nearest_corridor ? `${p.corridor_dist_km}km to ${p.nearest_corridor}` : 'In theater';
+  document.getElementById('bf-coords').innerText = `${coords[1].toFixed(4)}, ${coords[0].toFixed(4)}`;
+  document.getElementById('bf-event-id').innerText = p.event_id;
+  document.getElementById('bf-source-link').href = p.source_url;
+
+  flyout.style.display = 'block';
+}
+
+function showCorridorBriefing(p, coords) {
+  const flyout = document.getElementById('briefing-flyout');
+  document.getElementById('bf-category').innerText = p.asset_type || 'STRATEGIC ASSET';
+  document.getElementById('bf-title').innerText = p.corridor_name;
+  document.getElementById('bf-summary').innerText = p.description;
+  document.getElementById('bf-date').innerText = `Sponsor: ${p.sponsor_nation}`;
+  document.getElementById('bf-township').innerText = 'Corridor Hub';
+  document.getElementById('bf-casualties').innerText = 'International Infrastructure';
+  document.getElementById('bf-corridor').innerText = 'Buffer Alert: 25km Radius';
+  document.getElementById('bf-coords').innerText = `${coords[1].toFixed(4)}, ${coords[0].toFixed(4)}`;
+  document.getElementById('bf-event-id').innerText = p.corridor_id;
+  document.getElementById('bf-source-link').href = '#';
+
+  flyout.style.display = 'block';
+}
+
+function closeBriefing() {
+  document.getElementById('briefing-flyout').style.display = 'none';
+}
+
+// 8. Filter Helpers
+function filterByChip(chip) {
+  activeChip = chip;
+  document.querySelectorAll('.filter-chips .chip').forEach(c => c.classList.remove('active'));
+  if (chip === 'ALL') document.getElementById('chip-all').classList.add('active');
+  if (chip === 'AIRSTRIKE') document.getElementById('chip-airstrike').classList.add('active');
+  if (chip === 'ARMED_CLASH') document.getElementById('chip-clash').classList.add('active');
+  if (chip === 'INCEPTION') document.getElementById('chip-inception').classList.add('active');
+  renderEventFeed();
+}
+
+function onSearchFilter() {
+  searchQuery = document.getElementById('event-search-input').value.trim();
+  renderEventFeed();
+}
+
+function toggleSortOrder() {
+  sortOrder = (sortOrder === 'DESC') ? 'ASC' : 'DESC';
+  const btn = document.getElementById('chip-sort');
+  btn.innerText = (sortOrder === 'ASC') ? '⬆️ Oldest' : '⬇️ Newest';
+  renderEventFeed();
+}
+
+// 9. Interactive Bottom Timeline Scrubber
+function jumpTimeline(val) {
+  const slider = document.getElementById('timeline-slider');
+  if (slider) {
+    slider.value = val;
+    onTimelineSlider(val);
+  }
+}
+
+function onTimelineSlider(value) {
+  timelinePercent = parseInt(value, 10);
+  const badge = document.getElementById('timeline-current-label');
+  const allChip = document.getElementById('chip-all');
+
+  if (timelinePercent >= 98) {
+    badge.innerText = 'ALL HISTORY (2022-2026)';
+    renderEvents(rawEvents);
+    if (allChip) allChip.innerText = `All (${rawEvents.length})`;
+  } else {
+    // Map percent 0-100 across items
+    const cutoffIndex = Math.max(1, Math.floor((timelinePercent / 100) * rawEvents.length));
+    const sorted = [...rawEvents].sort((a, b) => a.properties.source_message_id - b.properties.source_message_id);
+    const sliced = sorted.slice(0, cutoffIndex);
+    const lastItem = sliced[sliced.length - 1];
+    badge.innerText = `Through #${lastItem.properties.source_message_id} (${lastItem.properties.incident_date || '2022'})`;
+    renderEvents(sliced);
+    if (allChip) allChip.innerText = `Timeline (${sliced.length}/${rawEvents.length})`;
+  }
+}
+
+function toggleTimelinePlay() {
+  const btn = document.getElementById('timeline-play-btn');
+  const slider = document.getElementById('timeline-slider');
+
+  if (isPlaying) {
+    clearInterval(timelineInterval);
+    isPlaying = false;
+    btn.innerText = '▶';
+  } else {
+    isPlaying = true;
+    btn.innerText = '⏸';
+    if (parseInt(slider.value, 10) >= 98) slider.value = 5;
+
+    timelineInterval = setInterval(() => {
+      let cur = parseInt(slider.value, 10) + 4;
+      if (cur >= 100) {
+        cur = 100;
+        slider.value = cur;
+        onTimelineSlider(cur);
+        clearInterval(timelineInterval);
+        isPlaying = false;
+        btn.innerText = '▶';
+      } else {
+        slider.value = cur;
+        onTimelineSlider(cur);
+      }
+    }, 600);
+  }
+}
+
+// 10. Township Risk Table (Tab 3)
 function renderTownshipRiskTable(features) {
   const container = document.getElementById('township-risk-table');
   const aggregates = {};
@@ -368,18 +492,16 @@ function renderTownshipRiskTable(features) {
       <thead>
         <tr>
           <th>Township</th>
-          <th>MIMU P-Code</th>
+          <th>MIMU</th>
           <th>Events</th>
           <th>Airstrikes</th>
-          <th>Claimed KIA</th>
-          <th>Status</th>
+          <th>KIA</th>
         </tr>
       </thead>
       <tbody>
   `;
 
   rows.forEach(r => {
-    const statusTag = r.airstrikes >= 2 ? '<span class="threat-tag danger">CRITICAL</span>' : (r.total >= 1 ? '<span class="threat-tag warning">ACTIVE</span>' : '<span class="threat-tag safe">MONITORED</span>');
     html += `
       <tr>
         <td style="color:#fff; font-weight:600;">${r.township}</td>
@@ -387,7 +509,6 @@ function renderTownshipRiskTable(features) {
         <td>${r.total}</td>
         <td style="color:var(--accent-red); font-weight:700;">${r.airstrikes}</td>
         <td style="color:var(--accent-amber);">${r.kia}</td>
-        <td>${statusTag}</td>
       </tr>
     `;
   });
@@ -396,55 +517,36 @@ function renderTownshipRiskTable(features) {
   container.innerHTML = html;
 }
 
-// 8. Strategic Narrative Digest (Tab 4)
+// 11. Narrative & Strategic Comms (Tab 4)
 function renderNarrativeDigest(features) {
   const container = document.getElementById('narrative-feed-list');
   container.innerHTML = '';
 
-  let filtered = features.filter(feat => {
-    const p = feat.properties;
-    const is2022 = (p.source_message_id <= 50) || (p.incident_date && p.incident_date.startsWith('2022'));
-    if (currentNarrativeFilter === '2022') return is2022;
-    if (currentNarrativeFilter === '2026') return !is2022;
-    return true;
-  });
-
-  filtered.sort((a, b) => b.properties.source_message_id - a.properties.source_message_id);
-
-  filtered.forEach(feat => {
+  features.slice(0, 20).forEach(feat => {
     const p = feat.properties;
     const is2022 = (p.source_message_id <= 50) || (p.incident_date && p.incident_date.startsWith('2022'));
 
     const card = document.createElement('div');
     card.className = 'event-card';
-    if (is2022) card.style.borderLeftColor = 'var(--accent-green)';
+    if (is2022) card.style.borderLeftColor = 'var(--accent-emerald)';
 
     card.innerHTML = `
-      <div class="card-meta">
-        <span class="badge ${is2022 ? 'cyan' : 'amber'}">${is2022 ? '🌱 2022 INCEPTION STATEMENT' : 'OFFICIAL COMMUNIQUE'}</span>
-        <span>${p.incident_date || 'Date N/A'}</span>
+      <div class="card-top">
+        <span class="tag-badge ${is2022 ? 'emerald' : 'cyan'}">${is2022 ? '🌱 INCEPTION STATEMENT' : 'OFFICIAL BULLETIN'}</span>
+        <span class="card-date">${p.incident_date || 'Date N/A'}</span>
       </div>
       <div class="card-title" style="font-size:12px; font-weight:500;">"${p.headline}"</div>
-      <div class="card-desc" style="color:#ccd7e6;">${p.summary}</div>
-      <div class="card-footer">
+      <div class="card-summary">${p.summary}</div>
+      <div class="card-bottom">
         <span>Post ID: #${p.source_message_id}</span>
-        <a href="${p.source_url}" target="_blank">Full Post #${p.source_message_id} ↗</a>
+        <a href="${p.source_url}" target="_blank" style="color:var(--accent-cyan); text-decoration:none; font-weight:600;">Telegram ↗</a>
       </div>
     `;
     container.appendChild(card);
   });
 }
 
-function filterNarrativeByYear(year) {
-  currentNarrativeFilter = year;
-  document.querySelectorAll('#tab-intel .filter-pill').forEach(el => el.classList.remove('active'));
-  if (year === 'ALL') document.getElementById('npill-all').classList.add('active');
-  if (year === '2022') document.getElementById('npill-2022').classList.add('active');
-  if (year === '2026') document.getElementById('npill-2026').classList.add('active');
-  renderNarrativeDigest(rawEvents);
-}
-
-// 9. OSINT & Order of Battle (Tab 5)
+// 12. OSINT / ORBAT (Tab 5)
 function renderOSINTCatalog(features) {
   const container = document.getElementById('osint-catalog-list');
   container.innerHTML = '';
@@ -460,31 +562,31 @@ function renderOSINTCatalog(features) {
   });
 
   let html = `
-    <div style="margin-bottom:16px;">
+    <div style="margin-bottom:14px;">
       <h3 style="font-size:11px; text-transform:uppercase; color:var(--text-muted); margin-bottom:8px;">
         Identified Opponent Formations & Battalions
       </h3>
-      <div style="display:flex; flex-wrap:wrap; gap:8px;">
+      <div style="display:flex; flex-wrap:wrap; gap:6px;">
   `;
 
   unitsFound.forEach(u => {
-    html += `<span class="badge red" style="padding:4px 8px; font-size:10px;">${u}</span>`;
+    html += `<span class="tag-badge red" style="padding:4px 8px; font-size:10px;">${u}</span>`;
   });
 
   html += `
       </div>
     </div>
-    <div style="margin-top:18px;">
+    <div style="margin-top:16px;">
       <h3 style="font-size:11px; text-transform:uppercase; color:var(--text-muted); margin-bottom:8px;">
-        Tracked Military Assets & Strike Platforms
+        Strike Platforms Monitored
       </h3>
-      <div class="event-card" style="border-left-color:var(--accent-red);">
-        <div class="card-title">SAC Military Air Force (Aviation)</div>
-        <div class="card-desc">Mi-35 combat helicopters, Y-12 transport bombers, and jet fighters providing close air support and heavy bombardments.</div>
+      <div class="event-card airstrike">
+        <div class="card-title">SAC Aviation & Air Superiority</div>
+        <div class="card-summary">Mi-35 Attack Helicopters, Y-12 Transport Bombers, Jet Fighters flying out of Magway and Sittwe airbases.</div>
       </div>
-      <div class="event-card" style="border-left-color:#3b82f6;">
+      <div class="event-card clash">
         <div class="card-title">Myanmar Navy Flotilla (Riverine & Coastal)</div>
-        <div class="card-desc">Armed gunboats and landing craft firing heavy ordnance along Kaladan and Mayu river corridors.</div>
+        <div class="card-summary">Armed gunboats and landing craft firing heavy ordnance along Kaladan and Mayu river corridors.</div>
       </div>
     </div>
   `;
@@ -492,7 +594,7 @@ function renderOSINTCatalog(features) {
   container.innerHTML = html;
 }
 
-// 10. Map Navigation Helper
+// 13. Map Navigation Helper
 function zoomTo(coords) {
   if (map && coords) {
     map.flyTo(coords, 11, { duration: 1.0 });
