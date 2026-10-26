@@ -8,6 +8,11 @@ let corridorsLayer;
 let rawEvents = [];
 let rawCorridors = [];
 
+// Filtering & Sorting State
+let currentYearFilter = 'ALL';
+let currentSortOrder = 'DESC'; // 'DESC' = Newest first, 'ASC' = Oldest first (Day 1)
+let currentNarrativeFilter = 'ALL';
+
 // 1. Initialize Map with Free, Reliable, Watermark-Free Basemaps
 function initMap() {
   // A. ESRI Dark Tactical Canvas (Primary)
@@ -40,7 +45,6 @@ function initMap() {
     maxZoom: 18
   });
 
-  // Base map container
   map = L.map('map', {
     center: [20.0, 93.3],
     zoom: 8,
@@ -50,7 +54,7 @@ function initMap() {
 
   L.control.zoom({ position: 'bottomright' }).addTo(map);
 
-  // Basemap Switcher (Dark Tactical vs. Satellite Imagery)
+  // Basemap Switcher
   const baseMaps = {
     "🕶️ Dark Tactical": darkTacticalGroup,
     "🛰️ Satellite Recon": satelliteGroup,
@@ -91,7 +95,6 @@ async function loadLakehouseData() {
     let corridorsGeo = { features: [] };
     let eventsGeo = { features: [] };
 
-    // Strategy 1: Fetch bundled payload in a single HTTP roundtrip
     const bundleRes = await fetch('/api/bundle');
     if (bundleRes.ok) {
       const bundle = await bundleRes.json();
@@ -100,7 +103,6 @@ async function loadLakehouseData() {
       eventsGeo = bundle.events || { features: [] };
       console.log(`✅ Loaded bundle in ${(performance.now() - startTime).toFixed(1)}ms`);
     } else {
-      // Strategy 2: Parallel fetch fallback with Promise.all
       console.warn("Falling back to parallel Promise.all fetch...");
       const [mRes, cRes, eRes] = await Promise.all([
         fetch('/data/gold/summary_metrics.json'),
@@ -153,7 +155,6 @@ function renderCorridors(features) {
     const coords = feat.geometry.coordinates; // [lon, lat]
     const p = feat.properties;
 
-    // Cyan Tactical Diamond Marker
     const marker = L.circleMarker([coords[1], coords[0]], {
       radius: 9,
       fillColor: '#00f0ff',
@@ -163,7 +164,6 @@ function renderCorridors(features) {
       fillOpacity: 0.9
     });
 
-    // 25km Threat Buffer Circle
     const bufferCircle = L.circle([coords[1], coords[0]], {
       radius: 25000,
       color: '#00f0ff',
@@ -185,7 +185,6 @@ function renderCorridors(features) {
     corridorsLayer.addLayer(marker);
     corridorsLayer.addLayer(bufferCircle);
 
-    // Tab 1 Card
     const card = document.createElement('div');
     card.className = 'event-card';
     card.style.borderLeftColor = '#00f0ff';
@@ -214,10 +213,14 @@ function renderEvents(features) {
     const p = feat.properties;
 
     const isAirstrike = p.category === 'AIRSTRIKE' || p.category === 'ARTILLERY_SHELLING';
-    const markerColor = isAirstrike ? '#ff3366' : '#ffaa00';
+    const isEarly2022 = (p.source_message_id <= 50) || (p.incident_date && p.incident_date.startsWith('2022'));
+    
+    let markerColor = '#ffaa00'; // Amber (ground clash)
+    if (isAirstrike) markerColor = '#ff3366'; // Red (airstrike)
+    if (isEarly2022) markerColor = '#00ffaa'; // Emerald/Green (2022 Inception & Political)
 
     const marker = L.circleMarker([coords[1], coords[0]], {
-      radius: isAirstrike ? 8 : 6,
+      radius: isAirstrike ? 8 : (isEarly2022 ? 5 : 6),
       fillColor: markerColor,
       color: '#ffffff',
       weight: 1.5,
@@ -226,12 +229,13 @@ function renderEvents(features) {
     });
 
     const proximityStr = p.corridor_dist_km != null ? `${p.corridor_dist_km}km from ${p.nearest_corridor}` : 'In theater';
+    const eraBadge = isEarly2022 ? '<span style="color:#00ffaa; font-weight:700;">🌱 2022 Inception</span>' : `<span style="color:${markerColor}; font-weight:700;">${p.category}</span>`;
 
     marker.bindPopup(`
       <div style="font-family: var(--font-ui); color: #111; max-width: 270px;">
-        <div style="display:flex; justify-content:space-between; font-size:10px; font-weight:700; color:${markerColor};">
-          <span>${p.category}</span>
-          <span>${p.incident_date || 'Undated'}</span>
+        <div style="display:flex; justify-content:space-between; font-size:10px; margin-bottom:4px;">
+          ${eraBadge}
+          <span style="color:#666;">${p.incident_date || 'Undated'}</span>
         </div>
         <div style="font-size: 13px; font-weight: 700; margin: 4px 0;">
           ${p.township || 'Rakhine'} ${p.mimu_pcode ? '(' + p.mimu_pcode + ')' : ''}
@@ -240,7 +244,7 @@ function renderEvents(features) {
           ${p.summary}
         </div>
         <div style="font-size: 10px; color: #666; border-top: 1px solid #ddd; padding-top: 4px; display:flex; justify-content:space-between;">
-          <span>Proximity: <strong>${proximityStr}</strong></span>
+          <span>Post #${p.source_message_id}</span>
           <a href="${p.source_url}" target="_blank" style="color:#0088cc; font-weight:600;">Telegram ↗</a>
         </div>
       </div>
@@ -250,26 +254,55 @@ function renderEvents(features) {
   });
 }
 
-// 6. Chronological Incident Feed (Tab 2)
+// 6. Chronological Incident Feed (Tab 2) with Filtering & Sorting
 function renderEventFeed(features) {
   const container = document.getElementById('events-feed-list');
   const countSpan = document.getElementById('event-feed-count');
   container.innerHTML = '';
-  countSpan.innerText = `${features.length} Events Logged`;
 
-  features.forEach(feat => {
+  // Filter by Year
+  let filtered = features.filter(feat => {
+    const p = feat.properties;
+    const is2022 = (p.source_message_id <= 50) || (p.incident_date && p.incident_date.startsWith('2022'));
+    if (currentYearFilter === '2022') return is2022;
+    if (currentYearFilter === '2026') return !is2022;
+    return true; // 'ALL'
+  });
+
+  // Sort
+  filtered.sort((a, b) => {
+    const idA = a.properties.source_message_id;
+    const idB = b.properties.source_message_id;
+    return currentSortOrder === 'ASC' ? (idA - idB) : (idB - idA);
+  });
+
+  countSpan.innerText = `${filtered.length} of ${features.length} Displayed`;
+
+  filtered.forEach(feat => {
     const coords = feat.geometry.coordinates;
     const p = feat.properties;
-    const catClass = p.category === 'AIRSTRIKE' ? 'airstrike' : (p.category === 'NAVAL_ENGAGEMENT' ? 'naval' : 'clash');
-    const badgeColor = p.category === 'AIRSTRIKE' ? 'red' : 'amber';
-    const proximityStr = p.corridor_dist_km != null ? `${p.corridor_dist_km}km from ${p.nearest_corridor}` : '';
+    const is2022 = (p.source_message_id <= 50) || (p.incident_date && p.incident_date.startsWith('2022'));
+
+    let catClass = p.category === 'AIRSTRIKE' ? 'airstrike' : (p.category === 'NAVAL_ENGAGEMENT' ? 'naval' : 'clash');
+    let badgeColor = p.category === 'AIRSTRIKE' ? 'red' : 'amber';
+    let eraLabel = `${p.category}`;
+
+    if (is2022) {
+      catClass = 'event-card';
+      badgeColor = 'cyan';
+      eraLabel = `🌱 2022 INCEPTION • #${p.source_message_id}`;
+    }
+
+    const proximityStr = p.corridor_dist_km != null ? `${p.corridor_dist_km}km from ${p.nearest_corridor}` : (is2022 ? 'Political / Strategic' : 'Rakhine Theater');
 
     const card = document.createElement('div');
     card.className = `event-card ${catClass}`;
+    if (is2022) card.style.borderLeftColor = 'var(--accent-green)';
+
     card.innerHTML = `
       <div class="card-meta">
-        <span class="badge ${badgeColor}">${p.category}</span>
-        <span>${p.incident_date || 'Undated'} • ${p.township || 'Rakhine'}</span>
+        <span class="badge ${badgeColor}">${eraLabel}</span>
+        <span>${p.incident_date || 'Date N/A'} • ${p.township || 'Rakhine'}</span>
       </div>
       <div class="card-title">${p.headline || p.summary}</div>
       <div class="card-desc">${p.summary}</div>
@@ -277,12 +310,33 @@ function renderEventFeed(features) {
         <span>${proximityStr}</span>
         <div style="display:flex; gap:12px;">
           <button style="background:none; border:none; color:var(--accent-cyan); cursor:pointer; font-size:11px; font-weight:600;" onclick="zoomTo([${coords[1]}, ${coords[0]}])">Focus Map ↗</button>
-          <a href="${p.source_url}" target="_blank">Post ↗</a>
+          <a href="${p.source_url}" target="_blank">Telegram #${p.source_message_id} ↗</a>
         </div>
       </div>
     `;
     container.appendChild(card);
   });
+}
+
+// Filter helpers for Tab 2
+function filterEventsByYear(year) {
+  currentYearFilter = year;
+  document.querySelectorAll('#tab-events .filter-pill').forEach(el => el.classList.remove('active'));
+  if (year === 'ALL') document.getElementById('pill-all').classList.add('active');
+  if (year === '2022') document.getElementById('pill-2022').classList.add('active');
+  if (year === '2026') document.getElementById('pill-2026').classList.add('active');
+  renderEventFeed(rawEvents);
+}
+
+function toggleEventSort() {
+  currentSortOrder = (currentSortOrder === 'DESC') ? 'ASC' : 'DESC';
+  const btn = document.getElementById('sort-toggle-btn');
+  if (currentSortOrder === 'ASC') {
+    btn.innerText = '⬆️ Oldest First (Day 1)';
+  } else {
+    btn.innerText = '⬇️ Newest First';
+  }
+  renderEventFeed(rawEvents);
 }
 
 // 7. Township Risk Hierarchy (Tab 3)
@@ -292,11 +346,11 @@ function renderTownshipRiskTable(features) {
 
   features.forEach(feat => {
     const p = feat.properties;
-    const ts = p.township || 'Unspecified';
+    const ts = p.township || 'Rakhine Theater (General)';
     if (!aggregates[ts]) {
       aggregates[ts] = {
         township: ts,
-        pcode: p.mimu_pcode || 'UNKNOWN',
+        pcode: p.mimu_pcode || 'THEATER',
         total: 0,
         airstrikes: 0,
         kia: 0
@@ -347,24 +401,47 @@ function renderNarrativeDigest(features) {
   const container = document.getElementById('narrative-feed-list');
   container.innerHTML = '';
 
-  features.forEach(feat => {
+  let filtered = features.filter(feat => {
     const p = feat.properties;
+    const is2022 = (p.source_message_id <= 50) || (p.incident_date && p.incident_date.startsWith('2022'));
+    if (currentNarrativeFilter === '2022') return is2022;
+    if (currentNarrativeFilter === '2026') return !is2022;
+    return true;
+  });
+
+  filtered.sort((a, b) => b.properties.source_message_id - a.properties.source_message_id);
+
+  filtered.forEach(feat => {
+    const p = feat.properties;
+    const is2022 = (p.source_message_id <= 50) || (p.incident_date && p.incident_date.startsWith('2022'));
+
     const card = document.createElement('div');
     card.className = 'event-card';
+    if (is2022) card.style.borderLeftColor = 'var(--accent-green)';
+
     card.innerHTML = `
       <div class="card-meta">
-        <span class="badge cyan">OFFICIAL COMMUNIQUE</span>
+        <span class="badge ${is2022 ? 'cyan' : 'amber'}">${is2022 ? '🌱 2022 INCEPTION STATEMENT' : 'OFFICIAL COMMUNIQUE'}</span>
         <span>${p.incident_date || 'Date N/A'}</span>
       </div>
       <div class="card-title" style="font-size:12px; font-weight:500;">"${p.headline}"</div>
       <div class="card-desc" style="color:#ccd7e6;">${p.summary}</div>
       <div class="card-footer">
-        <span>Event ID: ${p.event_id}</span>
-        <a href="${p.source_url}" target="_blank">Full Post ↗</a>
+        <span>Post ID: #${p.source_message_id}</span>
+        <a href="${p.source_url}" target="_blank">Full Post #${p.source_message_id} ↗</a>
       </div>
     `;
     container.appendChild(card);
   });
+}
+
+function filterNarrativeByYear(year) {
+  currentNarrativeFilter = year;
+  document.querySelectorAll('#tab-intel .filter-pill').forEach(el => el.classList.remove('active'));
+  if (year === 'ALL') document.getElementById('npill-all').classList.add('active');
+  if (year === '2022') document.getElementById('npill-2022').classList.add('active');
+  if (year === '2026') document.getElementById('npill-2026').classList.add('active');
+  renderNarrativeDigest(rawEvents);
 }
 
 // 9. OSINT & Order of Battle (Tab 5)

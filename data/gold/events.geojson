@@ -1,8 +1,8 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "generated_at": "2026-10-26T17:54:21.029222+00:00",
-    "total_features": 9,
+    "generated_at": "2026-10-26T18:21:00.203128+00:00",
+    "total_features": 40,
     "data_layer": "Gold Incident Layer"
   },
   "features": [
@@ -23,6 +23,8 @@
         "category": "AIRSTRIKE",
         "township": "Ponnagyun",
         "mimu_pcode": "MMR012002",
+        "location_accuracy": "village_centroid",
+        "has_explicit_coords": true,
         "headline": "Breaking News!   ၂၀၂၆ ခုနှစ်၊ အောက်တိုဘာလ (၄) ရက်   အာရက္ခပြည်၊ ပုဏ္ဏားကျွန်းမြို့နယ်၊ သရက်ချို နှင့် ယိုးငူကျေးရွာကြားတွင်ရှိသည့် ယိုးငူ၊ ဗျာလစစ်ဘေးရှောင်စခန်းအား ယနေ့ အောက်တိုဘာလ (၄) ရက်၊ ညနေ (၅) နာ",
         "summary": "Reported Airstrike in သရက်ချို (Ponnagyun) involving SAC Military Junta (6 claimed KIA). Source: AA official communique.",
         "opposing_actors": "SAC Military Junta",
@@ -52,6 +54,8 @@
         "category": "AIRSTRIKE",
         "township": "Ponnagyun",
         "mimu_pcode": "MMR012002",
+        "location_accuracy": "township_centroid",
+        "has_explicit_coords": true,
         "headline": "၂၀၂၆ ခုနှစ်၊ အောက်တိုဘာလ (၄) ရက်နှင့် (၅) ရက်နေ့တို့တွင် အာရက္ခပြည်၊ ပုဏ္ဏားကျွန်းမြို့နယ်၊ ဗျာလစစ်ဘေးရှောင်(IDP)စခန်း၊ ပန်းနီလာစစ်ဘေးရှောင်(IDP)စခန်းနှင့် အောင်ဖြူပြင်ကျေးရွာ တို့အား ဖက်ဆစ် အကြမ်းဖက်",
         "summary": "Reported Airstrike in Ponnagyun involving SAC Military Junta, Myanmar Military Air Force. Source: AA official communique.",
         "opposing_actors": "SAC Military Junta,Myanmar Military Air Force",
@@ -81,6 +85,8 @@
         "category": "AIRSTRIKE",
         "township": "Kyauktaw",
         "mimu_pcode": "MMR012004",
+        "location_accuracy": "township_centroid",
+        "has_explicit_coords": true,
         "headline": "ကျေးဇူးတင်လွှာ   ၂၀၂၆ ခုနှစ်၊ အောက်တိုဘာလ (၇) ရက်                ၂၀၂၆ ခုနှစ်၊ စက်တင်ဘာလ (၂၈) ရက်နေ့၊ နေ့လယ် (၁၂) နာရီကျော်ခန့်အချိန်တွင် အာရက္ခပြည်၊ ကျောက်တော်မြို့ရှိ အိန္ဒိယဈေးနှင့် ကစ္ဆပနဒီတံတားဝန်",
         "summary": "Reported Airstrike in Kyauktaw involving SAC Military Junta, Myanmar Military Air Force (57 claimed KIA). Source: AA official communique.",
         "opposing_actors": "SAC Military Junta,Myanmar Military Air Force",
@@ -110,6 +116,8 @@
         "category": "ARMED_CLASH",
         "township": "Kyaukphyu",
         "mimu_pcode": "MMR012011",
+        "location_accuracy": "township_centroid",
+        "has_explicit_coords": true,
         "headline": "အာရက္ခပြည်၊ ကျောက်ဖြူစစ်မျက်နှာ တိုက်ပွဲများအတွင်း ဖက်ဆစ် အကြမ်းဖက် စစ်ကော်မရှင်တပ်ဘက်မှ အာရက္ခတပ်တော်ထံသို့ ဘက်ပြောင်းအလင်းဝင်ရောက်လာသော ကိုယ်ပိုင်နံပါတ် ပစ -၂၁၉၇၆၀ တပ်သား စိုးမင်းသိန်း၏ ထွက်ဆိုချက်",
         "summary": "Reported Armed Clash in Kyaukphyu involving SAC Military Junta. Source: AA official communique.",
         "opposing_actors": "SAC Military Junta",
@@ -139,6 +147,8 @@
         "category": "ARMED_CLASH",
         "township": "Kyaukphyu",
         "mimu_pcode": "MMR012011",
+        "location_accuracy": "township_centroid",
+        "has_explicit_coords": true,
         "headline": "အာရက္ခပြည်၊ ကျောက်ဖြူစစ်မျက်နှာ တိုက်ပွဲများအတွင်း ဖက်ဆစ် အကြမ်းဖက် စစ်ကော်မရှင်တပ်ဘက်မှ အာရက္ခတပ်တော်ထံသို့ ဘက်ပြောင်းအလင်းဝင်ရောက်လာသော ကိုယ်ပိုင်နံပါတ် ပစ-၂၁၇၅၉၆ တပ်သား အောင်ကျော်နိုင်၏ ထွက်ဆိုချက်",
         "summary": "Reported Armed Clash in Kyaukphyu involving SAC Military Junta. Source: AA official communique.",
         "opposing_actors": "SAC Military Junta",
@@ -168,6 +178,8 @@
         "category": "AIRSTRIKE",
         "township": "Rathedaung",
         "mimu_pcode": "MMR012008",
+        "location_accuracy": "township_centroid",
+        "has_explicit_coords": true,
         "headline": "၂၀၂၆ ခုနှစ်၊ အောက်တိုဘာလ (၃) ရက်နေ့တွင် အာရက္ခပြည်၊ ရသေ့တောင်မြို့ရှိ မြို့ပေါ်ရပ်ကွက်များနှင့် ပြားချောင်းကြီးကျေးရွာ၊ ပြင်ခေါင်ကျေးရွာ၊ အငူမော်ကျေးရွာတို့ကို နံနက် (၁) နာရီကျော်အချိန်ခန့်တွင် ဖက်ဆစ်",
         "summary": "Reported Airstrike in Rathedaung involving SAC Military Junta. Source: AA official communique.",
         "opposing_actors": "SAC Military Junta",
@@ -195,8 +207,10 @@
         "source_url": "https://t.me/aainfodesk/2433",
         "incident_date": "2026-10-02",
         "category": "AIRSTRIKE",
-        "township": null,
-        "mimu_pcode": null,
+        "township": "Rakhine Theater (General)",
+        "mimu_pcode": "THEATER",
+        "location_accuracy": "state_level",
+        "has_explicit_coords": true,
         "headline": "၂၀၂၆ ခုနှစ်၊ စက်တင်ဘာလ (၃၀) ရက်မှ အောက်တိုဘာလ (၂) ရက်နေ့အထိ ဖက်ဆစ် အကြမ်းဖက် စစ်ကော်မရှင်၏ အာရက္ခပြည်အနှံ့ စစ်ရေးပစ်မှတ်မဟုတ်သော နေရာများအား လေကြောင်းမှ အကြမ်းဖက် ဗုံးကြဲတိုက်ခိုက်ခဲ့မှုကြောင့် အပြစ်မ",
         "summary": "Reported Airstrike in Rakhine State (General Theater) involving SAC Military Junta, Myanmar Military Air Force. Source: AA official communique.",
         "opposing_actors": "SAC Military Junta,Myanmar Military Air Force",
@@ -226,6 +240,8 @@
         "category": "AIRSTRIKE",
         "township": "Rathedaung",
         "mimu_pcode": "MMR012008",
+        "location_accuracy": "township_centroid",
+        "has_explicit_coords": true,
         "headline": "အာရက္ခပြည်၊ ရသေ့တောင်မြို့နယ်ကို ဖက်ဆစ်အကြမ်းဖက် စစ်ကော်မရှင်မှ ညအချိန်၌ ထပ်မံအကြမ်းဖက်ဗုံးကြဲတိုက်ခိုက်ခဲ့မှုကြောင့် အပြစ်မဲ့အရပ်သားပြည်သူ (၂) ဦးသေဆုံးပြီး (၁၃) ဦးဒဏ်ရာရ ၂၀၂၆ ခုနှစ်၊ အောက်တိုဘာလ (၃)",
         "summary": "Reported Airstrike in Rathedaung involving SAC Military Junta, Myanmar Military Air Force (13 claimed KIA). Source: AA official communique.",
         "opposing_actors": "SAC Military Junta,Myanmar Military Air Force",
@@ -248,6 +264,440 @@
         ]
       },
       "properties": {
+        "event_id": "AA-5",
+        "source_message_id": 5,
+        "source_url": "https://t.me/aainfodesk/5",
+        "incident_date": "2022-01-03",
+        "category": "OTHER",
+        "township": "Rakhine Theater (General)",
+        "mimu_pcode": "THEATER",
+        "location_accuracy": "theater_wide",
+        "has_explicit_coords": false,
+        "headline": "ဘင်္ဂလားဒေ့ရှ်အခြေစိုက် Prothom Alo သတင်းဌာနနှင့် ရက္ခိုင့်တပ်တော် စစ်ဦးစီးချုပ် အင်တာဗျူး",
+        "summary": "Reported Other in Rakhine Theater. Source: AA official communique.",
+        "opposing_actors": "",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": null,
+        "corridor_dist_km": null,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8969,
+          20.1444
+        ]
+      },
+      "properties": {
+        "event_id": "AA-6",
+        "source_message_id": 6,
+        "source_url": "https://t.me/aainfodesk/6",
+        "incident_date": "2022-01-05",
+        "category": "OTHER",
+        "township": "Rakhine Theater (General)",
+        "mimu_pcode": "THEATER",
+        "location_accuracy": "theater_wide",
+        "has_explicit_coords": false,
+        "headline": "Notification No. 01/2022 1 January 2022",
+        "summary": "Reported Other in Rakhine Theater. Source: AA official communique.",
+        "opposing_actors": "",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": null,
+        "corridor_dist_km": null,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8969,
+          20.1444
+        ]
+      },
+      "properties": {
+        "event_id": "AA-8",
+        "source_message_id": 8,
+        "source_url": "https://t.me/aainfodesk/8",
+        "incident_date": "2022-01-12",
+        "category": "OTHER",
+        "township": "Rakhine Theater (General)",
+        "mimu_pcode": "THEATER",
+        "location_accuracy": "theater_wide",
+        "has_explicit_coords": false,
+        "headline": "(၅၉) နှစ်မြောက် တအာင်းအမျိုးသားတော်လှန်ရေးနေ့အခမ်းအနားသို့ ညီနောင်မဟာမိတ်တပ်ဖွဲ့များဖြစ်ကြသည့် MNTJP/MNDAA နှင့် ULA/AA တို့မှ ပေးပို့အပ်သော သဝဏ်လွှာ ၂၀၂၂ ခုနှစ်၊ ဇန်နဝါရီလ (၁၂) ရက် #AAInfoDesk",
+        "summary": "Reported Other in Rakhine Theater. Source: AA official communique.",
+        "opposing_actors": "",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": null,
+        "corridor_dist_km": null,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8969,
+          20.1444
+        ]
+      },
+      "properties": {
+        "event_id": "AA-9",
+        "source_message_id": 9,
+        "source_url": "https://t.me/aainfodesk/9",
+        "incident_date": "2022-01-31",
+        "category": "OTHER",
+        "township": "Rakhine Theater (General)",
+        "mimu_pcode": "THEATER",
+        "location_accuracy": "theater_wide",
+        "has_explicit_coords": false,
+        "headline": "(၇၃) နှစ်မြောက် ကရင်တော်လှန်ရေးနေ့အခမ်းအနားသို့ ညီနောင်မဟာမိတ် (၃) ဖွဲ့မှ ပေးပို့အပ်သော ဂုဏ်ပြုသဝဏ်လွှာ  ၂၀၂၂ ခုနှစ်၊ ဇန်နဝါရီလ (၃၁) ရက်",
+        "summary": "Reported Other in Rakhine Theater. Source: AA official communique.",
+        "opposing_actors": "",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": null,
+        "corridor_dist_km": null,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8969,
+          20.1444
+        ]
+      },
+      "properties": {
+        "event_id": "AA-10",
+        "source_message_id": 10,
+        "source_url": "https://t.me/aainfodesk/10",
+        "incident_date": "2022-01-31",
+        "category": "OTHER",
+        "township": "Rakhine Theater (General)",
+        "mimu_pcode": "THEATER",
+        "location_accuracy": "theater_wide",
+        "has_explicit_coords": false,
+        "headline": "website link:  https://bit.ly/343byO4",
+        "summary": "Reported Other in Rakhine Theater. Source: AA official communique.",
+        "opposing_actors": "",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": null,
+        "corridor_dist_km": null,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8969,
+          20.1444
+        ]
+      },
+      "properties": {
+        "event_id": "AA-12",
+        "source_message_id": 12,
+        "source_url": "https://t.me/aainfodesk/12",
+        "incident_date": "2022-02-05",
+        "category": "OTHER",
+        "township": "Rakhine Theater (General)",
+        "mimu_pcode": "THEATER",
+        "location_accuracy": "theater_wide",
+        "has_explicit_coords": false,
+        "headline": "(၆၁) နှစ်မြောက် ကချင်တော်လှန်ရေးနေ့ အခမ်းအနားသို့ညီနောင်မဟာမိတ် (၃) ဖွဲ့ဖြစ်သော PSLF/TNLA ၊ MNTJP/MNDAA နှင့် ULA/AA တို့ထံမှ ပေးပို့အပ်သော ဂုဏ်ပြုသဝဏ်လွှာ ၂၀၂၂ ခုနှစ်၊ ဖေဖော်ဝါရီလ (၅) ရက် #ThreeBroth",
+        "summary": "Reported Other in Rakhine Theater. Source: AA official communique.",
+        "opposing_actors": "",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": null,
+        "corridor_dist_km": null,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8969,
+          20.1444
+        ]
+      },
+      "properties": {
+        "event_id": "AA-13",
+        "source_message_id": 13,
+        "source_url": "https://t.me/aainfodesk/13",
+        "incident_date": "2022-02-05",
+        "category": "OTHER",
+        "township": "Rakhine Theater (General)",
+        "mimu_pcode": "THEATER",
+        "location_accuracy": "theater_wide",
+        "has_explicit_coords": false,
+        "headline": "(၆၁) နှစ်မြောက် ကချင်တော်လှန်ရေးနေ့ အခမ်းအနားသို့ညီနောင်မဟာမိတ် (၃) ဖွဲ့ဖြစ်သော  PSLF/TNLA ၊ MNTJP/MNDAA နှင့် ULA/AA တို့ထံမှ ပေးပို့အပ်သော ဂုဏ်ပြုသဝဏ်လွှာ ၂၀၂၂ ခုနှစ်၊ ဖေဖော်ဝါရီလ (၅) ရက်",
+        "summary": "Reported Other in Rakhine Theater. Source: AA official communique.",
+        "opposing_actors": "",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": null,
+        "corridor_dist_km": null,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8969,
+          20.1444
+        ]
+      },
+      "properties": {
+        "event_id": "AA-14",
+        "source_message_id": 14,
+        "source_url": "https://t.me/aainfodesk/14",
+        "incident_date": "2022-02-07",
+        "category": "OTHER",
+        "township": "Rakhine Theater (General)",
+        "mimu_pcode": "THEATER",
+        "location_accuracy": "theater_wide",
+        "has_explicit_coords": false,
+        "headline": "ရက္ခိုင်ပြည်သူ့အာဏာပိုင်အဖွဲ့ ရက္ခိုင်ပြည် မှုခင်းသတင်း ထုတ်ပြန်ချက် (၁/၂၀၂၂) ၂၀၂၂ ခုနှစ်၊ ဖေဖော်ဝါရီလ ( ၇ ) ရက် https://vk.com/justiceforarakanland",
+        "summary": "Reported Other in Rakhine Theater. Source: AA official communique.",
+        "opposing_actors": "",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": null,
+        "corridor_dist_km": null,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8969,
+          20.1444
+        ]
+      },
+      "properties": {
+        "event_id": "AA-18",
+        "source_message_id": 18,
+        "source_url": "https://t.me/aainfodesk/18",
+        "incident_date": "2022-02-12",
+        "category": "OTHER",
+        "township": "Rakhine Theater (General)",
+        "mimu_pcode": "THEATER",
+        "location_accuracy": "theater_wide",
+        "has_explicit_coords": false,
+        "headline": "https://vk.com/justiceforarakanland",
+        "summary": "Reported Other in Rakhine Theater. Source: AA official communique.",
+        "opposing_actors": "",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": null,
+        "corridor_dist_km": null,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8969,
+          20.1444
+        ]
+      },
+      "properties": {
+        "event_id": "AA-22",
+        "source_message_id": 22,
+        "source_url": "https://t.me/aainfodesk/22",
+        "incident_date": "2022-02-20",
+        "category": "HUMANITARIAN",
+        "township": "Rakhine Theater (General)",
+        "mimu_pcode": "THEATER",
+        "location_accuracy": "theater_wide",
+        "has_explicit_coords": false,
+        "headline": "COVID-19 ကိုရိုနာကူးစက်မြန်ရောဂါ တစ်ကျော့ပြန် ကူးစက်ပျံ့နှံလာနေခြင်းနှင့်ပတ်သက်၍ သတိပေးထုတ်ပြန်ကြေညာချက် ၁၃၈၃ ခုနှစ်၊ တပိုတွဲလပြည့်ကျော် (၅) ရက် ၂၀၂၂ ခုနှစ်၊ ဖေဖော်ဝါရီလ (၂၀) ရက် #COVID -19",
+        "summary": "Reported Humanitarian in Rakhine Theater. Source: AA official communique.",
+        "opposing_actors": "",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": null,
+        "corridor_dist_km": null,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8969,
+          20.1444
+        ]
+      },
+      "properties": {
+        "event_id": "AA-23",
+        "source_message_id": 23,
+        "source_url": "https://t.me/aainfodesk/23",
+        "incident_date": "2022-02-20",
+        "category": "HUMANITARIAN",
+        "township": "Rakhine Theater (General)",
+        "mimu_pcode": "THEATER",
+        "location_accuracy": "theater_wide",
+        "has_explicit_coords": false,
+        "headline": "COVID-19 ကိုရိုနာကူးစက်မြန်ရောဂါ တစ်ကျော့ပြန် ကူးစက်ပျံ့နှံလာနေခြင်းနှင့်ပတ်သက်၍ သတိပေးထုတ်ပြန်ကြေညာချက် ၁၃၈၃ ခုနှစ်၊ တပိုတွဲလပြည့်ကျော် (၅) ရက် ၂၀၂၂ ခုနှစ်၊ ဖေဖော်ဝါရီလ (၂၀) ရက် #COVID -19",
+        "summary": "Reported Humanitarian in Rakhine Theater. Source: AA official communique.",
+        "opposing_actors": "",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": null,
+        "corridor_dist_km": null,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8969,
+          20.1444
+        ]
+      },
+      "properties": {
+        "event_id": "AA-24",
+        "source_message_id": 24,
+        "source_url": "https://t.me/aainfodesk/24",
+        "incident_date": "2022-02-20",
+        "category": "OTHER",
+        "township": "Rakhine Theater (General)",
+        "mimu_pcode": "THEATER",
+        "location_accuracy": "theater_wide",
+        "has_explicit_coords": false,
+        "headline": "Statement of Solidarity February 20, 2022",
+        "summary": "Reported Other in Rakhine Theater. Source: AA official communique.",
+        "opposing_actors": "",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": null,
+        "corridor_dist_km": null,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8969,
+          20.1444
+        ]
+      },
+      "properties": {
+        "event_id": "AA-30",
+        "source_message_id": 30,
+        "source_url": "https://t.me/aainfodesk/30",
+        "incident_date": "2022-03-05",
+        "category": "OTHER",
+        "township": "Rakhine Theater (General)",
+        "mimu_pcode": "THEATER",
+        "location_accuracy": "theater_wide",
+        "has_explicit_coords": false,
+        "headline": "သတင်းစာယှင်းလင်းပွဲလုပ်ရရေ ရည်ရွယ်ချက်များ ၂၀၂၂ ခုနှစ်၊ မာ့ချ်လ (၅) ရက် #AA  Info Desk",
+        "summary": "Reported Other in Rakhine Theater. Source: AA official communique.",
+        "opposing_actors": "",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": null,
+        "corridor_dist_km": null,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8969,
+          20.1444
+        ]
+      },
+      "properties": {
+        "event_id": "AA-31",
+        "source_message_id": 31,
+        "source_url": "https://t.me/aainfodesk/31",
+        "incident_date": "2022-03-26",
+        "category": "OTHER",
+        "township": "Rakhine Theater (General)",
+        "mimu_pcode": "THEATER",
+        "location_accuracy": "theater_wide",
+        "has_explicit_coords": false,
+        "headline": "Congratulatory Statement to the Independence Day of the People’s Republic of Bangladesh March 26, 2022 Website Link:  https://bit.ly/3IIH16y #AAInfoDesk",
+        "summary": "Reported Other in Rakhine Theater. Source: AA official communique.",
+        "opposing_actors": "",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": null,
+        "corridor_dist_km": null,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8969,
+          20.1444
+        ]
+      },
+      "properties": {
         "event_id": "AA-32",
         "source_message_id": 32,
         "source_url": "https://t.me/aainfodesk/32",
@@ -255,6 +705,8 @@
         "category": "OTHER",
         "township": "Sittwe",
         "mimu_pcode": "MMR012001",
+        "location_accuracy": "township_centroid",
+        "has_explicit_coords": true,
         "headline": "အသိပီးယှင်းလင်းချက် အမှတ်၊ (၄/၂၀၂၂) ၁၃၈၃ ခုနှစ်၊ တပေါင်းလပြည့်ကျော် (၁၃) ရက် ၂၀၂၂ ခုနှစ်၊ မာ့ချ်လ (၂၉) ရက် ရက္ခိုင်ပြည်၊ စစ်တွေမြို၊ ဓညဝတီ (ခ) ရပ်ကွက်၊ မေယုလမ်းအတွင်း ၂၀၂၂ ခုနှစ်၊ မာ့ချ်လ (၂၅) ရက်၊ ညည",
         "summary": "Reported Other in Sittwe. Source: AA official communique.",
         "opposing_actors": "",
@@ -264,6 +716,533 @@
         "corridor_dist_km": 0.0,
         "within_5km": true,
         "within_25km": true,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8969,
+          20.1444
+        ]
+      },
+      "properties": {
+        "event_id": "AA-33",
+        "source_message_id": 33,
+        "source_url": "https://t.me/aainfodesk/33",
+        "incident_date": "2022-04-09",
+        "category": "OTHER",
+        "township": "Rakhine Theater (General)",
+        "mimu_pcode": "THEATER",
+        "location_accuracy": "theater_wide",
+        "has_explicit_coords": false,
+        "headline": "Channel photo updated",
+        "summary": "Reported Other in Rakhine Theater. Source: AA official communique.",
+        "opposing_actors": "",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": null,
+        "corridor_dist_km": null,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8969,
+          20.1444
+        ]
+      },
+      "properties": {
+        "event_id": "AA-34",
+        "source_message_id": 34,
+        "source_url": "https://t.me/aainfodesk/34",
+        "incident_date": "2022-04-09",
+        "category": "OTHER",
+        "township": "Rakhine Theater (General)",
+        "mimu_pcode": "THEATER",
+        "location_accuracy": "theater_wide",
+        "has_explicit_coords": false,
+        "headline": "(၁၃) နှစ်မြောက် ရက္ခိုင့်တပ်တော်နေ့အခမ်းအနားသို့ ညီနောင်မဟာမိတ်များဖြစ်ကြသော PSLF/TNLA နှင့် MNTJP/MNDAA တို့မှ ပေးပို့လာသော သဝဏ်လွှာ",
+        "summary": "Reported Other in Rakhine Theater. Source: AA official communique.",
+        "opposing_actors": "",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": null,
+        "corridor_dist_km": null,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8969,
+          20.1444
+        ]
+      },
+      "properties": {
+        "event_id": "AA-35",
+        "source_message_id": 35,
+        "source_url": "https://t.me/aainfodesk/35",
+        "incident_date": "2022-04-09",
+        "category": "OTHER",
+        "township": "Rakhine Theater (General)",
+        "mimu_pcode": "THEATER",
+        "location_accuracy": "theater_wide",
+        "has_explicit_coords": false,
+        "headline": "(၁၃) နှစ်မြောက် ရက္ခိုင့်တပ်တော်နေ့အခမ်းအနားသို့  PRA-Magway မှ ပေးပို့လာသော သဝဏ်လွှာ",
+        "summary": "Reported Other in Rakhine Theater. Source: AA official communique.",
+        "opposing_actors": "",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": null,
+        "corridor_dist_km": null,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8969,
+          20.1444
+        ]
+      },
+      "properties": {
+        "event_id": "AA-36",
+        "source_message_id": 36,
+        "source_url": "https://t.me/aainfodesk/36",
+        "incident_date": "2022-04-09",
+        "category": "OTHER",
+        "township": "Rakhine Theater (General)",
+        "mimu_pcode": "THEATER",
+        "location_accuracy": "theater_wide",
+        "has_explicit_coords": false,
+        "headline": "(၁၃) နှစ်မြောက် ရက္ခိုင့်တပ်တော်နေ့အခမ်းအနားသို့ PIO/PIA မှ ပေးပို့လာသော သဝဏ်လွှာ",
+        "summary": "Reported Other in Rakhine Theater. Source: AA official communique.",
+        "opposing_actors": "",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": null,
+        "corridor_dist_km": null,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8969,
+          20.1444
+        ]
+      },
+      "properties": {
+        "event_id": "AA-37",
+        "source_message_id": 37,
+        "source_url": "https://t.me/aainfodesk/37",
+        "incident_date": "2022-04-09",
+        "category": "OTHER",
+        "township": "Rakhine Theater (General)",
+        "mimu_pcode": "THEATER",
+        "location_accuracy": "theater_wide",
+        "has_explicit_coords": false,
+        "headline": "(၁၃) နှစ်မြောက် ရက္ခိုင့်တပ်တော်နေ့အခမ်းအနားသို့ PLA မှ ပေးပို့လာသော သဝဏ်လွှာ",
+        "summary": "Reported Other in Rakhine Theater. Source: AA official communique.",
+        "opposing_actors": "",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": null,
+        "corridor_dist_km": null,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8969,
+          20.1444
+        ]
+      },
+      "properties": {
+        "event_id": "AA-38",
+        "source_message_id": 38,
+        "source_url": "https://t.me/aainfodesk/38",
+        "incident_date": "2022-04-09",
+        "category": "OTHER",
+        "township": "Rakhine Theater (General)",
+        "mimu_pcode": "THEATER",
+        "location_accuracy": "theater_wide",
+        "has_explicit_coords": false,
+        "headline": "(၁၃) နှစ်မြောက် ရက္ခိုင့်တပ်တော်နေ့အခမ်းအနားသို့  ASU/SAF မှ ပေးပို့လာသော သဝဏ်လွှာ",
+        "summary": "Reported Other in Rakhine Theater. Source: AA official communique.",
+        "opposing_actors": "",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": null,
+        "corridor_dist_km": null,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8969,
+          20.1444
+        ]
+      },
+      "properties": {
+        "event_id": "AA-39",
+        "source_message_id": 39,
+        "source_url": "https://t.me/aainfodesk/39",
+        "incident_date": "2022-04-09",
+        "category": "OTHER",
+        "township": "Rakhine Theater (General)",
+        "mimu_pcode": "THEATER",
+        "location_accuracy": "theater_wide",
+        "has_explicit_coords": false,
+        "headline": "(၁၃) နှစ်မြောက် ရက္ခိုင့်တပ်တော်နေ့အခမ်းအနားသို့  DPNS မှ ပေးပို့လာသော သဝဏ်လွှာ",
+        "summary": "Reported Other in Rakhine Theater. Source: AA official communique.",
+        "opposing_actors": "",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": null,
+        "corridor_dist_km": null,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8969,
+          20.1444
+        ]
+      },
+      "properties": {
+        "event_id": "AA-40",
+        "source_message_id": 40,
+        "source_url": "https://t.me/aainfodesk/40",
+        "incident_date": "2022-04-10",
+        "category": "OTHER",
+        "township": "Rakhine Theater (General)",
+        "mimu_pcode": "THEATER",
+        "location_accuracy": "theater_wide",
+        "has_explicit_coords": false,
+        "headline": "(၁၃) နှစ်မြောက် ရက္ခိုင့်တပ်တော်နေ့အခမ်းအနားသို့  အမျိုးသားညီညွတ်ရေးအစိုးရမှ ပေးပို့လာသော ဂုဏ်ပြုသဝဏ်လွှာ",
+        "summary": "Reported Other in Rakhine Theater. Source: AA official communique.",
+        "opposing_actors": "",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": null,
+        "corridor_dist_km": null,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8969,
+          20.1444
+        ]
+      },
+      "properties": {
+        "event_id": "AA-41",
+        "source_message_id": 41,
+        "source_url": "https://t.me/aainfodesk/41",
+        "incident_date": "2022-04-10",
+        "category": "OTHER",
+        "township": "Rakhine Theater (General)",
+        "mimu_pcode": "THEATER",
+        "location_accuracy": "theater_wide",
+        "has_explicit_coords": false,
+        "headline": "(၁၃) နှစ်မြောက် ရက္ခိုင့်တပ်တော်နေ့အခမ်းအနားသို့  ချင်းကာကွယ်ရေးတပ်ဖွဲ့-မင်းတပ်မှ ပေးပို့လာသော သဝဏ်လွှာ",
+        "summary": "Reported Other in Rakhine Theater. Source: AA official communique.",
+        "opposing_actors": "",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": null,
+        "corridor_dist_km": null,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8969,
+          20.1444
+        ]
+      },
+      "properties": {
+        "event_id": "AA-42",
+        "source_message_id": 42,
+        "source_url": "https://t.me/aainfodesk/42",
+        "incident_date": "2022-04-10",
+        "category": "OTHER",
+        "township": "Rakhine Theater (General)",
+        "mimu_pcode": "THEATER",
+        "location_accuracy": "theater_wide",
+        "has_explicit_coords": false,
+        "headline": "(၁၃) နှစ်မြောက် ရက္ခိုင့်တပ်တော်နေ့အခမ်းအနားသို့  အာဏာရှင်တော်လှန်ရေးပြည်သူ့တပ်မတော်မှ ပေးပို့လာသော သဝဏ်လွှာ",
+        "summary": "Reported Other in Rakhine Theater. Source: AA official communique.",
+        "opposing_actors": "",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": null,
+        "corridor_dist_km": null,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8969,
+          20.1444
+        ]
+      },
+      "properties": {
+        "event_id": "AA-43",
+        "source_message_id": 43,
+        "source_url": "https://t.me/aainfodesk/43",
+        "incident_date": "2022-04-10",
+        "category": "OTHER",
+        "township": "Rakhine Theater (General)",
+        "mimu_pcode": "THEATER",
+        "location_accuracy": "theater_wide",
+        "has_explicit_coords": false,
+        "headline": "(၁၃) နှစ်မြောက် ရက္ခိုင့်တပ်တော်နေ့အခမ်းအနားသို့  ပြည်သူ့တော်လှန်ရေးတပ်ဦး (PRF) မှ ပေးပို့လာသော ဂုဏ်ပြုသဝဏ်လွှာ",
+        "summary": "Reported Other in Rakhine Theater. Source: AA official communique.",
+        "opposing_actors": "",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": null,
+        "corridor_dist_km": null,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8969,
+          20.1444
+        ]
+      },
+      "properties": {
+        "event_id": "AA-44",
+        "source_message_id": 44,
+        "source_url": "https://t.me/aainfodesk/44",
+        "incident_date": "2022-04-10",
+        "category": "OTHER",
+        "township": "Rakhine Theater (General)",
+        "mimu_pcode": "THEATER",
+        "location_accuracy": "theater_wide",
+        "has_explicit_coords": false,
+        "headline": "(၁၃) နှစ်မြောက် ရက္ခိုင့်တပ်တော်နေ့အခမ်းအနားသို့  အရှိုချင်းကာကွယ်ရေးတပ်-ACDF မှ ပေးပို့လာသော ဂုဏ်ပြုသဝဏ်လွှာ",
+        "summary": "Reported Other in Rakhine Theater. Source: AA official communique.",
+        "opposing_actors": "",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": null,
+        "corridor_dist_km": null,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8969,
+          20.1444
+        ]
+      },
+      "properties": {
+        "event_id": "AA-45",
+        "source_message_id": 45,
+        "source_url": "https://t.me/aainfodesk/45",
+        "incident_date": "2022-04-10",
+        "category": "OTHER",
+        "township": "Rakhine Theater (General)",
+        "mimu_pcode": "THEATER",
+        "location_accuracy": "theater_wide",
+        "has_explicit_coords": false,
+        "headline": "(၁၃) နှစ်မြောက် ရက္ခိုင့်တပ်တော်နေ့အခမ်းအနားသို့  MATC နှင့် MDF မှ ပေးပို့လာသော သဝဏ်လွှာ",
+        "summary": "Reported Other in Rakhine Theater. Source: AA official communique.",
+        "opposing_actors": "",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": null,
+        "corridor_dist_km": null,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8969,
+          20.1444
+        ]
+      },
+      "properties": {
+        "event_id": "AA-46",
+        "source_message_id": 46,
+        "source_url": "https://t.me/aainfodesk/46",
+        "incident_date": "2022-04-10",
+        "category": "OTHER",
+        "township": "Rakhine Theater (General)",
+        "mimu_pcode": "THEATER",
+        "location_accuracy": "theater_wide",
+        "has_explicit_coords": false,
+        "headline": "(၁၃) နှစ်မြောက် ရက္ခိုင့်တပ်တော်နေ့အခမ်းအနားသို့  ကရင်နီအမျိုးသားများကာကွယ်ရေးတပ် KNDF မှ ပေးပို့လာသော သဝဏ်လွှာ",
+        "summary": "Reported Other in Rakhine Theater. Source: AA official communique.",
+        "opposing_actors": "",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": null,
+        "corridor_dist_km": null,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8969,
+          20.1444
+        ]
+      },
+      "properties": {
+        "event_id": "AA-47",
+        "source_message_id": 47,
+        "source_url": "https://t.me/aainfodesk/47",
+        "incident_date": "2022-04-10",
+        "category": "OTHER",
+        "township": "Rakhine Theater (General)",
+        "mimu_pcode": "THEATER",
+        "location_accuracy": "theater_wide",
+        "has_explicit_coords": false,
+        "headline": "(၁၃) နှစ်မြောက် ရက္ခိုင့်တပ်တော်နေ့အခမ်းအနားသို့  အမျိုးသားညီညွတ်ရေးအစိုးရ၊ ကာကွယ်ရေးဝန်ကြီးဌာနမှ ပေးပို့လာသော သဝဏ်လွှာ",
+        "summary": "Reported Other in Rakhine Theater. Source: AA official communique.",
+        "opposing_actors": "",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": null,
+        "corridor_dist_km": null,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8969,
+          20.1444
+        ]
+      },
+      "properties": {
+        "event_id": "AA-48",
+        "source_message_id": 48,
+        "source_url": "https://t.me/aainfodesk/48",
+        "incident_date": "2022-04-10",
+        "category": "OTHER",
+        "township": "Rakhine Theater (General)",
+        "mimu_pcode": "THEATER",
+        "location_accuracy": "theater_wide",
+        "has_explicit_coords": false,
+        "headline": "ရက္ခိုင်အမျိုးသားအဖွဲ့ချုပ် ၁၃၈၃ ခုနှစ်၊ တန်ခူးလဆန်း (၁၀) ရက် ၂၀၂၂ ခုနှစ်၊ ဧပြီလ (၁၀) ရက် ကျေးဇူးတင်ကြောင်းထုတ်ပြန်ချက် ၂၀၂၂ ခုနှစ်၊ ဧပြီလ (၁၀) ရက်နေ့တွင် ကျရောက်သော (၁၃) နှစ်မြောက် ရက္ခိုင့်တပ်တော်နေ",
+        "summary": "Reported Other in Rakhine Theater. Source: AA official communique.",
+        "opposing_actors": "",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": null,
+        "corridor_dist_km": null,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8969,
+          20.1444
+        ]
+      },
+      "properties": {
+        "event_id": "AA-49",
+        "source_message_id": 49,
+        "source_url": "https://t.me/aainfodesk/49",
+        "incident_date": "2022-04-13",
+        "category": "OTHER",
+        "township": "Rakhine Theater (General)",
+        "mimu_pcode": "THEATER",
+        "location_accuracy": "theater_wide",
+        "has_explicit_coords": false,
+        "headline": "(၁၃) နှစ်မြောက် ရက္ခိုင့်တပ်တော်နေ့အခမ်းအနားသို့  ဗမာပြည်သူ့လွတ်မြောက်ရေးတပ်တော် (BPLA) မှ ပေးပို့လာသော ဂုဏ်ပြုသဝဏ်လွှာ",
+        "summary": "Reported Other in Rakhine Theater. Source: AA official communique.",
+        "opposing_actors": "",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": null,
+        "corridor_dist_km": null,
+        "within_5km": false,
+        "within_25km": false,
         "is_actor_claim": true
       }
     }

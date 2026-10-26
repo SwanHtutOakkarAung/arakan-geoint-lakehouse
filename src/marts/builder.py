@@ -216,6 +216,13 @@ class GoldMartsBuilder:
             con.execute(f"COPY {table_name} TO '{csv_out}' (HEADER, DELIMITER ',')")
             logger.info(f"Exported mart `{table_name}` -> {pq_out.name} and {csv_out.name}")
 
+        # 7b. Export complete list of ALL events (spatial + non-spatial)
+        all_events_list = df_enriched.to_dict(orient="records")
+        all_events_path = GOLD_DIR / "all_events.json"
+        with open(all_events_path, "w", encoding="utf-8") as f:
+            json.dump(all_events_list, f, ensure_ascii=False, indent=2, default=str)
+        logger.info(f"Exported all {len(all_events_list)} events to {all_events_path}")
+
         # 8. Generate GeoJSON for Map Visualizations
         self._export_events_geojson(con)
         self._export_corridors_geojson()
@@ -232,7 +239,7 @@ class GoldMartsBuilder:
         }
 
     def _export_events_geojson(self, con: duckdb.DuckDBPyConnection):
-        """Generates RFC 7946 GeoJSON FeatureCollection for all conflict incidents."""
+        """Generates RFC 7946 GeoJSON FeatureCollection for all conflict incidents & communiques."""
         events_df = con.execute("SELECT * FROM fct_conflict_events").fetchdf()
         features = []
 
@@ -244,8 +251,13 @@ class GoldMartsBuilder:
         for _, r in events_df.iterrows():
             lat = clean_val(r.get("latitude"))
             lon = clean_val(r.get("longitude"))
-            if lat is None or lon is None:
-                continue
+            
+            # If coordinates are missing (e.g. diplomatic statement or alliance greeting),
+            # assign general theater coordinates for map exploration
+            has_explicit_coords = (lat is not None and lon is not None)
+            display_lat = float(lat) if has_explicit_coords else 20.1444
+            display_lon = float(lon) if has_explicit_coords else 92.8969
+            accuracy = clean_val(r.get("location_accuracy"), "theater_wide" if not has_explicit_coords else "unknown")
 
             properties = {
                 "event_id": str(r["event_id"]),
@@ -253,8 +265,10 @@ class GoldMartsBuilder:
                 "source_url": str(r["source_url"]),
                 "incident_date": str(r["incident_date"]) if pd.notna(r.get("incident_date")) else None,
                 "category": str(r["category"]),
-                "township": clean_val(r.get("township")),
-                "mimu_pcode": clean_val(r.get("mimu_pcode")),
+                "township": clean_val(r.get("township"), "Rakhine Theater (General)"),
+                "mimu_pcode": clean_val(r.get("mimu_pcode"), "THEATER"),
+                "location_accuracy": accuracy,
+                "has_explicit_coords": has_explicit_coords,
                 "headline": str(r.get("burmese_headline", "")),
                 "summary": str(r.get("english_summary", "")),
                 "opposing_actors": str(clean_val(r.get("opposing_actors"), "")),
@@ -271,7 +285,7 @@ class GoldMartsBuilder:
                 "type": "Feature",
                 "geometry": {
                     "type": "Point",
-                    "coordinates": [float(lon), float(lat)]
+                    "coordinates": [display_lon, display_lat]
                 },
                 "properties": properties
             }

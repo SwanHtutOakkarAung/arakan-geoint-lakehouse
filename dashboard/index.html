@@ -331,6 +331,28 @@
     .threat-tag.danger { background: rgba(255, 51, 102, 0.25); color: var(--accent-red); }
     .threat-tag.warning { background: rgba(255, 170, 0, 0.25); color: var(--accent-amber); }
     .threat-tag.safe { background: rgba(0, 255, 170, 0.15); color: var(--accent-green); }
+
+    .filter-pill {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+      border-radius: 14px;
+      padding: 4px 10px;
+      font-size: 10px;
+      font-weight: 600;
+      font-family: var(--font-mono);
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .filter-pill:hover {
+      background: rgba(0, 240, 255, 0.1);
+      color: #fff;
+    }
+    .filter-pill.active {
+      background: rgba(0, 240, 255, 0.2);
+      border-color: var(--accent-cyan);
+      color: var(--accent-cyan);
+    }
   </style>
 </head>
 <body>
@@ -397,12 +419,21 @@
 
       <!-- Tab 2: Conflict & Incident Tracker -->
       <div id="tab-events" class="tab-content" style="display: none;">
-        <div style="margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+        <div style="margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center;">
           <h2 style="font-size: 13px; text-transform: uppercase; color: var(--accent-cyan);">
             Chronological Incident Feed
           </h2>
           <span style="font-size: 10px; color: var(--text-muted); font-family: var(--font-mono);" id="event-feed-count"></span>
         </div>
+        
+        <!-- Filter and Sort Bar for Exploring Historical Inception vs Active Posts -->
+        <div class="filter-bar" style="display:flex; gap:6px; margin-bottom:12px; flex-wrap:wrap; align-items:center;">
+          <button class="filter-pill active" id="pill-all" onclick="filterEventsByYear('ALL')">All Years (40)</button>
+          <button class="filter-pill" id="pill-2022" onclick="filterEventsByYear('2022')">🌱 2022 Inception (31)</button>
+          <button class="filter-pill" id="pill-2026" onclick="filterEventsByYear('2026')">⚡ 2026 Active (9)</button>
+          <button class="filter-pill" id="sort-toggle-btn" style="margin-left:auto; border-color:rgba(0, 240, 255, 0.3);" onclick="toggleEventSort()">⬇️ Newest First</button>
+        </div>
+
         <div id="events-feed-list">Loading incidents...</div>
       </div>
 
@@ -421,14 +452,21 @@
 
       <!-- Tab 4: Strategic Narrative & Early Warning -->
       <div id="tab-intel" class="tab-content" style="display: none;">
-        <div style="margin-bottom: 12px;">
+        <div style="margin-bottom: 8px;">
           <h2 style="font-size: 13px; text-transform: uppercase; color: var(--accent-cyan);">
             Strategic Comms & Narrative Digest
           </h2>
           <p style="font-size: 11px; color: var(--text-muted); margin-top: 4px;">
-            Official communications, air raid warnings, and civilian advisory notices.
+            Official communications, Day 1 revolution greetings, and civilian advisory notices.
           </p>
         </div>
+
+        <div class="filter-bar" style="display:flex; gap:6px; margin-bottom:12px; flex-wrap:wrap;">
+          <button class="filter-pill active" id="npill-all" onclick="filterNarrativeByYear('ALL')">All Communiques (40)</button>
+          <button class="filter-pill" id="npill-2022" onclick="filterNarrativeByYear('2022')">📜 Day 1 Inception (2022)</button>
+          <button class="filter-pill" id="npill-2026" onclick="filterNarrativeByYear('2026')">🚨 Recent Alerts (2026)</button>
+        </div>
+
         <div id="narrative-feed-list">Loading digest...</div>
       </div>
 
