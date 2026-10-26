@@ -1,4 +1,7 @@
 corridor_id,corridor_name,incident_count_within_vicinity,critical_threat_5km,operational_threat_25km,theater_threat_50km,closest_incident_km
-KYAUKPHYU_SEZ,Kyaukphyu Deep Sea Port & SEZ,2,2,2,2,0.0
-KALADAN_CORRIDOR,Kaladan Multi-Modal Transit Transport Project,6,2,3,6,0.0
-PALETWA_KALADAN_HUB,Paletwa Kaladan Inland Waterway Terminal,1,0,0,0,52.5
+KALADAN_CORRIDOR,Kaladan Multi-Modal Transit Transport Project,227,99,151,201,0.0
+MAUNGDAW_BORDER,Maungdaw Border Trade & Naf River Crossing,95,53,93,95,0.0
+PALETWA_KALADAN_HUB,Paletwa Kaladan Inland Waterway Terminal,56,23,23,23,0.0
+ANN_WESTERN_CMD,Western Command Headquarters (Ann),26,18,24,24,0.0
+KYAUKPHYU_SEZ,Kyaukphyu Deep Sea Port & SEZ,17,17,17,17,0.0
+CMEC_PIPELINE,China-Myanmar Oil & Gas Pipelines (CMEC),57,0,0,3,44.5
