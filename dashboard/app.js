@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────────────────────────────
-// ARAKAN GEOINT LAKEHOUSE — DASHBOARD APPLICATION ENGINE
+// ARAKAN GEOINT LAKEHOUSE — HIGH-SPEED CLIENT ENGINE
 // ─────────────────────────────────────────────────────────────────────────────
 
 let map;
@@ -8,25 +8,64 @@ let corridorsLayer;
 let rawEvents = [];
 let rawCorridors = [];
 
-// 1. Initialize Map
+// 1. Initialize Map with Free, Reliable, Watermark-Free Basemaps
 function initMap() {
+  // A. ESRI Dark Tactical Canvas (Primary)
+  const esriDarkBase = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+    attribution: 'Esri, HERE, Garmin, &copy; OpenStreetMap contributors | MIMU Standards',
+    maxZoom: 16
+  });
+
+  const esriDarkLabels = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}', {
+    maxZoom: 16
+  });
+
+  const darkTacticalGroup = L.layerGroup([esriDarkBase, esriDarkLabels]);
+
+  // B. ESRI Satellite Reconnaissance (Secondary)
+  const esriSatellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+    attribution: 'Esri, Maxar, Earthstar Geographics | UN MIMU Standards',
+    maxZoom: 18
+  });
+
+  const esriBorders = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}', {
+    maxZoom: 18
+  });
+
+  const satelliteGroup = L.layerGroup([esriSatellite, esriBorders]);
+
+  // C. OpenStreetMap (Fallback)
+  const osmLayer = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors',
+    maxZoom: 18
+  });
+
+  // Base map container
   map = L.map('map', {
     center: [20.0, 93.3],
     zoom: 8,
-    zoomControl: false
+    zoomControl: false,
+    layers: [darkTacticalGroup]
   });
 
   L.control.zoom({ position: 'bottomright' }).addTo(map);
 
-  // CartoDB Dark Matter Base Tiles
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-    attribution: '&copy; <a href="https://carto.com/">CARTO</a> | MIMU UN Standards',
-    maxZoom: 18,
-    subdomains: 'abcd'
-  }).addTo(map);
+  // Basemap Switcher (Dark Tactical vs. Satellite Imagery)
+  const baseMaps = {
+    "🕶️ Dark Tactical": darkTacticalGroup,
+    "🛰️ Satellite Recon": satelliteGroup,
+    "🗺️ OpenStreetMap": osmLayer
+  };
 
   eventsLayer = L.layerGroup().addTo(map);
   corridorsLayer = L.layerGroup().addTo(map);
+
+  const overlayMaps = {
+    "⚡ Conflict Events": eventsLayer,
+    "🌐 Strategic Corridors (25km)": corridorsLayer
+  };
+
+  L.control.layers(baseMaps, overlayMaps, { position: 'topright' }).addTo(map);
 }
 
 // 2. Tab Navigation
@@ -35,50 +74,72 @@ function switchTab(tabId) {
   document.querySelectorAll('.tab-content').forEach(panel => panel.style.display = 'none');
 
   const activeBtn = Array.from(document.querySelectorAll('.tab-btn'))
-    .find(b => b.getAttribute('onclick').includes(tabId));
+    .find(b => b.getAttribute('onclick') && b.getAttribute('onclick').includes(tabId));
   if (activeBtn) activeBtn.classList.add('active');
 
   const targetPanel = document.getElementById(tabId);
   if (targetPanel) targetPanel.style.display = 'block';
 }
 
-// 3. Load Lakehouse Data
+// 3. Ultra-Fast Data Fetching Engine (Single-Trip /api/bundle)
 async function loadLakehouseData() {
+  const startTime = performance.now();
+  console.log("⚡ Fetching lakehouse data...");
+
   try {
-    // A. Summary Metrics
-    const metricsRes = await fetch('/data/gold/summary_metrics.json');
-    if (metricsRes.ok) {
-      const metrics = await metricsRes.json();
-      document.getElementById('kpi-total-events').innerText = metrics.total_incidents || 0;
-      document.getElementById('kpi-airstrikes').innerText = metrics.total_airstrikes || 0;
-      document.getElementById('kpi-corridor-alerts').innerText = metrics.corridor_threat_alerts_25km || 0;
-      document.getElementById('kpi-kia-claims').innerText = metrics.total_claimed_kia || 0;
+    let metrics = {};
+    let corridorsGeo = { features: [] };
+    let eventsGeo = { features: [] };
+
+    // Strategy 1: Fetch bundled payload in a single HTTP roundtrip
+    const bundleRes = await fetch('/api/bundle');
+    if (bundleRes.ok) {
+      const bundle = await bundleRes.json();
+      metrics = bundle.metrics || {};
+      corridorsGeo = bundle.corridors || { features: [] };
+      eventsGeo = bundle.events || { features: [] };
+      console.log(`✅ Loaded bundle in ${(performance.now() - startTime).toFixed(1)}ms`);
+    } else {
+      // Strategy 2: Parallel fetch fallback with Promise.all
+      console.warn("Falling back to parallel Promise.all fetch...");
+      const [mRes, cRes, eRes] = await Promise.all([
+        fetch('/data/gold/summary_metrics.json'),
+        fetch('/data/gold/corridors.geojson'),
+        fetch('/data/gold/events.geojson')
+      ]);
+
+      if (mRes.ok) metrics = await mRes.json();
+      if (cRes.ok) corridorsGeo = await cRes.json();
+      if (eRes.ok) eventsGeo = await eRes.json();
     }
 
-    // B. Strategic Corridors GeoJSON
-    const corridorsRes = await fetch('/data/gold/corridors.geojson');
-    if (corridorsRes.ok) {
-      const corridorsGeo = await corridorsRes.json();
-      rawCorridors = corridorsGeo.features || [];
-      renderCorridors(rawCorridors);
-    }
+    // A. Render Header KPIs
+    document.getElementById('kpi-total-events').innerText = metrics.total_incidents ?? '--';
+    document.getElementById('kpi-airstrikes').innerText = metrics.total_airstrikes ?? '--';
+    document.getElementById('kpi-corridor-alerts').innerText = metrics.corridor_threat_alerts_25km ?? '--';
+    document.getElementById('kpi-kia-claims').innerText = metrics.total_claimed_kia ?? '--';
 
-    // C. Conflict Events GeoJSON
-    const eventsRes = await fetch('/data/gold/events.geojson');
-    if (eventsRes.ok) {
-      const eventsGeo = await eventsRes.json();
-      rawEvents = eventsGeo.features || [];
-      renderEvents(rawEvents);
-      renderEventFeed(rawEvents);
-      renderNarrativeDigest(rawEvents);
-      renderOSINTCatalog(rawEvents);
-    }
+    // B. Render Corridors
+    rawCorridors = corridorsGeo.features || [];
+    renderCorridors(rawCorridors);
 
-    // D. Township Risk Table
-    renderTownshipRiskTable();
+    // C. Render Events & Populate All Intelligence Tabs
+    rawEvents = eventsGeo.features || [];
+    renderEvents(rawEvents);
+    renderEventFeed(rawEvents);
+    renderNarrativeDigest(rawEvents);
+    renderOSINTCatalog(rawEvents);
+    renderTownshipRiskTable(rawEvents);
+
+    console.log(`🎉 Dashboard rendered in ${(performance.now() - startTime).toFixed(1)}ms (${rawEvents.length} events, ${rawCorridors.length} corridors)`);
 
   } catch (err) {
-    console.error("Failed to load lakehouse data:", err);
+    console.error("❌ Failed to load lakehouse data:", err);
+    document.getElementById('events-feed-list').innerHTML = `
+      <div style="color:var(--accent-red); font-size:12px; padding:12px;">
+        Error loading intelligence feed: ${err.message}
+      </div>
+    `;
   }
 }
 
@@ -92,52 +153,52 @@ function renderCorridors(features) {
     const coords = feat.geometry.coordinates; // [lon, lat]
     const p = feat.properties;
 
-    // Marker
+    // Cyan Tactical Diamond Marker
     const marker = L.circleMarker([coords[1], coords[0]], {
-      radius: 8,
+      radius: 9,
       fillColor: '#00f0ff',
-      color: '#fff',
+      color: '#ffffff',
       weight: 2,
-      opacity: 0.9,
-      fillOpacity: 0.8
+      opacity: 1,
+      fillOpacity: 0.9
     });
 
-    // 25km Buffer Circle
+    // 25km Threat Buffer Circle
     const bufferCircle = L.circle([coords[1], coords[0]], {
-      radius: 25000, // 25km in meters
+      radius: 25000,
       color: '#00f0ff',
-      weight: 1,
-      dashArray: '4, 8',
+      weight: 1.5,
+      dashArray: '5, 8',
       fillColor: '#00f0ff',
-      fillOpacity: 0.04
+      fillOpacity: 0.05
     });
 
     marker.bindPopup(`
-      <div style="font-family: var(--font-ui); color: #111; max-width: 240px;">
+      <div style="font-family: var(--font-ui); color: #111; max-width: 250px;">
         <div style="font-size: 10px; font-weight: 700; color: #0088cc; text-transform: uppercase;">Strategic Asset</div>
-        <div style="font-size: 13px; font-weight: 700; margin: 4px 0;">${p.corridor_name}</div>
-        <div style="font-size: 11px; color: #555; margin-bottom: 6px;">Sponsor: <strong>${p.sponsor_nation}</strong></div>
-        <div style="font-size: 11px; line-height: 1.4;">${p.description}</div>
+        <div style="font-size: 14px; font-weight: 700; margin: 4px 0;">${p.corridor_name}</div>
+        <div style="font-size: 11px; color: #444; margin-bottom: 6px;">Sponsor: <strong>${p.sponsor_nation}</strong></div>
+        <div style="font-size: 11px; line-height: 1.4; color: #222;">${p.description}</div>
       </div>
     `);
 
     corridorsLayer.addLayer(marker);
     corridorsLayer.addLayer(bufferCircle);
 
-    // Populate Tab 1 Card
+    // Tab 1 Card
     const card = document.createElement('div');
     card.className = 'event-card';
     card.style.borderLeftColor = '#00f0ff';
     card.innerHTML = `
       <div class="card-meta">
-        <span class="badge cyan">${p.asset_type}</span>
-        <span>${p.sponsor_nation.split(' ')[0]}</span>
+        <span class="badge cyan">${p.asset_type || 'CORRIDOR'}</span>
+        <span>${(p.sponsor_nation || '').split(' ')[0]}</span>
       </div>
       <div class="card-title">${p.corridor_name}</div>
       <div class="card-desc">${p.description}</div>
       <div class="card-footer">
-        <span>Coordinates: ${coords[1].toFixed(4)}, ${coords[0].toFixed(4)}</span>
-        <button style="background:none; border:none; color:var(--accent-cyan); cursor:pointer; font-size:11px;" onclick="zoomTo([${coords[1]}, ${coords[0]}])">View on Map ↗</button>
+        <span>GPS: ${coords[1].toFixed(4)}, ${coords[0].toFixed(4)}</span>
+        <button style="background:none; border:none; color:var(--accent-cyan); cursor:pointer; font-size:11px; font-weight:600;" onclick="zoomTo([${coords[1]}, ${coords[0]}])">Focus Map ↗</button>
       </div>
     `;
     listContainer.appendChild(card);
@@ -149,36 +210,38 @@ function renderEvents(features) {
   eventsLayer.clearLayers();
 
   features.forEach(feat => {
-    const coords = feat.geometry.coordinates;
+    const coords = feat.geometry.coordinates; // [lon, lat]
     const p = feat.properties;
 
     const isAirstrike = p.category === 'AIRSTRIKE' || p.category === 'ARTILLERY_SHELLING';
     const markerColor = isAirstrike ? '#ff3366' : '#ffaa00';
 
     const marker = L.circleMarker([coords[1], coords[0]], {
-      radius: isAirstrike ? 7 : 5,
+      radius: isAirstrike ? 8 : 6,
       fillColor: markerColor,
-      color: '#fff',
+      color: '#ffffff',
       weight: 1.5,
-      opacity: 0.9,
+      opacity: 1,
       fillOpacity: 0.85
     });
 
+    const proximityStr = p.corridor_dist_km != null ? `${p.corridor_dist_km}km from ${p.nearest_corridor}` : 'In theater';
+
     marker.bindPopup(`
-      <div style="font-family: var(--font-ui); color: #111; max-width: 260px;">
+      <div style="font-family: var(--font-ui); color: #111; max-width: 270px;">
         <div style="display:flex; justify-content:space-between; font-size:10px; font-weight:700; color:${markerColor};">
           <span>${p.category}</span>
           <span>${p.incident_date || 'Undated'}</span>
         </div>
         <div style="font-size: 13px; font-weight: 700; margin: 4px 0;">
-          ${p.township || 'Rakhine'} (${p.mimu_pcode || 'MIMU'})
+          ${p.township || 'Rakhine'} ${p.mimu_pcode ? '(' + p.mimu_pcode + ')' : ''}
         </div>
-        <div style="font-size: 11px; color: #444; margin-bottom: 6px; line-height: 1.4;">
+        <div style="font-size: 11px; color: #333; margin-bottom: 6px; line-height: 1.4;">
           ${p.summary}
         </div>
-        <div style="font-size: 10px; color: #777; border-top: 1px solid #ddd; padding-top: 4px; display:flex; justify-content:space-between;">
-          <span>Proximity: <strong>${p.corridor_dist_km ? p.corridor_dist_km + 'km to ' + p.nearest_corridor : 'N/A'}</strong></span>
-          <a href="${p.source_url}" target="_blank" style="color:#0088cc;">Source ↗</a>
+        <div style="font-size: 10px; color: #666; border-top: 1px solid #ddd; padding-top: 4px; display:flex; justify-content:space-between;">
+          <span>Proximity: <strong>${proximityStr}</strong></span>
+          <a href="${p.source_url}" target="_blank" style="color:#0088cc; font-weight:600;">Telegram ↗</a>
         </div>
       </div>
     `);
@@ -187,7 +250,7 @@ function renderEvents(features) {
   });
 }
 
-// 6. Chronological Incident Feed
+// 6. Chronological Incident Feed (Tab 2)
 function renderEventFeed(features) {
   const container = document.getElementById('events-feed-list');
   const countSpan = document.getElementById('event-feed-count');
@@ -199,21 +262,22 @@ function renderEventFeed(features) {
     const p = feat.properties;
     const catClass = p.category === 'AIRSTRIKE' ? 'airstrike' : (p.category === 'NAVAL_ENGAGEMENT' ? 'naval' : 'clash');
     const badgeColor = p.category === 'AIRSTRIKE' ? 'red' : 'amber';
+    const proximityStr = p.corridor_dist_km != null ? `${p.corridor_dist_km}km from ${p.nearest_corridor}` : '';
 
     const card = document.createElement('div');
     card.className = `event-card ${catClass}`;
     card.innerHTML = `
       <div class="card-meta">
         <span class="badge ${badgeColor}">${p.category}</span>
-        <span>${p.incident_date || 'Date N/A'} • ${p.township || 'Rakhine'}</span>
+        <span>${p.incident_date || 'Undated'} • ${p.township || 'Rakhine'}</span>
       </div>
-      <div class="card-title">${p.headline}</div>
+      <div class="card-title">${p.headline || p.summary}</div>
       <div class="card-desc">${p.summary}</div>
       <div class="card-footer">
-        <span>${p.nearest_corridor ? p.corridor_dist_km + 'km from ' + p.nearest_corridor : ''}</span>
-        <div style="display:flex; gap:10px;">
-          <button style="background:none; border:none; color:var(--accent-cyan); cursor:pointer; font-size:11px;" onclick="zoomTo([${coords[1]}, ${coords[0]}])">Focus Map ↗</button>
-          <a href="${p.source_url}" target="_blank">Source ↗</a>
+        <span>${proximityStr}</span>
+        <div style="display:flex; gap:12px;">
+          <button style="background:none; border:none; color:var(--accent-cyan); cursor:pointer; font-size:11px; font-weight:600;" onclick="zoomTo([${coords[1]}, ${coords[0]}])">Focus Map ↗</button>
+          <a href="${p.source_url}" target="_blank">Post ↗</a>
         </div>
       </div>
     `;
@@ -221,13 +285,12 @@ function renderEventFeed(features) {
   });
 }
 
-// 7. Township Risk Hierarchy
-function renderTownshipRiskTable() {
+// 7. Township Risk Hierarchy (Tab 3)
+function renderTownshipRiskTable(features) {
   const container = document.getElementById('township-risk-table');
-  
-  // Aggregate from raw events
   const aggregates = {};
-  rawEvents.forEach(feat => {
+
+  features.forEach(feat => {
     const p = feat.properties;
     const ts = p.township || 'Unspecified';
     if (!aggregates[ts]) {
@@ -240,7 +303,7 @@ function renderTownshipRiskTable() {
       };
     }
     aggregates[ts].total += 1;
-    if (p.category === 'AIRSTRIKE') aggregates[ts].airstrikes += 1;
+    if (p.category === 'AIRSTRIKE' || p.category === 'ARTILLERY_SHELLING') aggregates[ts].airstrikes += 1;
     aggregates[ts].kia += p.kia_reported || 0;
   });
 
@@ -262,11 +325,11 @@ function renderTownshipRiskTable() {
   `;
 
   rows.forEach(r => {
-    const statusTag = r.airstrikes > 1 ? '<span class="threat-tag danger">CRITICAL</span>' : (r.total > 1 ? '<span class="threat-tag warning">ACTIVE</span>' : '<span class="threat-tag safe">MONITORED</span>');
+    const statusTag = r.airstrikes >= 2 ? '<span class="threat-tag danger">CRITICAL</span>' : (r.total >= 1 ? '<span class="threat-tag warning">ACTIVE</span>' : '<span class="threat-tag safe">MONITORED</span>');
     html += `
       <tr>
         <td style="color:#fff; font-weight:600;">${r.township}</td>
-        <td style="color:var(--text-muted);">${r.pcode}</td>
+        <td style="color:var(--text-muted); font-size:10px;">${r.pcode}</td>
         <td>${r.total}</td>
         <td style="color:var(--accent-red); font-weight:700;">${r.airstrikes}</td>
         <td style="color:var(--accent-amber);">${r.kia}</td>
@@ -279,7 +342,7 @@ function renderTownshipRiskTable() {
   container.innerHTML = html;
 }
 
-// 8. Strategic Narrative Digest
+// 8. Strategic Narrative Digest (Tab 4)
 function renderNarrativeDigest(features) {
   const container = document.getElementById('narrative-feed-list');
   container.innerHTML = '';
@@ -296,7 +359,7 @@ function renderNarrativeDigest(features) {
       <div class="card-title" style="font-size:12px; font-weight:500;">"${p.headline}"</div>
       <div class="card-desc" style="color:#ccd7e6;">${p.summary}</div>
       <div class="card-footer">
-        <span>Lineage: AA Telegram Post #${p.source_message_id}</span>
+        <span>Event ID: ${p.event_id}</span>
         <a href="${p.source_url}" target="_blank">Full Post ↗</a>
       </div>
     `;
@@ -304,14 +367,12 @@ function renderNarrativeDigest(features) {
   });
 }
 
-// 9. OSINT & Order of Battle (ORBAT)
+// 9. OSINT & Order of Battle (Tab 5)
 function renderOSINTCatalog(features) {
   const container = document.getElementById('osint-catalog-list');
   container.innerHTML = '';
 
   const unitsFound = new Set();
-  const materielFound = new Set();
-
   features.forEach(feat => {
     const p = feat.properties;
     if (p.opposing_actors) {
@@ -322,7 +383,7 @@ function renderOSINTCatalog(features) {
   });
 
   let html = `
-    <div style="margin-bottom:14px;">
+    <div style="margin-bottom:16px;">
       <h3 style="font-size:11px; text-transform:uppercase; color:var(--text-muted); margin-bottom:8px;">
         Identified Opponent Formations & Battalions
       </h3>
@@ -338,15 +399,15 @@ function renderOSINTCatalog(features) {
     </div>
     <div style="margin-top:18px;">
       <h3 style="font-size:11px; text-transform:uppercase; color:var(--text-muted); margin-bottom:8px;">
-        Tracked Tactical Threat Categories
+        Tracked Military Assets & Strike Platforms
       </h3>
       <div class="event-card" style="border-left-color:var(--accent-red);">
-        <div class="card-title">SAC Aviation & Air Superiority</div>
-        <div class="card-desc">Mi-35 Attack Helicopters, Y-12 Transport Bombers, Jet Fighters flying out of Magway and Sittwe airbases.</div>
+        <div class="card-title">SAC Military Air Force (Aviation)</div>
+        <div class="card-desc">Mi-35 combat helicopters, Y-12 transport bombers, and jet fighters providing close air support and heavy bombardments.</div>
       </div>
       <div class="event-card" style="border-left-color:#3b82f6;">
-        <div class="card-title">Myanmar Navy Flotilla & Riverine Patrols</div>
-        <div class="card-desc">Armed gunboats and landing craft operating in Kaladan and Mayu river corridors.</div>
+        <div class="card-title">Myanmar Navy Flotilla (Riverine & Coastal)</div>
+        <div class="card-desc">Armed gunboats and landing craft firing heavy ordnance along Kaladan and Mayu river corridors.</div>
       </div>
     </div>
   `;
@@ -357,11 +418,11 @@ function renderOSINTCatalog(features) {
 // 10. Map Navigation Helper
 function zoomTo(coords) {
   if (map && coords) {
-    map.flyTo(coords, 11, { duration: 1.2 });
+    map.flyTo(coords, 11, { duration: 1.0 });
   }
 }
 
-// On Page Load
+// Initialize on DOM Ready
 document.addEventListener('DOMContentLoaded', () => {
   initMap();
   loadLakehouseData();

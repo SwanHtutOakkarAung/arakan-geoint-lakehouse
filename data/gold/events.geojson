@@ -1,7 +1,7 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "generated_at": "2026-10-26T17:23:02.804771+00:00",
+    "generated_at": "2026-10-26T17:35:50.966898+00:00",
     "total_features": 8,
     "data_layer": "Gold Incident Layer"
   },
@@ -195,8 +195,8 @@
         "source_url": "https://t.me/aainfodesk/2433",
         "incident_date": "2026-10-02",
         "category": "AIRSTRIKE",
-        "township": NaN,
-        "mimu_pcode": NaN,
+        "township": null,
+        "mimu_pcode": null,
         "headline": "၂၀၂၆ ခုနှစ်၊ စက်တင်ဘာလ (၃၀) ရက်မှ အောက်တိုဘာလ (၂) ရက်နေ့အထိ ဖက်ဆစ် အကြမ်းဖက် စစ်ကော်မရှင်၏ အာရက္ခပြည်အနှံ့ စစ်ရေးပစ်မှတ်မဟုတ်သော နေရာများအား လေကြောင်းမှ အကြမ်းဖက် ဗုံးကြဲတိုက်ခိုက်ခဲ့မှုကြောင့် အပြစ်မ",
         "summary": "Reported Airstrike in Rakhine State (General Theater) involving SAC Military Junta, Myanmar Military Air Force. Source: AA official communique.",
         "opposing_actors": "SAC Military Junta,Myanmar Military Air Force",

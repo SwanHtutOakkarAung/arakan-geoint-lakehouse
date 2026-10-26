@@ -236,30 +236,35 @@ class GoldMartsBuilder:
         events_df = con.execute("SELECT * FROM fct_conflict_events").fetchdf()
         features = []
 
+        def clean_val(v, default=None):
+            if v is None or pd.isna(v):
+                return default
+            return v
+
         for _, r in events_df.iterrows():
-            lat = r.get("latitude")
-            lon = r.get("longitude")
-            if pd.isna(lat) or pd.isna(lon):
+            lat = clean_val(r.get("latitude"))
+            lon = clean_val(r.get("longitude"))
+            if lat is None or lon is None:
                 continue
 
             properties = {
-                "event_id": r["event_id"],
+                "event_id": str(r["event_id"]),
                 "source_message_id": int(r["source_message_id"]),
-                "source_url": r["source_url"],
-                "incident_date": str(r["incident_date"]) if pd.notna(r["incident_date"]) else None,
-                "category": r["category"],
-                "township": r["township"],
-                "mimu_pcode": r["mimu_pcode"],
-                "headline": r["burmese_headline"],
-                "summary": r["english_summary"],
-                "opposing_actors": r["opposing_actors"],
-                "kia_reported": int(r["kia_reported"]) if pd.notna(r["kia_reported"]) else 0,
-                "wounded_reported": int(r["wounded_reported"]) if pd.notna(r["wounded_reported"]) else 0,
-                "nearest_corridor": r["nearest_corridor_name"],
-                "corridor_dist_km": float(r["nearest_corridor_dist_km"]) if pd.notna(r["nearest_corridor_dist_km"]) else None,
-                "within_5km": bool(r["within_5km_of_corridor"]),
-                "within_25km": bool(r["within_25km_of_corridor"]),
-                "is_actor_claim": bool(r["is_actor_claim"])
+                "source_url": str(r["source_url"]),
+                "incident_date": str(r["incident_date"]) if pd.notna(r.get("incident_date")) else None,
+                "category": str(r["category"]),
+                "township": clean_val(r.get("township")),
+                "mimu_pcode": clean_val(r.get("mimu_pcode")),
+                "headline": str(r.get("burmese_headline", "")),
+                "summary": str(r.get("english_summary", "")),
+                "opposing_actors": str(clean_val(r.get("opposing_actors"), "")),
+                "kia_reported": int(clean_val(r.get("kia_reported"), 0)),
+                "wounded_reported": int(clean_val(r.get("wounded_reported"), 0)),
+                "nearest_corridor": clean_val(r.get("nearest_corridor_name")),
+                "corridor_dist_km": float(clean_val(r.get("nearest_corridor_dist_km"), 0.0)) if pd.notna(r.get("nearest_corridor_dist_km")) else None,
+                "within_5km": bool(clean_val(r.get("within_5km_of_corridor"), False)),
+                "within_25km": bool(clean_val(r.get("within_25km_of_corridor"), False)),
+                "is_actor_claim": bool(clean_val(r.get("is_actor_claim"), True))
             }
 
             feature = {
@@ -284,7 +289,7 @@ class GoldMartsBuilder:
 
         geojson_path = GOLD_DIR / "events.geojson"
         with open(geojson_path, "w", encoding="utf-8") as f:
-            json.dump(geojson_obj, f, ensure_ascii=False, indent=2)
+            json.dump(geojson_obj, f, ensure_ascii=False, indent=2, allow_nan=False)
         logger.info(f"Generated GeoJSON: {geojson_path} ({len(features)} points).")
 
     def _export_corridors_geojson(self):
