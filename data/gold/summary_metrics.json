@@ -1,7 +1,7 @@
 {
-  "total_incidents": 8,
+  "total_incidents": 40,
   "total_airstrikes": 6,
-  "corridor_threat_alerts_25km": 4,
+  "corridor_threat_alerts_25km": 5,
   "total_claimed_kia": 76,
-  "updated_at": "2026-10-26T17:35:50.972726+00:00"
+  "updated_at": "2026-10-26T17:54:21.039983+00:00"
 }

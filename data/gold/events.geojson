@@ -1,8 +1,8 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "generated_at": "2026-10-26T17:35:50.966898+00:00",
-    "total_features": 8,
+    "generated_at": "2026-10-26T17:54:21.029222+00:00",
+    "total_features": 9,
     "data_layer": "Gold Incident Layer"
   },
   "features": [
@@ -235,6 +235,35 @@
         "corridor_dist_km": 40.68,
         "within_5km": false,
         "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8969,
+          20.1444
+        ]
+      },
+      "properties": {
+        "event_id": "AA-32",
+        "source_message_id": 32,
+        "source_url": "https://t.me/aainfodesk/32",
+        "incident_date": "2022-03-29",
+        "category": "OTHER",
+        "township": "Sittwe",
+        "mimu_pcode": "MMR012001",
+        "headline": "အသိပီးယှင်းလင်းချက် အမှတ်၊ (၄/၂၀၂၂) ၁၃၈၃ ခုနှစ်၊ တပေါင်းလပြည့်ကျော် (၁၃) ရက် ၂၀၂၂ ခုနှစ်၊ မာ့ချ်လ (၂၉) ရက် ရက္ခိုင်ပြည်၊ စစ်တွေမြို၊ ဓညဝတီ (ခ) ရပ်ကွက်၊ မေယုလမ်းအတွင်း ၂၀၂၂ ခုနှစ်၊ မာ့ချ်လ (၂၅) ရက်၊ ညည",
+        "summary": "Reported Other in Sittwe. Source: AA official communique.",
+        "opposing_actors": "",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": "Kaladan Multi-Modal Transit Transport Project",
+        "corridor_dist_km": 0.0,
+        "within_5km": true,
+        "within_25km": true,
         "is_actor_claim": true
       }
     }
