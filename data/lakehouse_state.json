@@ -1,0 +1,7 @@
+{
+  "high_watermark": 2491,
+  "low_watermark": 5,
+  "total_bronze_records": 40,
+  "last_sync_utc": null,
+  "historical_backfill_complete": false
+}

@@ -1,0 +1,39 @@
+name: Lakehouse Automated Sync & Marts Build
+
+on:
+  schedule:
+    # Run every 6 hours (00:00, 06:00, 12:00, 18:00 UTC)
+    - cron: '0 */6 * * *'
+  workflow_dispatch: # Allows manual trigger from GitHub UI anytime
+
+permissions:
+  contents: write
+
+jobs:
+  sync-lakehouse:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Lakehouse Master Pipeline
+        run: |
+          python src/pipeline.py --mode sync --pages 5
+
+      - name: Commit & Push New Lakehouse Data
+        run: |
+          git config --local user.email "150508583+SwanHtutOakkarAung@users.noreply.github.com"
+          git config --local user.name "Swan Htut Oakkar Aung"
+          git add data/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(lakehouse): automated incremental sync & marts re-index [skip ci]" && git push)
