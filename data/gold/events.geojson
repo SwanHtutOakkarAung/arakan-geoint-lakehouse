@@ -1,8 +1,8 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "generated_at": "2026-10-30T11:44:25.222692+00:00",
-    "total_features": 655,
+    "generated_at": "2026-10-30T17:19:03.282721+00:00",
+    "total_features": 656,
     "data_layer": "Gold Incident Layer"
   },
   "features": [
@@ -20307,6 +20307,37 @@
         "nearest_corridor": "Kaladan Multi-Modal Transit Transport Project",
         "corridor_dist_km": 23.6,
         "within_5km": false,
+        "within_25km": true,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8969,
+          20.1444
+        ]
+      },
+      "properties": {
+        "event_id": "AA-2492",
+        "source_message_id": 2492,
+        "source_url": "https://t.me/aainfodesk/2492",
+        "incident_date": null,
+        "category": "NAVAL_ENGAGEMENT",
+        "township": "Sittwe",
+        "mimu_pcode": "MMR012001",
+        "location_accuracy": "township_centroid",
+        "has_explicit_coords": true,
+        "headline": "ဖက်ဆစ် အကြမ်းဖက် စစ်ကော်မရှင်၏ ပါရာမော်တာတစ်စင်းအား နတ်ရေကန်ဗျူဟာကုန်း ပတ်ဝန်းကျင်၌ အာရက္ခတပ်တော်မှ ပစ်ချနိုင်ခဲ့ ၂၀၂၆ ခုနှစ်၊ အောက်တိုဘာလ (၃၀) ရက် ဖက်ဆစ် အကြမ်းဖက် စစ်ကော်မရှင် နှင့် အာရက္ခတပ်တော်တို",
+        "summary": "Reported Naval Engagement in Sittwe involving SAC Military Junta, Myanmar Military Navy. Source: AA official communique.",
+        "opposing_actors": "SAC Military Junta,Myanmar Military Navy,Myanmar Military Air Force",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": "Kaladan Multi-Modal Transit Transport Project",
+        "corridor_dist_km": 0.0,
+        "within_5km": true,
         "within_25km": true,
         "is_actor_claim": true
       }

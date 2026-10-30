@@ -1,5 +1,5 @@
 corridor_id,corridor_name,incident_count_within_vicinity,critical_threat_5km,operational_threat_25km,theater_threat_50km,closest_incident_km
-KALADAN_CORRIDOR,Kaladan Multi-Modal Transit Transport Project,227,99,151,201,0.0
+KALADAN_CORRIDOR,Kaladan Multi-Modal Transit Transport Project,228,100,152,202,0.0
 MAUNGDAW_BORDER,Maungdaw Border Trade & Naf River Crossing,95,53,93,95,0.0
 PALETWA_KALADAN_HUB,Paletwa Kaladan Inland Waterway Terminal,56,23,23,23,0.0
 ANN_WESTERN_CMD,Western Command Headquarters (Ann),26,18,24,24,0.0

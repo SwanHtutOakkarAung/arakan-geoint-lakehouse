@@ -1,7 +1,7 @@
 {
-  "high_watermark": 2491,
+  "high_watermark": 2492,
   "low_watermark": 5,
-  "total_bronze_records": 655,
-  "last_sync_utc": "2026-10-26T19:26:36.060077+00:00",
+  "total_bronze_records": 656,
+  "last_sync_utc": "2026-10-30T17:19:02.793042+00:00",
   "historical_backfill_complete": true
 }
