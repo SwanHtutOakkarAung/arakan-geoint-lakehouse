@@ -1,8 +1,8 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "generated_at": "2026-11-01T12:08:44.479341+00:00",
-    "total_features": 656,
+    "generated_at": "2026-11-01T21:25:00.058703+00:00",
+    "total_features": 658,
     "data_layer": "Gold Incident Layer"
   },
   "features": [
@@ -20337,6 +20337,68 @@
         "wounded_reported": 0,
         "nearest_corridor": "Kaladan Multi-Modal Transit Transport Project",
         "corridor_dist_km": 0.0,
+        "within_5km": true,
+        "within_25km": true,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.9667,
+          20.8406
+        ]
+      },
+      "properties": {
+        "event_id": "AA-2524",
+        "source_message_id": 2524,
+        "source_url": "https://t.me/aainfodesk/2524",
+        "incident_date": "2026-11-01",
+        "category": "AIRSTRIKE",
+        "township": "Kyauktaw",
+        "mimu_pcode": "MMR012004",
+        "location_accuracy": "township_centroid",
+        "has_explicit_coords": true,
+        "headline": "၂၀၂၆ ခုနှစ်၊ နိုဝင်ဘာလ (၁) ရက်နေ့တွင် အာရက္ခပြည် ကျောက်တော်၊ မြောက်ဦး၊ ကျောက်ဖြူ နှင့် ဝီရဌာနေ မြို့နယ်များ၌ရှိသော အများပြည်သူများသွားလာရာ လမ်း၊ တံတား၊ ဆေးရုံ၊ ဆေးခန်းများနှင့် လူနေရပ်ကွက်များကို ဖက်ဆ",
+        "summary": "Reported Airstrike in Kyauktaw involving SAC Military Junta, Myanmar Military Air Force. Source: AA official communique.",
+        "opposing_actors": "SAC Military Junta,Myanmar Military Air Force",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": "Paletwa Kaladan Inland Waterway Terminal",
+        "corridor_dist_km": 52.5,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.59,
+          19.41
+        ]
+      },
+      "properties": {
+        "event_id": "AA-2493",
+        "source_message_id": 2493,
+        "source_url": "https://t.me/aainfodesk/2493",
+        "incident_date": "2026-11-01",
+        "category": "AIRSTRIKE",
+        "township": "Kyaukphyu",
+        "mimu_pcode": "MMR012011",
+        "location_accuracy": "village_centroid",
+        "has_explicit_coords": true,
+        "headline": "ကျောက်တော်၊ မြောက်ဦး၊ ကျောက်ဖြူ နှင့် ဝီရဌာနေ မြို့နယ် (၄) ခုကို ဖက်ဆစ်အကြမ်းဖက် စစ်ကော်မရှင်မှ နိုဝင်ဘာလ (၁) ရက်တည်းတွင် ဆက်တိုက်အကြမ်းဖက် ဗုံးကြဲတိုက်ခိုက်ခဲ့ပြီး စစ်ရာဇဝတ်မှုများကို ပြောင်ပြောင်တင်",
+        "summary": "Reported Airstrike in မင်းပြင် (Kyaukphyu) involving SAC Military Junta, Myanmar Military Air Force (7 claimed KIA, 7 claimed wounded). Source: AA official communique.",
+        "opposing_actors": "SAC Military Junta,Myanmar Military Air Force",
+        "kia_reported": 7,
+        "wounded_reported": 7,
+        "nearest_corridor": "Kyaukphyu Deep Sea Port & SEZ",
+        "corridor_dist_km": 3.81,
         "within_5km": true,
         "within_25km": true,
         "is_actor_claim": true
