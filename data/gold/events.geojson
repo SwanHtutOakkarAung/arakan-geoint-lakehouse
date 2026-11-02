@@ -1,8 +1,8 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "generated_at": "2026-11-02T02:56:07.508200+00:00",
-    "total_features": 658,
+    "generated_at": "2026-11-02T13:57:40.353958+00:00",
+    "total_features": 659,
     "data_layer": "Gold Incident Layer"
   },
   "features": [
@@ -20397,6 +20397,37 @@
         "opposing_actors": "SAC Military Junta,Myanmar Military Air Force",
         "kia_reported": 7,
         "wounded_reported": 7,
+        "nearest_corridor": "Kyaukphyu Deep Sea Port & SEZ",
+        "corridor_dist_km": 3.81,
+        "within_5km": true,
+        "within_25km": true,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.59,
+          19.41
+        ]
+      },
+      "properties": {
+        "event_id": "AA-2532",
+        "source_message_id": 2532,
+        "source_url": "https://t.me/aainfodesk/2532",
+        "incident_date": "2026-11-02",
+        "category": "AIRSTRIKE",
+        "township": "Kyaukphyu",
+        "mimu_pcode": "MMR012011",
+        "location_accuracy": "village_centroid",
+        "has_explicit_coords": true,
+        "headline": "ဖက်ဆစ်အကြမ်းဖက် စစ်ကော်မရှင်မှ ၂၀၂၆ ခုနှစ်၊ နိုဝင်ဘာလ (၁) ရက်နေ့၊ ညသန်းခေါင်နှင့် နိုဝင်ဘာလ (၂) ရက်နေ့တို့၌ အကြမ်းဖက် ဗုံးကြဲတိုက်ခိုက်မှုများကို အာရက္ခဒေသအတွင်း မရပ်မနား နေရာအနှံ့ ဆက်တိုက်ပြုလုပ် ၂၀၂",
+        "summary": "Reported Airstrike in မင်းပြင် (Kyaukphyu) involving SAC Military Junta, Myanmar Military Air Force (12 claimed KIA, 5 claimed wounded). Source: AA official communique.",
+        "opposing_actors": "SAC Military Junta,Myanmar Military Air Force,IB 539",
+        "kia_reported": 12,
+        "wounded_reported": 5,
         "nearest_corridor": "Kyaukphyu Deep Sea Port & SEZ",
         "corridor_dist_km": 3.81,
         "within_5km": true,
