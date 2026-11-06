@@ -1,8 +1,8 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "generated_at": "2026-11-06T13:19:46.409085+00:00",
-    "total_features": 659,
+    "generated_at": "2026-11-06T22:27:49.334012+00:00",
+    "total_features": 662,
     "data_layer": "Gold Incident Layer"
   },
   "features": [
@@ -20432,6 +20432,99 @@
         "corridor_dist_km": 3.81,
         "within_5km": true,
         "within_25km": true,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.1897,
+          20.5975
+        ]
+      },
+      "properties": {
+        "event_id": "AA-2571",
+        "source_message_id": 2571,
+        "source_url": "https://t.me/aainfodesk/2571",
+        "incident_date": "2026-11-06",
+        "category": "AIRSTRIKE",
+        "township": "Mrauk-U",
+        "mimu_pcode": "MMR012003",
+        "location_accuracy": "township_centroid",
+        "has_explicit_coords": true,
+        "headline": "၂၀၂၆ ခုနှစ်၊ နိုဝင်ဘာလ (၅) ရက်နေ့၊ ည (၁၁) နာရီ (၂၈) မိနစ် အချိန်ခန့်တွင် အာရက္ခပြည်၊ မြောက်ဦးမြို့နယ်၊ နန်းကျားရွာအား ဖက်ဆစ် အကြမ်းဖက် စစ်ကော်မရှင်မှ လေကြောင်းတိုက်ခိုက်မှုကြောင်း သေဆုံး ဒဏ်ရာရရှိခဲ့က",
+        "summary": "Reported Airstrike in Mrauk-U involving SAC Military Junta, Myanmar Military Air Force. Source: AA official communique.",
+        "opposing_actors": "SAC Military Junta,Myanmar Military Air Force",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": "Kaladan Multi-Modal Transit Transport Project",
+        "corridor_dist_km": 58.91,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.9667,
+          20.8406
+        ]
+      },
+      "properties": {
+        "event_id": "AA-2542",
+        "source_message_id": 2542,
+        "source_url": "https://t.me/aainfodesk/2542",
+        "incident_date": "2026-11-06",
+        "category": "AIRSTRIKE",
+        "township": "Kyauktaw",
+        "mimu_pcode": "MMR012004",
+        "location_accuracy": "township_centroid",
+        "has_explicit_coords": true,
+        "headline": "မြောက်ဦးမြို့နယ်၊ နန်းကျားရွာအား ဖက်ဆစ် အကြမ်းဖက် စစ်ကော်မရှင်၏ လေကြောင်းတိုက်ခိုက်မှုကြောင့် အပြစ်မဲ့ပြည်သူ ကိုယ်ဝန်ဆောင်အမျိုးသမီး (၁) ဦးသေဆုံးပြီး (၁၂) ဦး ထိခိုက်ဒဏ်ရာရ ၂၀၂၆ ခုနှစ်၊ နိုဝင်ဘာလ (၆) ရ",
+        "summary": "Reported Airstrike in Kyauktaw involving SAC Military Junta, Myanmar Military Air Force (12 claimed KIA). Source: AA official communique.",
+        "opposing_actors": "SAC Military Junta,Myanmar Military Air Force",
+        "kia_reported": 12,
+        "wounded_reported": 0,
+        "nearest_corridor": "Paletwa Kaladan Inland Waterway Terminal",
+        "corridor_dist_km": 52.5,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.9667,
+          20.8406
+        ]
+      },
+      "properties": {
+        "event_id": "AA-2543",
+        "source_message_id": 2543,
+        "source_url": "https://t.me/aainfodesk/2543",
+        "incident_date": "2026-11-06",
+        "category": "AIRSTRIKE",
+        "township": "Kyauktaw",
+        "mimu_pcode": "MMR012004",
+        "location_accuracy": "township_centroid",
+        "has_explicit_coords": true,
+        "headline": "၂၀၂၆ ခုနှစ်၊ နိုဝင်ဘာလ (၃) ရက်နေ့၊ နံနက် (၁) နာရီ (၅၇) မိနစ်အချိန်ခန့်တွင် ကျောက်တော်မြို့နယ်၊ မျှာလီကန်ကျေးရွာအနီးတဝိုက်ကို ဖက်ဆစ် အကြမ်းဖက် စစ်ကော်မရှင်မှ လေကြောင်းတိုက်ခိုက်မှုအတွင်း ထိခိုက်ဒဏ်ရာရရ",
+        "summary": "Reported Airstrike in Kyauktaw involving SAC Military Junta, Myanmar Military Air Force. Source: AA official communique.",
+        "opposing_actors": "SAC Military Junta,Myanmar Military Air Force",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": "Paletwa Kaladan Inland Waterway Terminal",
+        "corridor_dist_km": 52.5,
+        "within_5km": false,
+        "within_25km": false,
         "is_actor_claim": true
       }
     }
