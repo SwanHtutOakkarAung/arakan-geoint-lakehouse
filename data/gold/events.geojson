@@ -1,8 +1,8 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "generated_at": "2026-11-07T11:58:33.641111+00:00",
-    "total_features": 663,
+    "generated_at": "2026-11-07T17:20:46.638337+00:00",
+    "total_features": 664,
     "data_layer": "Gold Incident Layer"
   },
   "features": [
@@ -20548,6 +20548,37 @@
         "location_accuracy": "theater_wide",
         "has_explicit_coords": false,
         "headline": "တပ်မှူးချုပ်မွီးနိအတွက် ဒုတိယတပ်မှူးချုပ်နန့် တပ်မှူးများထံမှ မွီးနိဆုတောင်းစကား ၂၀၂၆ ခုနှစ်၊ နိုဗမ်ဘာလ (၇) ရက်",
+        "summary": "Reported Other in Rakhine Theater. Source: AA official communique.",
+        "opposing_actors": "",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": null,
+        "corridor_dist_km": null,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8969,
+          20.1444
+        ]
+      },
+      "properties": {
+        "event_id": "AA-2577",
+        "source_message_id": 2577,
+        "source_url": "https://t.me/aainfodesk/2577",
+        "incident_date": "2026-11-07",
+        "category": "OTHER",
+        "township": "Rakhine Theater (General)",
+        "mimu_pcode": "THEATER",
+        "location_accuracy": "theater_wide",
+        "has_explicit_coords": false,
+        "headline": "Chyeju Kaba Sai … DKB",
         "summary": "Reported Other in Rakhine Theater. Source: AA official communique.",
         "opposing_actors": "",
         "kia_reported": 0,
