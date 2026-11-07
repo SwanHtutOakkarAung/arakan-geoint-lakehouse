@@ -1,8 +1,8 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "generated_at": "2026-11-07T17:20:46.638337+00:00",
-    "total_features": 664,
+    "generated_at": "2026-11-07T21:08:25.008122+00:00",
+    "total_features": 666,
     "data_layer": "Gold Incident Layer"
   },
   "features": [
@@ -20587,6 +20587,68 @@
         "corridor_dist_km": null,
         "within_5km": false,
         "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8969,
+          20.1444
+        ]
+      },
+      "properties": {
+        "event_id": "AA-2578",
+        "source_message_id": 2578,
+        "source_url": "https://t.me/aainfodesk/2578",
+        "incident_date": null,
+        "category": "OTHER",
+        "township": "Rakhine Theater (General)",
+        "mimu_pcode": "THEATER",
+        "location_accuracy": "state_level",
+        "has_explicit_coords": true,
+        "headline": "အာရက္ခတပ်တော် စစ်ဦးစီးချုပ် တပ်မှူးချုပ် ထွန်းမြတ်နိုင်၏ (၄၈) နှစ်မြောက် မွေးနေ့အထိမ်းအမှတ်နေ့သို့ မြစ်ဝကျွန်းပေါ်အမျိုးသားများတပ်ဖွဲ့ (DNF) ရဲဘော်/ရဲမယ်များမှ ပေးပို့သော ဆုတောင်းစကား",
+        "summary": "Reported Other in Rakhine State (General Theater). Source: AA official communique.",
+        "opposing_actors": "",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": "Kaladan Multi-Modal Transit Transport Project",
+        "corridor_dist_km": 0.0,
+        "within_5km": true,
+        "within_25km": true,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8969,
+          20.1444
+        ]
+      },
+      "properties": {
+        "event_id": "AA-2579",
+        "source_message_id": 2579,
+        "source_url": "https://t.me/aainfodesk/2579",
+        "incident_date": "2026-11-07",
+        "category": "OTHER",
+        "township": "Rakhine Theater (General)",
+        "mimu_pcode": "THEATER",
+        "location_accuracy": "state_level",
+        "has_explicit_coords": true,
+        "headline": "အာရက္ခတပ်တော် စစ်ဦးစီးချုပ် တပ်မှူးချုပ် ထွန်းမြတ်နိုင်၏ (၄၈) နှစ်မြောက် မွေးနေ့အထိမ်းအမှတ်နေ့သို့ လူထုတော်လှန်ရေးမဟာမိတ်အင်အားစု (PRA-Magway) မှ ပေးပို့သော သဝဏ်လွှာ",
+        "summary": "Reported Other in Rakhine State (General Theater). Source: AA official communique.",
+        "opposing_actors": "",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": "Kaladan Multi-Modal Transit Transport Project",
+        "corridor_dist_km": 0.0,
+        "within_5km": true,
+        "within_25km": true,
         "is_actor_claim": true
       }
     }
