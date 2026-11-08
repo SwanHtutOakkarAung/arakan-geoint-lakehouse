@@ -1,8 +1,8 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "generated_at": "2026-11-08T02:53:39.328662+00:00",
-    "total_features": 666,
+    "generated_at": "2026-11-08T12:18:23.710162+00:00",
+    "total_features": 667,
     "data_layer": "Gold Incident Layer"
   },
   "features": [
@@ -20649,6 +20649,37 @@
         "corridor_dist_km": 0.0,
         "within_5km": true,
         "within_25km": true,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8969,
+          20.1444
+        ]
+      },
+      "properties": {
+        "event_id": "AA-2580",
+        "source_message_id": 2580,
+        "source_url": "https://t.me/aainfodesk/2580",
+        "incident_date": "2026-11-08",
+        "category": "OTHER",
+        "township": "Rakhine Theater (General)",
+        "mimu_pcode": "THEATER",
+        "location_accuracy": "theater_wide",
+        "has_explicit_coords": false,
+        "headline": "မွေးနေ့ဆုတောင်းပေးကြသော သက်ဆိုင်ရာအဖွဲ့အစည်း၊ လူပုဂ္ဂိုလ်အယောက်ချင်းစီတိုင်းအတွက် ပြန်လည်ဆုတောင်းမေတ္တာပို့ ကျေးဇူးတင်လွှာ   ၂၀၂၆ ခုနှစ်၊ နိုဝင်ဘာလ (၈) ရက်",
+        "summary": "Reported Other in Rakhine Theater. Source: AA official communique.",
+        "opposing_actors": "",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": null,
+        "corridor_dist_km": null,
+        "within_5km": false,
+        "within_25km": false,
         "is_actor_claim": true
       }
     }
