@@ -1,8 +1,8 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "generated_at": "2026-11-13T03:46:06.128512+00:00",
-    "total_features": 667,
+    "generated_at": "2026-11-13T13:30:23.419523+00:00",
+    "total_features": 669,
     "data_layer": "Gold Incident Layer"
   },
   "features": [
@@ -20678,6 +20678,68 @@
         "wounded_reported": 0,
         "nearest_corridor": null,
         "corridor_dist_km": null,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.59,
+          19.41
+        ]
+      },
+      "properties": {
+        "event_id": "AA-2581",
+        "source_message_id": 2581,
+        "source_url": "https://t.me/aainfodesk/2581",
+        "incident_date": "2026-11-13",
+        "category": "AIRSTRIKE",
+        "township": "Kyaukphyu",
+        "mimu_pcode": "MMR012011",
+        "location_accuracy": "village_centroid",
+        "has_explicit_coords": true,
+        "headline": "အာရက္ခပြည်၊ မြောက်ဦးမြို့အား ဖက်ဆစ်အကြမ်းဖက် စစ်ကော်မရှင်မှ ထပ်မံအကြမ်းဖက် ဗုံးကြဲတိုက်ခိုက်မှုကြောင့် အပြစ်မဲ့ပြည်သူ (၂) ဦး သေဆုံးခဲ့ပြီး (၈) ဦး ထိခိုက်ဒဏ်ရာရ ၂၀၂၆ ခုနှစ်၊ နိုဝင်ဘာလ (၁၃) ရက်နေ့ ၂၀၂၆",
+        "summary": "Reported Airstrike in မင်းပြင် (Kyaukphyu) involving SAC Military Junta, Myanmar Military Air Force (8 claimed KIA, 5 claimed wounded). Source: AA official communique.",
+        "opposing_actors": "SAC Military Junta,Myanmar Military Air Force",
+        "kia_reported": 8,
+        "wounded_reported": 5,
+        "nearest_corridor": "Kyaukphyu Deep Sea Port & SEZ",
+        "corridor_dist_km": 3.81,
+        "within_5km": true,
+        "within_25km": true,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.1897,
+          20.5975
+        ]
+      },
+      "properties": {
+        "event_id": "AA-2592",
+        "source_message_id": 2592,
+        "source_url": "https://t.me/aainfodesk/2592",
+        "incident_date": "2026-11-13",
+        "category": "AIRSTRIKE",
+        "township": "Mrauk-U",
+        "mimu_pcode": "MMR012003",
+        "location_accuracy": "township_centroid",
+        "has_explicit_coords": true,
+        "headline": "၂၀၂၆ ခုနှစ်၊ နိုဝင်ဘာလ (၁၂) ရက်နေ့၊ ည (၈) နာရီ (၄၉) မိနစ်အချိန်ခန့်တွင် အာရက္ခပြည်၊ မြောက်ဦးမြို့ပေါ်ရှိ ကြက်ဈေးရပ်ကွက်အား ဖက်ဆစ်အကြမ်းဖက် စစ်ကော်မရှင်မှ ဂျက်တိုက်လေယာဉ်တစ်စီးဖြင့် အကြမ်းဖက် ဗုံးကြဲတိ",
+        "summary": "Reported Airstrike in Mrauk-U involving SAC Military Junta. Source: AA official communique.",
+        "opposing_actors": "SAC Military Junta",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": "Kaladan Multi-Modal Transit Transport Project",
+        "corridor_dist_km": 58.91,
         "within_5km": false,
         "within_25km": false,
         "is_actor_claim": true
