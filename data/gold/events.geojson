@@ -1,8 +1,8 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "generated_at": "2026-11-13T13:30:23.419523+00:00",
-    "total_features": 669,
+    "generated_at": "2026-11-13T22:57:30.423684+00:00",
+    "total_features": 670,
     "data_layer": "Gold Incident Layer"
   },
   "features": [
@@ -20742,6 +20742,37 @@
         "corridor_dist_km": 58.91,
         "within_5km": false,
         "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.5583,
+          19.4267
+        ]
+      },
+      "properties": {
+        "event_id": "AA-2601",
+        "source_message_id": 2601,
+        "source_url": "https://t.me/aainfodesk/2601",
+        "incident_date": "2026-11-13",
+        "category": "ARMED_CLASH",
+        "township": "Kyaukphyu",
+        "mimu_pcode": "MMR012011",
+        "location_accuracy": "township_centroid",
+        "has_explicit_coords": true,
+        "headline": "ကျေးဇူးတင်ခြင်း၊ အမိန့်နာခံပြီး တာဝန်ကျေပွန်သူတို့အား အသိအမှတ်ပြုခြင်း၊ သတ္တိရှိပြီး နေရာမရွေး၊ တာမရွေး တိုက်ပွဲဝင်နေကြသော အာရက္ခတပ်တော် စစ်သည်တော်တိုင်းအား ဂုဏ်ပြုခြင်း၊ အာရက္ခပြည်သူ့တော်လှန်ရီးအစိုး",
+        "summary": "Reported Armed Clash in Kyaukphyu involving SAC Military Junta. Source: AA official communique.",
+        "opposing_actors": "SAC Military Junta",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": "Kyaukphyu Deep Sea Port & SEZ",
+        "corridor_dist_km": 0.0,
+        "within_5km": true,
+        "within_25km": true,
         "is_actor_claim": true
       }
     }
