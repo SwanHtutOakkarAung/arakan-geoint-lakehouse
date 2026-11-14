@@ -1,8 +1,8 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "generated_at": "2026-11-14T12:35:56.519395+00:00",
-    "total_features": 670,
+    "generated_at": "2026-11-14T21:44:19.739108+00:00",
+    "total_features": 676,
     "data_layer": "Gold Incident Layer"
   },
   "features": [
@@ -20773,6 +20773,192 @@
         "corridor_dist_km": 0.0,
         "within_5km": true,
         "within_25km": true,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.012,
+          20.352
+        ]
+      },
+      "properties": {
+        "event_id": "AA-2625",
+        "source_message_id": 2625,
+        "source_url": "https://t.me/aainfodesk/2625",
+        "incident_date": "2026-11-14",
+        "category": "AIRSTRIKE",
+        "township": "Ponnagyun",
+        "mimu_pcode": "MMR012002",
+        "location_accuracy": "village_centroid",
+        "has_explicit_coords": true,
+        "headline": "၂၀၂၆ ခုနှစ်၊ နိုဝင်ဘာလ (၁၃) ရက်နေ့၊ ည (၇) နာရီ အချိန်ခန့်တွင် ပုဏ္ဏားကျွန်းမြို့နယ်၊ ယိုးငူ နှင့် သရက်ချိုကျေးရွာကြားရှိ ဗျာလစစ်ဘေးရှောင်စခန်း (IDP Camp) အား ဖက်ဆစ်အကြမ်းဖက် စစ်ကော်မရှင်မှ ဂျက်တိုက်လေ",
+        "summary": "Reported Airstrike in သရက်ချို (Ponnagyun) involving SAC Military Junta. Source: AA official communique.",
+        "opposing_actors": "SAC Military Junta",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": "Kaladan Multi-Modal Transit Transport Project",
+        "corridor_dist_km": 26.02,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8969,
+          20.1444
+        ]
+      },
+      "properties": {
+        "event_id": "AA-2635",
+        "source_message_id": 2635,
+        "source_url": "https://t.me/aainfodesk/2635",
+        "incident_date": "2026-11-14",
+        "category": "AIRSTRIKE",
+        "township": "Rakhine Theater (General)",
+        "mimu_pcode": "THEATER",
+        "location_accuracy": "theater_wide",
+        "has_explicit_coords": false,
+        "headline": "၂၀၂၆ ခုနှစ်၊ နိုဝင်ဘာလ (၁၄) ရက်နေ့၊ နံနက် (၂) နာရီအချိန်ခန့်တွင် အဉ္ဇနပူရမြို့နယ်၊ စွန်ရဲကျေးရွာ တံတားအား ဖက်ဆစ် အကြမ်းဖက် စစ်ကော်မရှင်မှ လေကြောင်းမှလာရောက် ဗုံးကြဲတိုက်ခိုက် ခဲ့သောကြောင့် တံတားပျက်စီ",
+        "summary": "Reported Airstrike in Rakhine Theater involving SAC Military Junta, Myanmar Military Air Force. Source: AA official communique.",
+        "opposing_actors": "SAC Military Junta,Myanmar Military Air Force",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": null,
+        "corridor_dist_km": null,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.86,
+          19.09
+        ]
+      },
+      "properties": {
+        "event_id": "AA-2637",
+        "source_message_id": 2637,
+        "source_url": "https://t.me/aainfodesk/2637",
+        "incident_date": "2026-11-14",
+        "category": "AIRSTRIKE",
+        "township": "Ramree",
+        "mimu_pcode": "MMR012013",
+        "location_accuracy": "township_centroid",
+        "has_explicit_coords": true,
+        "headline": "၂၀၂၆ ခုနှစ်၊ နိုဝင်ဘာလ (၁၄) ရက်နေ့၊ နံနက် (၁) နာရီ (၃၂) မိနစ်အချိန်ခန့်တွင် ရမ်းဗြဲမြို့နယ်ရှိ သဇင်တန်ပေါက်တံတားနှင့် သံသမချေတံတားတို့အား ဖက်ဆစ် အကြမ်းဖက် စစ်ကော်မရှင်မှ မိုင်းခွဲဖျက်ဆီးခဲ့ပြီး နံနက်",
+        "summary": "Reported Airstrike in Ramree involving SAC Military Junta, Myanmar Military Air Force. Source: AA official communique.",
+        "opposing_actors": "SAC Military Junta,Myanmar Military Air Force",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": "China-Myanmar Oil & Gas Pipelines (CMEC)",
+        "corridor_dist_km": 44.5,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.5583,
+          19.4267
+        ]
+      },
+      "properties": {
+        "event_id": "AA-2644",
+        "source_message_id": 2644,
+        "source_url": "https://t.me/aainfodesk/2644",
+        "incident_date": "2026-11-14",
+        "category": "NAVAL_ENGAGEMENT",
+        "township": "Kyaukphyu",
+        "mimu_pcode": "MMR012011",
+        "location_accuracy": "township_centroid",
+        "has_explicit_coords": true,
+        "headline": "၂၀၂၆ ခုနှစ်၊ နိုဝင်ဘာလ (၁၄) ရက်နေ့၊ နံနက် (၉) နာရီခွဲအချိန်ခန့်တွင် ကျောက်ဖြူမြို့နယ်၊ စနဲမြို့၊ တောင်ငူစုရပ်ကွက်အား ဖက်ဆစ် အကြမ်းဖက် စစ်ကော်မရှင်၏ စစ်သင်္ဘောပေါ်မှ လက်နက်ကြီးများဖြင့် ပစ်ခတ်တိုက်ခိုက",
+        "summary": "Reported Naval Engagement in Kyaukphyu involving SAC Military Junta, Myanmar Military Navy. Source: AA official communique.",
+        "opposing_actors": "SAC Military Junta,Myanmar Military Navy",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": "Kyaukphyu Deep Sea Port & SEZ",
+        "corridor_dist_km": 0.0,
+        "within_5km": true,
+        "within_25km": true,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.012,
+          20.352
+        ]
+      },
+      "properties": {
+        "event_id": "AA-2615",
+        "source_message_id": 2615,
+        "source_url": "https://t.me/aainfodesk/2615",
+        "incident_date": "2026-11-14",
+        "category": "AIRSTRIKE",
+        "township": "Ponnagyun",
+        "mimu_pcode": "MMR012002",
+        "location_accuracy": "village_centroid",
+        "has_explicit_coords": true,
+        "headline": "၂၀၂၆ ခုနှစ်၊ နိုဝင်ဘာလ (၁၃) ရက်နေ့၊ ည (၇) နာရီ အချိန်ခန့်တွင် ပုဏ္ဏားကျွန်းမြို့နယ်၊ ယိုးငူ နှင့် သရက်ချိုကျေးရွာကြားရှိ ဗျာလစစ်ဘေးရှောင်စခန်း (IDP Camp) အား ဖက်ဆစ်အကြမ်းဖက် စစ်ကော်မရှင်မှ ဂျက်တိုက်လေ",
+        "summary": "Reported Airstrike in သရက်ချို (Ponnagyun) involving SAC Military Junta. Source: AA official communique.",
+        "opposing_actors": "SAC Military Junta",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": "Kaladan Multi-Modal Transit Transport Project",
+        "corridor_dist_km": 26.02,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.012,
+          20.352
+        ]
+      },
+      "properties": {
+        "event_id": "AA-2602",
+        "source_message_id": 2602,
+        "source_url": "https://t.me/aainfodesk/2602",
+        "incident_date": "2026-11-14",
+        "category": "NAVAL_ENGAGEMENT",
+        "township": "Ponnagyun",
+        "mimu_pcode": "MMR012002",
+        "location_accuracy": "village_centroid",
+        "has_explicit_coords": true,
+        "headline": "စစ်ဘေးရှောင်စခန်းများ (IDP Camp) နှင့် အများပြည်သူ သွားလာနေသည့် လမ်းတံတားများ အပါအဝင် အပြစ်မဲ့အရပ်သားပြည်သူလူထုများအား ဗုံးကြဲတိုက်ခိုက်ပြီး စစ်ရာဇဝတ်မှုများကို ဖက်ဆစ် အကြမ်းဖက် စစ်ကော်မရှင်မှ ဆက်တိုက",
+        "summary": "Reported Naval Engagement in သရက်ချို (Ponnagyun) involving SAC Military Junta, Myanmar Military Navy (18 claimed KIA). Source: AA official communique.",
+        "opposing_actors": "SAC Military Junta,Myanmar Military Navy,Myanmar Military Air Force",
+        "kia_reported": 18,
+        "wounded_reported": 0,
+        "nearest_corridor": "Kaladan Multi-Modal Transit Transport Project",
+        "corridor_dist_km": 26.02,
+        "within_5km": false,
+        "within_25km": false,
         "is_actor_claim": true
       }
     }
