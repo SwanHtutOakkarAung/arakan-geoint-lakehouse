@@ -47,7 +47,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.410595+00:00"
+    "processed_at": "2026-11-18T14:40:07.857405+00:00"
   },
   {
     "event_id": "AA-2488",
@@ -92,7 +92,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.410715+00:00"
+    "processed_at": "2026-11-18T14:40:07.857536+00:00"
   },
   {
     "event_id": "AA-2489",
@@ -141,7 +141,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.410868+00:00"
+    "processed_at": "2026-11-18T14:40:07.857682+00:00"
   },
   {
     "event_id": "AA-2490",
@@ -183,7 +183,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.410964+00:00"
+    "processed_at": "2026-11-18T14:40:07.857772+00:00"
   },
   {
     "event_id": "AA-2491",
@@ -225,7 +225,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.411071+00:00"
+    "processed_at": "2026-11-18T14:40:07.857843+00:00"
   },
   {
     "event_id": "AA-2463",
@@ -269,7 +269,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.411192+00:00"
+    "processed_at": "2026-11-18T14:40:07.857950+00:00"
   },
   {
     "event_id": "AA-2433",
@@ -313,7 +313,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.411555+00:00"
+    "processed_at": "2026-11-18T14:40:07.858299+00:00"
   },
   {
     "event_id": "AA-2442",
@@ -364,7 +364,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.411751+00:00"
+    "processed_at": "2026-11-18T14:40:07.858472+00:00"
   },
   {
     "event_id": "AA-5",
@@ -390,7 +390,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.412078+00:00"
+    "processed_at": "2026-11-18T14:40:07.858781+00:00"
   },
   {
     "event_id": "AA-6",
@@ -416,7 +416,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.412136+00:00"
+    "processed_at": "2026-11-18T14:40:07.858829+00:00"
   },
   {
     "event_id": "AA-8",
@@ -442,7 +442,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.412218+00:00"
+    "processed_at": "2026-11-18T14:40:07.858900+00:00"
   },
   {
     "event_id": "AA-9",
@@ -468,7 +468,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.412289+00:00"
+    "processed_at": "2026-11-18T14:40:07.858958+00:00"
   },
   {
     "event_id": "AA-10",
@@ -494,7 +494,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.412336+00:00"
+    "processed_at": "2026-11-18T14:40:07.858994+00:00"
   },
   {
     "event_id": "AA-12",
@@ -520,7 +520,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.412421+00:00"
+    "processed_at": "2026-11-18T14:40:07.859065+00:00"
   },
   {
     "event_id": "AA-13",
@@ -546,7 +546,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.412509+00:00"
+    "processed_at": "2026-11-18T14:40:07.859124+00:00"
   },
   {
     "event_id": "AA-14",
@@ -572,7 +572,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.412583+00:00"
+    "processed_at": "2026-11-18T14:40:07.859182+00:00"
   },
   {
     "event_id": "AA-18",
@@ -598,7 +598,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.412629+00:00"
+    "processed_at": "2026-11-18T14:40:07.859214+00:00"
   },
   {
     "event_id": "AA-22",
@@ -627,7 +627,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.412739+00:00"
+    "processed_at": "2026-11-18T14:40:07.859284+00:00"
   },
   {
     "event_id": "AA-23",
@@ -656,7 +656,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.412826+00:00"
+    "processed_at": "2026-11-18T14:40:07.859343+00:00"
   },
   {
     "event_id": "AA-24",
@@ -682,7 +682,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.412873+00:00"
+    "processed_at": "2026-11-18T14:40:07.859376+00:00"
   },
   {
     "event_id": "AA-30",
@@ -708,7 +708,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.412936+00:00"
+    "processed_at": "2026-11-18T14:40:07.859424+00:00"
   },
   {
     "event_id": "AA-31",
@@ -734,7 +734,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.413036+00:00"
+    "processed_at": "2026-11-18T14:40:07.859472+00:00"
   },
   {
     "event_id": "AA-32",
@@ -771,7 +771,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.413216+00:00"
+    "processed_at": "2026-11-18T14:40:07.859658+00:00"
   },
   {
     "event_id": "AA-33",
@@ -797,7 +797,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.413263+00:00"
+    "processed_at": "2026-11-18T14:40:07.859694+00:00"
   },
   {
     "event_id": "AA-34",
@@ -823,7 +823,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.413329+00:00"
+    "processed_at": "2026-11-18T14:40:07.859845+00:00"
   },
   {
     "event_id": "AA-35",
@@ -849,7 +849,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.413387+00:00"
+    "processed_at": "2026-11-18T14:40:07.859894+00:00"
   },
   {
     "event_id": "AA-36",
@@ -875,7 +875,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.413444+00:00"
+    "processed_at": "2026-11-18T14:40:07.859942+00:00"
   },
   {
     "event_id": "AA-37",
@@ -901,7 +901,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.413504+00:00"
+    "processed_at": "2026-11-18T14:40:07.859993+00:00"
   },
   {
     "event_id": "AA-38",
@@ -927,7 +927,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.413558+00:00"
+    "processed_at": "2026-11-18T14:40:07.860036+00:00"
   },
   {
     "event_id": "AA-39",
@@ -953,7 +953,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.413611+00:00"
+    "processed_at": "2026-11-18T14:40:07.860079+00:00"
   },
   {
     "event_id": "AA-40",
@@ -979,7 +979,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.413669+00:00"
+    "processed_at": "2026-11-18T14:40:07.860125+00:00"
   },
   {
     "event_id": "AA-41",
@@ -1005,7 +1005,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.413725+00:00"
+    "processed_at": "2026-11-18T14:40:07.860171+00:00"
   },
   {
     "event_id": "AA-42",
@@ -1031,7 +1031,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.413783+00:00"
+    "processed_at": "2026-11-18T14:40:07.860219+00:00"
   },
   {
     "event_id": "AA-43",
@@ -1057,7 +1057,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.413839+00:00"
+    "processed_at": "2026-11-18T14:40:07.860265+00:00"
   },
   {
     "event_id": "AA-44",
@@ -1083,7 +1083,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.413893+00:00"
+    "processed_at": "2026-11-18T14:40:07.860309+00:00"
   },
   {
     "event_id": "AA-45",
@@ -1109,7 +1109,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.413963+00:00"
+    "processed_at": "2026-11-18T14:40:07.860364+00:00"
   },
   {
     "event_id": "AA-46",
@@ -1135,7 +1135,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.414049+00:00"
+    "processed_at": "2026-11-18T14:40:07.860409+00:00"
   },
   {
     "event_id": "AA-47",
@@ -1161,7 +1161,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.414108+00:00"
+    "processed_at": "2026-11-18T14:40:07.860461+00:00"
   },
   {
     "event_id": "AA-48",
@@ -1187,7 +1187,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.414256+00:00"
+    "processed_at": "2026-11-18T14:40:07.860610+00:00"
   },
   {
     "event_id": "AA-49",
@@ -1213,7 +1213,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.414401+00:00"
+    "processed_at": "2026-11-18T14:40:07.860664+00:00"
   },
   {
     "event_id": "AA-50",
@@ -1239,7 +1239,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.414788+00:00"
+    "processed_at": "2026-11-18T14:40:07.860988+00:00"
   },
   {
     "event_id": "AA-51",
@@ -1265,7 +1265,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.414872+00:00"
+    "processed_at": "2026-11-18T14:40:07.861036+00:00"
   },
   {
     "event_id": "AA-52",
@@ -1291,7 +1291,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.415028+00:00"
+    "processed_at": "2026-11-18T14:40:07.861114+00:00"
   },
   {
     "event_id": "AA-53",
@@ -1317,7 +1317,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.415082+00:00"
+    "processed_at": "2026-11-18T14:40:07.861147+00:00"
   },
   {
     "event_id": "AA-54",
@@ -1361,7 +1361,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.415412+00:00"
+    "processed_at": "2026-11-18T14:40:07.861425+00:00"
   },
   {
     "event_id": "AA-55",
@@ -1387,7 +1387,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.415534+00:00"
+    "processed_at": "2026-11-18T14:40:07.861496+00:00"
   },
   {
     "event_id": "AA-57",
@@ -1426,7 +1426,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.415623+00:00"
+    "processed_at": "2026-11-18T14:40:07.861603+00:00"
   },
   {
     "event_id": "AA-58",
@@ -1465,7 +1465,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.415809+00:00"
+    "processed_at": "2026-11-18T14:40:07.861760+00:00"
   },
   {
     "event_id": "AA-59",
@@ -1504,7 +1504,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.415880+00:00"
+    "processed_at": "2026-11-18T14:40:07.861813+00:00"
   },
   {
     "event_id": "AA-60",
@@ -1543,7 +1543,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.415950+00:00"
+    "processed_at": "2026-11-18T14:40:07.861866+00:00"
   },
   {
     "event_id": "AA-61",
@@ -1582,7 +1582,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.416048+00:00"
+    "processed_at": "2026-11-18T14:40:07.861919+00:00"
   },
   {
     "event_id": "AA-62",
@@ -1619,7 +1619,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.416206+00:00"
+    "processed_at": "2026-11-18T14:40:07.862046+00:00"
   },
   {
     "event_id": "AA-63",
@@ -1645,7 +1645,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.416269+00:00"
+    "processed_at": "2026-11-18T14:40:07.862095+00:00"
   },
   {
     "event_id": "AA-64",
@@ -1671,7 +1671,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.416322+00:00"
+    "processed_at": "2026-11-18T14:40:07.862139+00:00"
   },
   {
     "event_id": "AA-65",
@@ -1697,7 +1697,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.416374+00:00"
+    "processed_at": "2026-11-18T14:40:07.862190+00:00"
   },
   {
     "event_id": "AA-66",
@@ -1723,7 +1723,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.416421+00:00"
+    "processed_at": "2026-11-18T14:40:07.862232+00:00"
   },
   {
     "event_id": "AA-67",
@@ -1749,7 +1749,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.416471+00:00"
+    "processed_at": "2026-11-18T14:40:07.862269+00:00"
   },
   {
     "event_id": "AA-70",
@@ -1786,7 +1786,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.416823+00:00"
+    "processed_at": "2026-11-18T14:40:07.862603+00:00"
   },
   {
     "event_id": "AA-71",
@@ -1812,7 +1812,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.416869+00:00"
+    "processed_at": "2026-11-18T14:40:07.862641+00:00"
   },
   {
     "event_id": "AA-72",
@@ -1848,7 +1848,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.417183+00:00"
+    "processed_at": "2026-11-18T14:40:07.862882+00:00"
   },
   {
     "event_id": "AA-75",
@@ -1882,7 +1882,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.417382+00:00"
+    "processed_at": "2026-11-18T14:40:07.863062+00:00"
   },
   {
     "event_id": "AA-77",
@@ -1916,7 +1916,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.417481+00:00"
+    "processed_at": "2026-11-18T14:40:07.863148+00:00"
   },
   {
     "event_id": "AA-81",
@@ -1968,7 +1968,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.417748+00:00"
+    "processed_at": "2026-11-18T14:40:07.863375+00:00"
   },
   {
     "event_id": "AA-82",
@@ -1994,7 +1994,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.417825+00:00"
+    "processed_at": "2026-11-18T14:40:07.863443+00:00"
   },
   {
     "event_id": "AA-83",
@@ -2033,7 +2033,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.418033+00:00"
+    "processed_at": "2026-11-18T14:40:07.863624+00:00"
   },
   {
     "event_id": "AA-84",
@@ -2059,7 +2059,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.418108+00:00"
+    "processed_at": "2026-11-18T14:40:07.863687+00:00"
   },
   {
     "event_id": "AA-85",
@@ -2098,7 +2098,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.418180+00:00"
+    "processed_at": "2026-11-18T14:40:07.863745+00:00"
   },
   {
     "event_id": "AA-87",
@@ -2124,7 +2124,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.418257+00:00"
+    "processed_at": "2026-11-18T14:40:07.863808+00:00"
   },
   {
     "event_id": "AA-88",
@@ -2166,7 +2166,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.418496+00:00"
+    "processed_at": "2026-11-18T14:40:07.864017+00:00"
   },
   {
     "event_id": "AA-93",
@@ -2221,7 +2221,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.418861+00:00"
+    "processed_at": "2026-11-18T14:40:07.864327+00:00"
   },
   {
     "event_id": "AA-94",
@@ -2256,7 +2256,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.419116+00:00"
+    "processed_at": "2026-11-18T14:40:07.864546+00:00"
   },
   {
     "event_id": "AA-95",
@@ -2293,7 +2293,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.419196+00:00"
+    "processed_at": "2026-11-18T14:40:07.864616+00:00"
   },
   {
     "event_id": "AA-96",
@@ -2333,7 +2333,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.419280+00:00"
+    "processed_at": "2026-11-18T14:40:07.864676+00:00"
   },
   {
     "event_id": "AA-99",
@@ -2369,7 +2369,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.419369+00:00"
+    "processed_at": "2026-11-18T14:40:07.864756+00:00"
   },
   {
     "event_id": "AA-101",
@@ -2395,7 +2395,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.419443+00:00"
+    "processed_at": "2026-11-18T14:40:07.864822+00:00"
   },
   {
     "event_id": "AA-102",
@@ -2451,7 +2451,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.419799+00:00"
+    "processed_at": "2026-11-18T14:40:07.865129+00:00"
   },
   {
     "event_id": "AA-107",
@@ -2486,7 +2486,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.419885+00:00"
+    "processed_at": "2026-11-18T14:40:07.865206+00:00"
   },
   {
     "event_id": "AA-108",
@@ -2521,7 +2521,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.419997+00:00"
+    "processed_at": "2026-11-18T14:40:07.865278+00:00"
   },
   {
     "event_id": "AA-109",
@@ -2547,7 +2547,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.420080+00:00"
+    "processed_at": "2026-11-18T14:40:07.865333+00:00"
   },
   {
     "event_id": "AA-111",
@@ -2593,7 +2593,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.420280+00:00"
+    "processed_at": "2026-11-18T14:40:07.865493+00:00"
   },
   {
     "event_id": "AA-112",
@@ -2636,7 +2636,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.420380+00:00"
+    "processed_at": "2026-11-18T14:40:07.865589+00:00"
   },
   {
     "event_id": "AA-113",
@@ -2662,7 +2662,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.420463+00:00"
+    "processed_at": "2026-11-18T14:40:07.865653+00:00"
   },
   {
     "event_id": "AA-114",
@@ -2688,7 +2688,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.420554+00:00"
+    "processed_at": "2026-11-18T14:40:07.865720+00:00"
   },
   {
     "event_id": "AA-117",
@@ -2734,7 +2734,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.420947+00:00"
+    "processed_at": "2026-11-18T14:40:07.866023+00:00"
   },
   {
     "event_id": "AA-118",
@@ -2760,7 +2760,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.421017+00:00"
+    "processed_at": "2026-11-18T14:40:07.866067+00:00"
   },
   {
     "event_id": "AA-119",
@@ -2791,7 +2791,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.421106+00:00"
+    "processed_at": "2026-11-18T14:40:07.866141+00:00"
   },
   {
     "event_id": "AA-120",
@@ -2842,7 +2842,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.421463+00:00"
+    "processed_at": "2026-11-18T14:40:07.866431+00:00"
   },
   {
     "event_id": "AA-121",
@@ -2873,7 +2873,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.421548+00:00"
+    "processed_at": "2026-11-18T14:40:07.866512+00:00"
   },
   {
     "event_id": "AA-122",
@@ -2915,7 +2915,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.421651+00:00"
+    "processed_at": "2026-11-18T14:40:07.866599+00:00"
   },
   {
     "event_id": "AA-123",
@@ -2957,7 +2957,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.421745+00:00"
+    "processed_at": "2026-11-18T14:40:07.866672+00:00"
   },
   {
     "event_id": "AA-124",
@@ -2997,7 +2997,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.421853+00:00"
+    "processed_at": "2026-11-18T14:40:07.866750+00:00"
   },
   {
     "event_id": "AA-132",
@@ -3057,7 +3057,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.422268+00:00"
+    "processed_at": "2026-11-18T14:40:07.867027+00:00"
   },
   {
     "event_id": "AA-133",
@@ -3107,7 +3107,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.422507+00:00"
+    "processed_at": "2026-11-18T14:40:07.867212+00:00"
   },
   {
     "event_id": "AA-134",
@@ -3152,7 +3152,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.422749+00:00"
+    "processed_at": "2026-11-18T14:40:07.867394+00:00"
   },
   {
     "event_id": "AA-137",
@@ -3189,7 +3189,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.423033+00:00"
+    "processed_at": "2026-11-18T14:40:07.867598+00:00"
   },
   {
     "event_id": "AA-138",
@@ -3215,7 +3215,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.423124+00:00"
+    "processed_at": "2026-11-18T14:40:07.867667+00:00"
   },
   {
     "event_id": "AA-139",
@@ -3246,7 +3246,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.423205+00:00"
+    "processed_at": "2026-11-18T14:40:07.867729+00:00"
   },
   {
     "event_id": "AA-140",
@@ -3282,7 +3282,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.423523+00:00"
+    "processed_at": "2026-11-18T14:40:07.867982+00:00"
   },
   {
     "event_id": "AA-146",
@@ -3340,7 +3340,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.423917+00:00"
+    "processed_at": "2026-11-18T14:40:07.868295+00:00"
   },
   {
     "event_id": "AA-147",
@@ -3392,7 +3392,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.424128+00:00"
+    "processed_at": "2026-11-18T14:40:07.869645+00:00"
   },
   {
     "event_id": "AA-150",
@@ -3418,7 +3418,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.424487+00:00"
+    "processed_at": "2026-11-18T14:40:07.869990+00:00"
   },
   {
     "event_id": "AA-151",
@@ -3444,7 +3444,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.424584+00:00"
+    "processed_at": "2026-11-18T14:40:07.870065+00:00"
   },
   {
     "event_id": "AA-154",
@@ -3499,7 +3499,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.424904+00:00"
+    "processed_at": "2026-11-18T14:40:07.870326+00:00"
   },
   {
     "event_id": "AA-155",
@@ -3525,7 +3525,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.425016+00:00"
+    "processed_at": "2026-11-18T14:40:07.870394+00:00"
   },
   {
     "event_id": "AA-159",
@@ -3584,7 +3584,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.425384+00:00"
+    "processed_at": "2026-11-18T14:40:07.870702+00:00"
   },
   {
     "event_id": "AA-164",
@@ -3641,7 +3641,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.425819+00:00"
+    "processed_at": "2026-11-18T14:40:07.871041+00:00"
   },
   {
     "event_id": "AA-166",
@@ -3681,7 +3681,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.426142+00:00"
+    "processed_at": "2026-11-18T14:40:07.871290+00:00"
   },
   {
     "event_id": "AA-167",
@@ -3710,7 +3710,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.426304+00:00"
+    "processed_at": "2026-11-18T14:40:07.871428+00:00"
   },
   {
     "event_id": "AA-168",
@@ -3736,7 +3736,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.426378+00:00"
+    "processed_at": "2026-11-18T14:40:07.871484+00:00"
   },
   {
     "event_id": "AA-169",
@@ -3762,7 +3762,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.426441+00:00"
+    "processed_at": "2026-11-18T14:40:07.871548+00:00"
   },
   {
     "event_id": "AA-170",
@@ -3788,7 +3788,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.426520+00:00"
+    "processed_at": "2026-11-18T14:40:07.871614+00:00"
   },
   {
     "event_id": "AA-171",
@@ -3814,7 +3814,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.426662+00:00"
+    "processed_at": "2026-11-18T14:40:07.871674+00:00"
   },
   {
     "event_id": "AA-172",
@@ -3843,7 +3843,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.426766+00:00"
+    "processed_at": "2026-11-18T14:40:07.871750+00:00"
   },
   {
     "event_id": "AA-173",
@@ -3869,7 +3869,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.426860+00:00"
+    "processed_at": "2026-11-18T14:40:07.871824+00:00"
   },
   {
     "event_id": "AA-175",
@@ -3895,7 +3895,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.426947+00:00"
+    "processed_at": "2026-11-18T14:40:07.871895+00:00"
   },
   {
     "event_id": "AA-176",
@@ -3921,7 +3921,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.427043+00:00"
+    "processed_at": "2026-11-18T14:40:07.871958+00:00"
   },
   {
     "event_id": "AA-180",
@@ -3947,7 +3947,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.427129+00:00"
+    "processed_at": "2026-11-18T14:40:07.872026+00:00"
   },
   {
     "event_id": "AA-182",
@@ -3973,7 +3973,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.427233+00:00"
+    "processed_at": "2026-11-18T14:40:07.872108+00:00"
   },
   {
     "event_id": "AA-183",
@@ -3999,7 +3999,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.427336+00:00"
+    "processed_at": "2026-11-18T14:40:07.872202+00:00"
   },
   {
     "event_id": "AA-184",
@@ -4025,7 +4025,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.427421+00:00"
+    "processed_at": "2026-11-18T14:40:07.872267+00:00"
   },
   {
     "event_id": "AA-185",
@@ -4051,7 +4051,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.427509+00:00"
+    "processed_at": "2026-11-18T14:40:07.872331+00:00"
   },
   {
     "event_id": "AA-186",
@@ -4077,7 +4077,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.427590+00:00"
+    "processed_at": "2026-11-18T14:40:07.872393+00:00"
   },
   {
     "event_id": "AA-188",
@@ -4103,7 +4103,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.427670+00:00"
+    "processed_at": "2026-11-18T14:40:07.872456+00:00"
   },
   {
     "event_id": "AA-189",
@@ -4129,7 +4129,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.427747+00:00"
+    "processed_at": "2026-11-18T14:40:07.872528+00:00"
   },
   {
     "event_id": "AA-190",
@@ -4155,7 +4155,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.427825+00:00"
+    "processed_at": "2026-11-18T14:40:07.872593+00:00"
   },
   {
     "event_id": "AA-191",
@@ -4181,7 +4181,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.427903+00:00"
+    "processed_at": "2026-11-18T14:40:07.872655+00:00"
   },
   {
     "event_id": "AA-192",
@@ -4207,7 +4207,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.428019+00:00"
+    "processed_at": "2026-11-18T14:40:07.872733+00:00"
   },
   {
     "event_id": "AA-193",
@@ -4233,7 +4233,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.428103+00:00"
+    "processed_at": "2026-11-18T14:40:07.872796+00:00"
   },
   {
     "event_id": "AA-195",
@@ -4259,7 +4259,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.428187+00:00"
+    "processed_at": "2026-11-18T14:40:07.872857+00:00"
   },
   {
     "event_id": "AA-196",
@@ -4285,7 +4285,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.428270+00:00"
+    "processed_at": "2026-11-18T14:40:07.872922+00:00"
   },
   {
     "event_id": "AA-197",
@@ -4311,7 +4311,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.428351+00:00"
+    "processed_at": "2026-11-18T14:40:07.872986+00:00"
   },
   {
     "event_id": "AA-198",
@@ -4337,7 +4337,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.428436+00:00"
+    "processed_at": "2026-11-18T14:40:07.873055+00:00"
   },
   {
     "event_id": "AA-200",
@@ -4363,7 +4363,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.428515+00:00"
+    "processed_at": "2026-11-18T14:40:07.873119+00:00"
   },
   {
     "event_id": "AA-201",
@@ -4389,7 +4389,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.428595+00:00"
+    "processed_at": "2026-11-18T14:40:07.873177+00:00"
   },
   {
     "event_id": "AA-202",
@@ -4415,7 +4415,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.428675+00:00"
+    "processed_at": "2026-11-18T14:40:07.873234+00:00"
   },
   {
     "event_id": "AA-203",
@@ -4441,7 +4441,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.428770+00:00"
+    "processed_at": "2026-11-18T14:40:07.873305+00:00"
   },
   {
     "event_id": "AA-204",
@@ -4467,7 +4467,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.428860+00:00"
+    "processed_at": "2026-11-18T14:40:07.873371+00:00"
   },
   {
     "event_id": "AA-206",
@@ -4493,7 +4493,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.428939+00:00"
+    "processed_at": "2026-11-18T14:40:07.873433+00:00"
   },
   {
     "event_id": "AA-207",
@@ -4519,7 +4519,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.429037+00:00"
+    "processed_at": "2026-11-18T14:40:07.873491+00:00"
   },
   {
     "event_id": "AA-209",
@@ -4545,7 +4545,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.429134+00:00"
+    "processed_at": "2026-11-18T14:40:07.873571+00:00"
   },
   {
     "event_id": "AA-210",
@@ -4571,7 +4571,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.429219+00:00"
+    "processed_at": "2026-11-18T14:40:07.873641+00:00"
   },
   {
     "event_id": "AA-211",
@@ -4597,7 +4597,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.429268+00:00"
+    "processed_at": "2026-11-18T14:40:07.873677+00:00"
   },
   {
     "event_id": "AA-212",
@@ -4623,7 +4623,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.429354+00:00"
+    "processed_at": "2026-11-18T14:40:07.873746+00:00"
   },
   {
     "event_id": "AA-213",
@@ -4660,7 +4660,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.429502+00:00"
+    "processed_at": "2026-11-18T14:40:07.873868+00:00"
   },
   {
     "event_id": "AA-214",
@@ -4696,7 +4696,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.429575+00:00"
+    "processed_at": "2026-11-18T14:40:07.873923+00:00"
   },
   {
     "event_id": "AA-215",
@@ -4732,7 +4732,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.429661+00:00"
+    "processed_at": "2026-11-18T14:40:07.873999+00:00"
   },
   {
     "event_id": "AA-216",
@@ -4758,7 +4758,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.429741+00:00"
+    "processed_at": "2026-11-18T14:40:07.874070+00:00"
   },
   {
     "event_id": "AA-217",
@@ -4797,7 +4797,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.429834+00:00"
+    "processed_at": "2026-11-18T14:40:07.874150+00:00"
   },
   {
     "event_id": "AA-218",
@@ -4826,7 +4826,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.429890+00:00"
+    "processed_at": "2026-11-18T14:40:07.874197+00:00"
   },
   {
     "event_id": "AA-219",
@@ -4855,7 +4855,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.429946+00:00"
+    "processed_at": "2026-11-18T14:40:07.874242+00:00"
   },
   {
     "event_id": "AA-220",
@@ -4884,7 +4884,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.430033+00:00"
+    "processed_at": "2026-11-18T14:40:07.874286+00:00"
   },
   {
     "event_id": "AA-221",
@@ -4920,7 +4920,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.430089+00:00"
+    "processed_at": "2026-11-18T14:40:07.874327+00:00"
   },
   {
     "event_id": "AA-222",
@@ -4949,7 +4949,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.430145+00:00"
+    "processed_at": "2026-11-18T14:40:07.874369+00:00"
   },
   {
     "event_id": "AA-223",
@@ -4988,7 +4988,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.430232+00:00"
+    "processed_at": "2026-11-18T14:40:07.874438+00:00"
   },
   {
     "event_id": "AA-224",
@@ -5027,7 +5027,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.430322+00:00"
+    "processed_at": "2026-11-18T14:40:07.874517+00:00"
   },
   {
     "event_id": "AA-237",
@@ -5056,7 +5056,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.430381+00:00"
+    "processed_at": "2026-11-18T14:40:07.874565+00:00"
   },
   {
     "event_id": "AA-238",
@@ -5085,7 +5085,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.430432+00:00"
+    "processed_at": "2026-11-18T14:40:07.874604+00:00"
   },
   {
     "event_id": "AA-239",
@@ -5114,7 +5114,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.430493+00:00"
+    "processed_at": "2026-11-18T14:40:07.874648+00:00"
   },
   {
     "event_id": "AA-240",
@@ -5140,7 +5140,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.430600+00:00"
+    "processed_at": "2026-11-18T14:40:07.874732+00:00"
   },
   {
     "event_id": "AA-241",
@@ -5180,7 +5180,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.430814+00:00"
+    "processed_at": "2026-11-18T14:40:07.874919+00:00"
   },
   {
     "event_id": "AA-245",
@@ -5220,7 +5220,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.431052+00:00"
+    "processed_at": "2026-11-18T14:40:07.875111+00:00"
   },
   {
     "event_id": "AA-249",
@@ -5260,7 +5260,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.431248+00:00"
+    "processed_at": "2026-11-18T14:40:07.875282+00:00"
   },
   {
     "event_id": "AA-253",
@@ -5300,7 +5300,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.431471+00:00"
+    "processed_at": "2026-11-18T14:40:07.875487+00:00"
   },
   {
     "event_id": "AA-261",
@@ -5339,7 +5339,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.431718+00:00"
+    "processed_at": "2026-11-18T14:40:07.875722+00:00"
   },
   {
     "event_id": "AA-262",
@@ -5365,7 +5365,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.431792+00:00"
+    "processed_at": "2026-11-18T14:40:07.875789+00:00"
   },
   {
     "event_id": "AA-263",
@@ -5391,7 +5391,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.431880+00:00"
+    "processed_at": "2026-11-18T14:40:07.875863+00:00"
   },
   {
     "event_id": "AA-264",
@@ -5417,7 +5417,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.431949+00:00"
+    "processed_at": "2026-11-18T14:40:07.875922+00:00"
   },
   {
     "event_id": "AA-274",
@@ -5457,7 +5457,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.432207+00:00"
+    "processed_at": "2026-11-18T14:40:07.876125+00:00"
   },
   {
     "event_id": "AA-275",
@@ -5494,7 +5494,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.432289+00:00"
+    "processed_at": "2026-11-18T14:40:07.876185+00:00"
   },
   {
     "event_id": "AA-284",
@@ -5531,7 +5531,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.432370+00:00"
+    "processed_at": "2026-11-18T14:40:07.876241+00:00"
   },
   {
     "event_id": "AA-289",
@@ -5557,7 +5557,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.432448+00:00"
+    "processed_at": "2026-11-18T14:40:07.876301+00:00"
   },
   {
     "event_id": "AA-291",
@@ -5583,7 +5583,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.432511+00:00"
+    "processed_at": "2026-11-18T14:40:07.876354+00:00"
   },
   {
     "event_id": "AA-292",
@@ -5619,7 +5619,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.432865+00:00"
+    "processed_at": "2026-11-18T14:40:07.876698+00:00"
   },
   {
     "event_id": "AA-293",
@@ -5645,7 +5645,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.432943+00:00"
+    "processed_at": "2026-11-18T14:40:07.876765+00:00"
   },
   {
     "event_id": "AA-295",
@@ -5681,7 +5681,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.433140+00:00"
+    "processed_at": "2026-11-18T14:40:07.876917+00:00"
   },
   {
     "event_id": "AA-299",
@@ -5707,7 +5707,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.433246+00:00"
+    "processed_at": "2026-11-18T14:40:07.876997+00:00"
   },
   {
     "event_id": "AA-302",
@@ -5743,7 +5743,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.433306+00:00"
+    "processed_at": "2026-11-18T14:40:07.877038+00:00"
   },
   {
     "event_id": "AA-305",
@@ -5769,7 +5769,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.433371+00:00"
+    "processed_at": "2026-11-18T14:40:07.877086+00:00"
   },
   {
     "event_id": "AA-307",
@@ -5795,7 +5795,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.433429+00:00"
+    "processed_at": "2026-11-18T14:40:07.877129+00:00"
   },
   {
     "event_id": "AA-308",
@@ -5821,7 +5821,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.433489+00:00"
+    "processed_at": "2026-11-18T14:40:07.877170+00:00"
   },
   {
     "event_id": "AA-310",
@@ -5847,7 +5847,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.433572+00:00"
+    "processed_at": "2026-11-18T14:40:07.877244+00:00"
   },
   {
     "event_id": "AA-311",
@@ -5873,7 +5873,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.433665+00:00"
+    "processed_at": "2026-11-18T14:40:07.877329+00:00"
   },
   {
     "event_id": "AA-313",
@@ -5899,7 +5899,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.433738+00:00"
+    "processed_at": "2026-11-18T14:40:07.877392+00:00"
   },
   {
     "event_id": "AA-317",
@@ -5944,7 +5944,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.434069+00:00"
+    "processed_at": "2026-11-18T14:40:07.877673+00:00"
   },
   {
     "event_id": "AA-318",
@@ -5983,7 +5983,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.434194+00:00"
+    "processed_at": "2026-11-18T14:40:07.877786+00:00"
   },
   {
     "event_id": "AA-319",
@@ -6028,7 +6028,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.434411+00:00"
+    "processed_at": "2026-11-18T14:40:07.877956+00:00"
   },
   {
     "event_id": "AA-320",
@@ -6080,7 +6080,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.434581+00:00"
+    "processed_at": "2026-11-18T14:40:07.878100+00:00"
   },
   {
     "event_id": "AA-322",
@@ -6113,7 +6113,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.434753+00:00"
+    "processed_at": "2026-11-18T14:40:07.878253+00:00"
   },
   {
     "event_id": "AA-323",
@@ -6158,7 +6158,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.435020+00:00"
+    "processed_at": "2026-11-18T14:40:07.878550+00:00"
   },
   {
     "event_id": "AA-324",
@@ -6197,7 +6197,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.435107+00:00"
+    "processed_at": "2026-11-18T14:40:07.878625+00:00"
   },
   {
     "event_id": "AA-329",
@@ -6246,7 +6246,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.435529+00:00"
+    "processed_at": "2026-11-18T14:40:07.878929+00:00"
   },
   {
     "event_id": "AA-330",
@@ -6283,7 +6283,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.435693+00:00"
+    "processed_at": "2026-11-18T14:40:07.879073+00:00"
   },
   {
     "event_id": "AA-331",
@@ -6320,7 +6320,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.435746+00:00"
+    "processed_at": "2026-11-18T14:40:07.879118+00:00"
   },
   {
     "event_id": "AA-332",
@@ -6364,7 +6364,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.436015+00:00"
+    "processed_at": "2026-11-18T14:40:07.879351+00:00"
   },
   {
     "event_id": "AA-333",
@@ -6403,7 +6403,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.436094+00:00"
+    "processed_at": "2026-11-18T14:40:07.879427+00:00"
   },
   {
     "event_id": "AA-334",
@@ -6437,7 +6437,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.436185+00:00"
+    "processed_at": "2026-11-18T14:40:07.879519+00:00"
   },
   {
     "event_id": "AA-337",
@@ -6476,7 +6476,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.436264+00:00"
+    "processed_at": "2026-11-18T14:40:07.879595+00:00"
   },
   {
     "event_id": "AA-342",
@@ -6525,7 +6525,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.436594+00:00"
+    "processed_at": "2026-11-18T14:40:07.879870+00:00"
   },
   {
     "event_id": "AA-343",
@@ -6569,7 +6569,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.436814+00:00"
+    "processed_at": "2026-11-18T14:40:07.880048+00:00"
   },
   {
     "event_id": "AA-346",
@@ -6613,7 +6613,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.436927+00:00"
+    "processed_at": "2026-11-18T14:40:07.880134+00:00"
   },
   {
     "event_id": "AA-350",
@@ -6658,7 +6658,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.437201+00:00"
+    "processed_at": "2026-11-18T14:40:07.880326+00:00"
   },
   {
     "event_id": "AA-351",
@@ -6703,7 +6703,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.437328+00:00"
+    "processed_at": "2026-11-18T14:40:07.880428+00:00"
   },
   {
     "event_id": "AA-352",
@@ -6731,7 +6731,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.437398+00:00"
+    "processed_at": "2026-11-18T14:40:07.880484+00:00"
   },
   {
     "event_id": "AA-356",
@@ -6770,7 +6770,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.437485+00:00"
+    "processed_at": "2026-11-18T14:40:07.880568+00:00"
   },
   {
     "event_id": "AA-359",
@@ -6816,7 +6816,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.437992+00:00"
+    "processed_at": "2026-11-18T14:40:07.880986+00:00"
   },
   {
     "event_id": "AA-360",
@@ -6862,7 +6862,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.438220+00:00"
+    "processed_at": "2026-11-18T14:40:07.881171+00:00"
   },
   {
     "event_id": "AA-361",
@@ -6901,7 +6901,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.438298+00:00"
+    "processed_at": "2026-11-18T14:40:07.881231+00:00"
   },
   {
     "event_id": "AA-363",
@@ -6927,7 +6927,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.438395+00:00"
+    "processed_at": "2026-11-18T14:40:07.881304+00:00"
   },
   {
     "event_id": "AA-369",
@@ -6953,7 +6953,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.438472+00:00"
+    "processed_at": "2026-11-18T14:40:07.881362+00:00"
   },
   {
     "event_id": "AA-375",
@@ -6990,7 +6990,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.438715+00:00"
+    "processed_at": "2026-11-18T14:40:07.881574+00:00"
   },
   {
     "event_id": "AA-381",
@@ -7030,7 +7030,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.439048+00:00"
+    "processed_at": "2026-11-18T14:40:07.881866+00:00"
   },
   {
     "event_id": "AA-382",
@@ -7070,7 +7070,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.439156+00:00"
+    "processed_at": "2026-11-18T14:40:07.881959+00:00"
   },
   {
     "event_id": "AA-387",
@@ -7112,7 +7112,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.439396+00:00"
+    "processed_at": "2026-11-18T14:40:07.882167+00:00"
   },
   {
     "event_id": "AA-395",
@@ -7165,7 +7165,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.439673+00:00"
+    "processed_at": "2026-11-18T14:40:07.882408+00:00"
   },
   {
     "event_id": "AA-412",
@@ -7212,7 +7212,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.440086+00:00"
+    "processed_at": "2026-11-18T14:40:07.882744+00:00"
   },
   {
     "event_id": "AA-413",
@@ -7254,7 +7254,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.440466+00:00"
+    "processed_at": "2026-11-18T14:40:07.883063+00:00"
   },
   {
     "event_id": "AA-414",
@@ -7293,7 +7293,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.440542+00:00"
+    "processed_at": "2026-11-18T14:40:07.883129+00:00"
   },
   {
     "event_id": "AA-415",
@@ -7338,7 +7338,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.440813+00:00"
+    "processed_at": "2026-11-18T14:40:07.883377+00:00"
   },
   {
     "event_id": "AA-416",
@@ -7377,7 +7377,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.441033+00:00"
+    "processed_at": "2026-11-18T14:40:07.883577+00:00"
   },
   {
     "event_id": "AA-445",
@@ -7420,7 +7420,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.441142+00:00"
+    "processed_at": "2026-11-18T14:40:07.883659+00:00"
   },
   {
     "event_id": "AA-459",
@@ -7463,7 +7463,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.441269+00:00"
+    "processed_at": "2026-11-18T14:40:07.883760+00:00"
   },
   {
     "event_id": "AA-460",
@@ -7507,7 +7507,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.441363+00:00"
+    "processed_at": "2026-11-18T14:40:07.883835+00:00"
   },
   {
     "event_id": "AA-461",
@@ -7535,7 +7535,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.441471+00:00"
+    "processed_at": "2026-11-18T14:40:07.883929+00:00"
   },
   {
     "event_id": "AA-463",
@@ -7561,7 +7561,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.441550+00:00"
+    "processed_at": "2026-11-18T14:40:07.883989+00:00"
   },
   {
     "event_id": "AA-468",
@@ -7590,7 +7590,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.441895+00:00"
+    "processed_at": "2026-11-18T14:40:07.884313+00:00"
   },
   {
     "event_id": "AA-469",
@@ -7630,7 +7630,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.442107+00:00"
+    "processed_at": "2026-11-18T14:40:07.884482+00:00"
   },
   {
     "event_id": "AA-477",
@@ -7678,7 +7678,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.442443+00:00"
+    "processed_at": "2026-11-18T14:40:07.884790+00:00"
   },
   {
     "event_id": "AA-478",
@@ -7725,7 +7725,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.442643+00:00"
+    "processed_at": "2026-11-18T14:40:07.884961+00:00"
   },
   {
     "event_id": "AA-480",
@@ -7768,7 +7768,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.442759+00:00"
+    "processed_at": "2026-11-18T14:40:07.885055+00:00"
   },
   {
     "event_id": "AA-491",
@@ -7811,7 +7811,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.443227+00:00"
+    "processed_at": "2026-11-18T14:40:07.885454+00:00"
   },
   {
     "event_id": "AA-492",
@@ -7852,7 +7852,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.443428+00:00"
+    "processed_at": "2026-11-18T14:40:07.885653+00:00"
   },
   {
     "event_id": "AA-493",
@@ -7884,7 +7884,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.443535+00:00"
+    "processed_at": "2026-11-18T14:40:07.885744+00:00"
   },
   {
     "event_id": "AA-502",
@@ -7920,7 +7920,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.443591+00:00"
+    "processed_at": "2026-11-18T14:40:07.885792+00:00"
   },
   {
     "event_id": "AA-503",
@@ -7967,7 +7967,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.443682+00:00"
+    "processed_at": "2026-11-18T14:40:07.885872+00:00"
   },
   {
     "event_id": "AA-504",
@@ -8011,7 +8011,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.444066+00:00"
+    "processed_at": "2026-11-18T14:40:07.886180+00:00"
   },
   {
     "event_id": "AA-505",
@@ -8056,7 +8056,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.444383+00:00"
+    "processed_at": "2026-11-18T14:40:07.886466+00:00"
   },
   {
     "event_id": "AA-506",
@@ -8099,7 +8099,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.444454+00:00"
+    "processed_at": "2026-11-18T14:40:07.886535+00:00"
   },
   {
     "event_id": "AA-513",
@@ -8143,7 +8143,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.444774+00:00"
+    "processed_at": "2026-11-18T14:40:07.886798+00:00"
   },
   {
     "event_id": "AA-515",
@@ -8187,7 +8187,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.444869+00:00"
+    "processed_at": "2026-11-18T14:40:07.886872+00:00"
   },
   {
     "event_id": "AA-525",
@@ -8231,7 +8231,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.444964+00:00"
+    "processed_at": "2026-11-18T14:40:07.886937+00:00"
   },
   {
     "event_id": "AA-532",
@@ -8260,7 +8260,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.445066+00:00"
+    "processed_at": "2026-11-18T14:40:07.887003+00:00"
   },
   {
     "event_id": "AA-535",
@@ -8304,7 +8304,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.445440+00:00"
+    "processed_at": "2026-11-18T14:40:07.887344+00:00"
   },
   {
     "event_id": "AA-543",
@@ -8343,7 +8343,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.445539+00:00"
+    "processed_at": "2026-11-18T14:40:07.887428+00:00"
   },
   {
     "event_id": "AA-550",
@@ -8388,7 +8388,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.445702+00:00"
+    "processed_at": "2026-11-18T14:40:07.887563+00:00"
   },
   {
     "event_id": "AA-551",
@@ -8431,7 +8431,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.445766+00:00"
+    "processed_at": "2026-11-18T14:40:07.887617+00:00"
   },
   {
     "event_id": "AA-563",
@@ -8476,7 +8476,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.445888+00:00"
+    "processed_at": "2026-11-18T14:40:07.887690+00:00"
   },
   {
     "event_id": "AA-571",
@@ -8521,7 +8521,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.446367+00:00"
+    "processed_at": "2026-11-18T14:40:07.888064+00:00"
   },
   {
     "event_id": "AA-572",
@@ -8547,7 +8547,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.446606+00:00"
+    "processed_at": "2026-11-18T14:40:07.888275+00:00"
   },
   {
     "event_id": "AA-580",
@@ -8592,7 +8592,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.446880+00:00"
+    "processed_at": "2026-11-18T14:40:07.888515+00:00"
   },
   {
     "event_id": "AA-581",
@@ -8637,7 +8637,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.447003+00:00"
+    "processed_at": "2026-11-18T14:40:07.888598+00:00"
   },
   {
     "event_id": "AA-590",
@@ -8692,7 +8692,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.447234+00:00"
+    "processed_at": "2026-11-18T14:40:07.888789+00:00"
   },
   {
     "event_id": "AA-592",
@@ -8739,7 +8739,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.447613+00:00"
+    "processed_at": "2026-11-18T14:40:07.889106+00:00"
   },
   {
     "event_id": "AA-593",
@@ -8783,7 +8783,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.447722+00:00"
+    "processed_at": "2026-11-18T14:40:07.889200+00:00"
   },
   {
     "event_id": "AA-594",
@@ -8827,7 +8827,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.447868+00:00"
+    "processed_at": "2026-11-18T14:40:07.889301+00:00"
   },
   {
     "event_id": "AA-596",
@@ -8872,7 +8872,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.448234+00:00"
+    "processed_at": "2026-11-18T14:40:07.889560+00:00"
   },
   {
     "event_id": "AA-597",
@@ -8914,7 +8914,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.448370+00:00"
+    "processed_at": "2026-11-18T14:40:07.889643+00:00"
   },
   {
     "event_id": "AA-599",
@@ -8940,7 +8940,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.448541+00:00"
+    "processed_at": "2026-11-18T14:40:07.889709+00:00"
   },
   {
     "event_id": "AA-603",
@@ -8984,7 +8984,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.448951+00:00"
+    "processed_at": "2026-11-18T14:40:07.889998+00:00"
   },
   {
     "event_id": "AA-614",
@@ -9028,7 +9028,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.449082+00:00"
+    "processed_at": "2026-11-18T14:40:07.890133+00:00"
   },
   {
     "event_id": "AA-621",
@@ -9075,7 +9075,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.449313+00:00"
+    "processed_at": "2026-11-18T14:40:07.890292+00:00"
   },
   {
     "event_id": "AA-623",
@@ -9122,7 +9122,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.449637+00:00"
+    "processed_at": "2026-11-18T14:40:07.890537+00:00"
   },
   {
     "event_id": "AA-624",
@@ -9168,7 +9168,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.449909+00:00"
+    "processed_at": "2026-11-18T14:40:07.890711+00:00"
   },
   {
     "event_id": "AA-625",
@@ -9194,7 +9194,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.450266+00:00"
+    "processed_at": "2026-11-18T14:40:07.890985+00:00"
   },
   {
     "event_id": "AA-626",
@@ -9220,7 +9220,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.450366+00:00"
+    "processed_at": "2026-11-18T14:40:07.891054+00:00"
   },
   {
     "event_id": "AA-628",
@@ -9270,7 +9270,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.450777+00:00"
+    "processed_at": "2026-11-18T14:40:07.891345+00:00"
   },
   {
     "event_id": "AA-629",
@@ -9312,7 +9312,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.450908+00:00"
+    "processed_at": "2026-11-18T14:40:07.891421+00:00"
   },
   {
     "event_id": "AA-639",
@@ -9341,7 +9341,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.451034+00:00"
+    "processed_at": "2026-11-18T14:40:07.891493+00:00"
   },
   {
     "event_id": "AA-648",
@@ -9391,7 +9391,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.451395+00:00"
+    "processed_at": "2026-11-18T14:40:07.891773+00:00"
   },
   {
     "event_id": "AA-649",
@@ -9431,7 +9431,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.451496+00:00"
+    "processed_at": "2026-11-18T14:40:07.891836+00:00"
   },
   {
     "event_id": "AA-650",
@@ -9476,7 +9476,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.451693+00:00"
+    "processed_at": "2026-11-18T14:40:07.891972+00:00"
   },
   {
     "event_id": "AA-661",
@@ -9523,7 +9523,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.452011+00:00"
+    "processed_at": "2026-11-18T14:40:07.892225+00:00"
   },
   {
     "event_id": "AA-662",
@@ -9568,7 +9568,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.452112+00:00"
+    "processed_at": "2026-11-18T14:40:07.892305+00:00"
   },
   {
     "event_id": "AA-663",
@@ -9613,7 +9613,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.452188+00:00"
+    "processed_at": "2026-11-18T14:40:07.892366+00:00"
   },
   {
     "event_id": "AA-664",
@@ -9652,7 +9652,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.452305+00:00"
+    "processed_at": "2026-11-18T14:40:07.892468+00:00"
   },
   {
     "event_id": "AA-665",
@@ -9691,7 +9691,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.452422+00:00"
+    "processed_at": "2026-11-18T14:40:07.892577+00:00"
   },
   {
     "event_id": "AA-666",
@@ -9730,7 +9730,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.452533+00:00"
+    "processed_at": "2026-11-18T14:40:07.892670+00:00"
   },
   {
     "event_id": "AA-667",
@@ -9775,7 +9775,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.452621+00:00"
+    "processed_at": "2026-11-18T14:40:07.892739+00:00"
   },
   {
     "event_id": "AA-670",
@@ -9812,7 +9812,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.452816+00:00"
+    "processed_at": "2026-11-18T14:40:07.892899+00:00"
   },
   {
     "event_id": "AA-672",
@@ -9866,7 +9866,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.453104+00:00"
+    "processed_at": "2026-11-18T14:40:07.893102+00:00"
   },
   {
     "event_id": "AA-673",
@@ -9905,7 +9905,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.453193+00:00"
+    "processed_at": "2026-11-18T14:40:07.893173+00:00"
   },
   {
     "event_id": "AA-674",
@@ -9931,7 +9931,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.453262+00:00"
+    "processed_at": "2026-11-18T14:40:07.893228+00:00"
   },
   {
     "event_id": "AA-677",
@@ -9977,7 +9977,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.453420+00:00"
+    "processed_at": "2026-11-18T14:40:07.893351+00:00"
   },
   {
     "event_id": "AA-678",
@@ -10018,7 +10018,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.453519+00:00"
+    "processed_at": "2026-11-18T14:40:07.893430+00:00"
   },
   {
     "event_id": "AA-700",
@@ -10059,7 +10059,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.453685+00:00"
+    "processed_at": "2026-11-18T14:40:07.893570+00:00"
   },
   {
     "event_id": "AA-709",
@@ -10102,7 +10102,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.453836+00:00"
+    "processed_at": "2026-11-18T14:40:07.893686+00:00"
   },
   {
     "event_id": "AA-711",
@@ -10152,7 +10152,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.454265+00:00"
+    "processed_at": "2026-11-18T14:40:07.894006+00:00"
   },
   {
     "event_id": "AA-713",
@@ -10200,7 +10200,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.454571+00:00"
+    "processed_at": "2026-11-18T14:40:07.894248+00:00"
   },
   {
     "event_id": "AA-714",
@@ -10240,7 +10240,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.454683+00:00"
+    "processed_at": "2026-11-18T14:40:07.894324+00:00"
   },
   {
     "event_id": "AA-724",
@@ -10286,7 +10286,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.454954+00:00"
+    "processed_at": "2026-11-18T14:40:07.894552+00:00"
   },
   {
     "event_id": "AA-726",
@@ -10332,7 +10332,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.455292+00:00"
+    "processed_at": "2026-11-18T14:40:07.894817+00:00"
   },
   {
     "event_id": "AA-727",
@@ -10380,7 +10380,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.455550+00:00"
+    "processed_at": "2026-11-18T14:40:07.895019+00:00"
   },
   {
     "event_id": "AA-731",
@@ -10420,7 +10420,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.455640+00:00"
+    "processed_at": "2026-11-18T14:40:07.895090+00:00"
   },
   {
     "event_id": "AA-732",
@@ -10459,7 +10459,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.455714+00:00"
+    "processed_at": "2026-11-18T14:40:07.895150+00:00"
   },
   {
     "event_id": "AA-733",
@@ -10498,7 +10498,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.455784+00:00"
+    "processed_at": "2026-11-18T14:40:07.895202+00:00"
   },
   {
     "event_id": "AA-734",
@@ -10537,7 +10537,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.455878+00:00"
+    "processed_at": "2026-11-18T14:40:07.895267+00:00"
   },
   {
     "event_id": "AA-735",
@@ -10581,7 +10581,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.456052+00:00"
+    "processed_at": "2026-11-18T14:40:07.895392+00:00"
   },
   {
     "event_id": "AA-736",
@@ -10626,7 +10626,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.456255+00:00"
+    "processed_at": "2026-11-18T14:40:07.895560+00:00"
   },
   {
     "event_id": "AA-737",
@@ -10678,7 +10678,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.456479+00:00"
+    "processed_at": "2026-11-18T14:40:07.895746+00:00"
   },
   {
     "event_id": "AA-764",
@@ -10711,7 +10711,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.456554+00:00"
+    "processed_at": "2026-11-18T14:40:07.895804+00:00"
   },
   {
     "event_id": "AA-766",
@@ -10744,7 +10744,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.456638+00:00"
+    "processed_at": "2026-11-18T14:40:07.895870+00:00"
   },
   {
     "event_id": "AA-768",
@@ -10784,7 +10784,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.456733+00:00"
+    "processed_at": "2026-11-18T14:40:07.895941+00:00"
   },
   {
     "event_id": "AA-774",
@@ -10828,7 +10828,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.457022+00:00"
+    "processed_at": "2026-11-18T14:40:07.896159+00:00"
   },
   {
     "event_id": "AA-775",
@@ -10854,7 +10854,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.457096+00:00"
+    "processed_at": "2026-11-18T14:40:07.896215+00:00"
   },
   {
     "event_id": "AA-800",
@@ -10891,7 +10891,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.457408+00:00"
+    "processed_at": "2026-11-18T14:40:07.896458+00:00"
   },
   {
     "event_id": "AA-807",
@@ -10935,7 +10935,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.457699+00:00"
+    "processed_at": "2026-11-18T14:40:07.896733+00:00"
   },
   {
     "event_id": "AA-810",
@@ -10991,7 +10991,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.458026+00:00"
+    "processed_at": "2026-11-18T14:40:07.896985+00:00"
   },
   {
     "event_id": "AA-811",
@@ -11017,7 +11017,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.458107+00:00"
+    "processed_at": "2026-11-18T14:40:07.897046+00:00"
   },
   {
     "event_id": "AA-813",
@@ -11066,7 +11066,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.458391+00:00"
+    "processed_at": "2026-11-18T14:40:07.897267+00:00"
   },
   {
     "event_id": "AA-817",
@@ -11114,7 +11114,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.458720+00:00"
+    "processed_at": "2026-11-18T14:40:07.897546+00:00"
   },
   {
     "event_id": "AA-818",
@@ -11158,7 +11158,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.458867+00:00"
+    "processed_at": "2026-11-18T14:40:07.897669+00:00"
   },
   {
     "event_id": "AA-819",
@@ -11194,7 +11194,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.459001+00:00"
+    "processed_at": "2026-11-18T14:40:07.897759+00:00"
   },
   {
     "event_id": "AA-829",
@@ -11230,7 +11230,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.459095+00:00"
+    "processed_at": "2026-11-18T14:40:07.897822+00:00"
   },
   {
     "event_id": "AA-835",
@@ -11266,7 +11266,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.459185+00:00"
+    "processed_at": "2026-11-18T14:40:07.897889+00:00"
   },
   {
     "event_id": "AA-845",
@@ -11302,7 +11302,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.459268+00:00"
+    "processed_at": "2026-11-18T14:40:07.897949+00:00"
   },
   {
     "event_id": "AA-853",
@@ -11338,7 +11338,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.459347+00:00"
+    "processed_at": "2026-11-18T14:40:07.898012+00:00"
   },
   {
     "event_id": "AA-860",
@@ -11374,7 +11374,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.459498+00:00"
+    "processed_at": "2026-11-18T14:40:07.898143+00:00"
   },
   {
     "event_id": "AA-861",
@@ -11410,7 +11410,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.459569+00:00"
+    "processed_at": "2026-11-18T14:40:07.898199+00:00"
   },
   {
     "event_id": "AA-863",
@@ -11462,7 +11462,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.459963+00:00"
+    "processed_at": "2026-11-18T14:40:07.898526+00:00"
   },
   {
     "event_id": "AA-864",
@@ -11501,7 +11501,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.460076+00:00"
+    "processed_at": "2026-11-18T14:40:07.898603+00:00"
   },
   {
     "event_id": "AA-865",
@@ -11527,7 +11527,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.460147+00:00"
+    "processed_at": "2026-11-18T14:40:07.898655+00:00"
   },
   {
     "event_id": "AA-867",
@@ -11564,7 +11564,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.460354+00:00"
+    "processed_at": "2026-11-18T14:40:07.898811+00:00"
   },
   {
     "event_id": "AA-869",
@@ -11617,7 +11617,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.460779+00:00"
+    "processed_at": "2026-11-18T14:40:07.899100+00:00"
   },
   {
     "event_id": "AA-870",
@@ -11659,7 +11659,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.460923+00:00"
+    "processed_at": "2026-11-18T14:40:07.899211+00:00"
   },
   {
     "event_id": "AA-871",
@@ -11687,7 +11687,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.461014+00:00"
+    "processed_at": "2026-11-18T14:40:07.899331+00:00"
   },
   {
     "event_id": "AA-872",
@@ -11727,7 +11727,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.461088+00:00"
+    "processed_at": "2026-11-18T14:40:07.899387+00:00"
   },
   {
     "event_id": "AA-893",
@@ -11778,7 +11778,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.461282+00:00"
+    "processed_at": "2026-11-18T14:40:07.899551+00:00"
   },
   {
     "event_id": "AA-901",
@@ -11822,7 +11822,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.461368+00:00"
+    "processed_at": "2026-11-18T14:40:07.899623+00:00"
   },
   {
     "event_id": "AA-902",
@@ -11862,7 +11862,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.461483+00:00"
+    "processed_at": "2026-11-18T14:40:07.899716+00:00"
   },
   {
     "event_id": "AA-903",
@@ -11911,7 +11911,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.461693+00:00"
+    "processed_at": "2026-11-18T14:40:07.899889+00:00"
   },
   {
     "event_id": "AA-904",
@@ -11950,7 +11950,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.461796+00:00"
+    "processed_at": "2026-11-18T14:40:07.899978+00:00"
   },
   {
     "event_id": "AA-905",
@@ -11994,7 +11994,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.461905+00:00"
+    "processed_at": "2026-11-18T14:40:07.900061+00:00"
   },
   {
     "event_id": "AA-911",
@@ -12031,7 +12031,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.462229+00:00"
+    "processed_at": "2026-11-18T14:40:07.900302+00:00"
   },
   {
     "event_id": "AA-912",
@@ -12068,7 +12068,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.462334+00:00"
+    "processed_at": "2026-11-18T14:40:07.900379+00:00"
   },
   {
     "event_id": "AA-913",
@@ -12110,7 +12110,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.462534+00:00"
+    "processed_at": "2026-11-18T14:40:07.900544+00:00"
   },
   {
     "event_id": "AA-920",
@@ -12149,7 +12149,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.462897+00:00"
+    "processed_at": "2026-11-18T14:40:07.900879+00:00"
   },
   {
     "event_id": "AA-921",
@@ -12175,7 +12175,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.462985+00:00"
+    "processed_at": "2026-11-18T14:40:07.900934+00:00"
   },
   {
     "event_id": "AA-924",
@@ -12213,7 +12213,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.463120+00:00"
+    "processed_at": "2026-11-18T14:40:07.901042+00:00"
   },
   {
     "event_id": "AA-926",
@@ -12262,7 +12262,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.463282+00:00"
+    "processed_at": "2026-11-18T14:40:07.901176+00:00"
   },
   {
     "event_id": "AA-934",
@@ -12304,7 +12304,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.463642+00:00"
+    "processed_at": "2026-11-18T14:40:07.901485+00:00"
   },
   {
     "event_id": "AA-935",
@@ -12351,7 +12351,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.463757+00:00"
+    "processed_at": "2026-11-18T14:40:07.901595+00:00"
   },
   {
     "event_id": "AA-936",
@@ -12393,7 +12393,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.463880+00:00"
+    "processed_at": "2026-11-18T14:40:07.901694+00:00"
   },
   {
     "event_id": "AA-942",
@@ -12432,7 +12432,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.464087+00:00"
+    "processed_at": "2026-11-18T14:40:07.901854+00:00"
   },
   {
     "event_id": "AA-943",
@@ -12469,7 +12469,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.464340+00:00"
+    "processed_at": "2026-11-18T14:40:07.902050+00:00"
   },
   {
     "event_id": "AA-950",
@@ -12514,7 +12514,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.464749+00:00"
+    "processed_at": "2026-11-18T14:40:07.902413+00:00"
   },
   {
     "event_id": "AA-951",
@@ -12561,7 +12561,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.465027+00:00"
+    "processed_at": "2026-11-18T14:40:07.902635+00:00"
   },
   {
     "event_id": "AA-952",
@@ -12608,7 +12608,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.465110+00:00"
+    "processed_at": "2026-11-18T14:40:07.902702+00:00"
   },
   {
     "event_id": "AA-954",
@@ -12655,7 +12655,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.465196+00:00"
+    "processed_at": "2026-11-18T14:40:07.902765+00:00"
   },
   {
     "event_id": "AA-957",
@@ -12702,7 +12702,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.465270+00:00"
+    "processed_at": "2026-11-18T14:40:07.902821+00:00"
   },
   {
     "event_id": "AA-963",
@@ -12750,7 +12750,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.465590+00:00"
+    "processed_at": "2026-11-18T14:40:07.903085+00:00"
   },
   {
     "event_id": "AA-971",
@@ -12787,7 +12787,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.465660+00:00"
+    "processed_at": "2026-11-18T14:40:07.903136+00:00"
   },
   {
     "event_id": "AA-973",
@@ -12824,7 +12824,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.465720+00:00"
+    "processed_at": "2026-11-18T14:40:07.903181+00:00"
   },
   {
     "event_id": "AA-976",
@@ -12861,7 +12861,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.465780+00:00"
+    "processed_at": "2026-11-18T14:40:07.903223+00:00"
   },
   {
     "event_id": "AA-982",
@@ -12903,7 +12903,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.466032+00:00"
+    "processed_at": "2026-11-18T14:40:07.903422+00:00"
   },
   {
     "event_id": "AA-985",
@@ -12947,7 +12947,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.466216+00:00"
+    "processed_at": "2026-11-18T14:40:07.903587+00:00"
   },
   {
     "event_id": "AA-986",
@@ -12984,7 +12984,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.466382+00:00"
+    "processed_at": "2026-11-18T14:40:07.903723+00:00"
   },
   {
     "event_id": "AA-987",
@@ -13023,7 +13023,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.466495+00:00"
+    "processed_at": "2026-11-18T14:40:07.903816+00:00"
   },
   {
     "event_id": "AA-988",
@@ -13065,7 +13065,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.466658+00:00"
+    "processed_at": "2026-11-18T14:40:07.903952+00:00"
   },
   {
     "event_id": "AA-997",
@@ -13124,7 +13124,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.467067+00:00"
+    "processed_at": "2026-11-18T14:40:07.904281+00:00"
   },
   {
     "event_id": "AA-998",
@@ -13174,7 +13174,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.467348+00:00"
+    "processed_at": "2026-11-18T14:40:07.904513+00:00"
   },
   {
     "event_id": "AA-1000",
@@ -13222,7 +13222,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.467635+00:00"
+    "processed_at": "2026-11-18T14:40:07.904776+00:00"
   },
   {
     "event_id": "AA-1010",
@@ -13264,7 +13264,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.467870+00:00"
+    "processed_at": "2026-11-18T14:40:07.904986+00:00"
   },
   {
     "event_id": "AA-1013",
@@ -13306,7 +13306,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.468237+00:00"
+    "processed_at": "2026-11-18T14:40:07.905290+00:00"
   },
   {
     "event_id": "AA-1021",
@@ -13346,7 +13346,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.468460+00:00"
+    "processed_at": "2026-11-18T14:40:07.905514+00:00"
   },
   {
     "event_id": "AA-1023",
@@ -13389,7 +13389,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.468547+00:00"
+    "processed_at": "2026-11-18T14:40:07.905586+00:00"
   },
   {
     "event_id": "AA-1024",
@@ -13426,7 +13426,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.468619+00:00"
+    "processed_at": "2026-11-18T14:40:07.905646+00:00"
   },
   {
     "event_id": "AA-1028",
@@ -13452,7 +13452,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.468689+00:00"
+    "processed_at": "2026-11-18T14:40:07.905695+00:00"
   },
   {
     "event_id": "AA-1030",
@@ -13489,7 +13489,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.469006+00:00"
+    "processed_at": "2026-11-18T14:40:07.905933+00:00"
   },
   {
     "event_id": "AA-1032",
@@ -13539,7 +13539,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.469285+00:00"
+    "processed_at": "2026-11-18T14:40:07.906155+00:00"
   },
   {
     "event_id": "AA-1036",
@@ -13578,7 +13578,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.469431+00:00"
+    "processed_at": "2026-11-18T14:40:07.906277+00:00"
   },
   {
     "event_id": "AA-1037",
@@ -13620,7 +13620,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.469608+00:00"
+    "processed_at": "2026-11-18T14:40:07.906455+00:00"
   },
   {
     "event_id": "AA-1038",
@@ -13659,7 +13659,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.469716+00:00"
+    "processed_at": "2026-11-18T14:40:07.906574+00:00"
   },
   {
     "event_id": "AA-1039",
@@ -13710,7 +13710,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.469916+00:00"
+    "processed_at": "2026-11-18T14:40:07.906752+00:00"
   },
   {
     "event_id": "AA-1042",
@@ -13750,7 +13750,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.470031+00:00"
+    "processed_at": "2026-11-18T14:40:07.906826+00:00"
   },
   {
     "event_id": "AA-1043",
@@ -13787,7 +13787,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.470212+00:00"
+    "processed_at": "2026-11-18T14:40:07.906964+00:00"
   },
   {
     "event_id": "AA-1046",
@@ -13829,7 +13829,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.470661+00:00"
+    "processed_at": "2026-11-18T14:40:07.907356+00:00"
   },
   {
     "event_id": "AA-1047",
@@ -13879,7 +13879,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.470958+00:00"
+    "processed_at": "2026-11-18T14:40:07.907627+00:00"
   },
   {
     "event_id": "AA-1052",
@@ -13921,7 +13921,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.471358+00:00"
+    "processed_at": "2026-11-18T14:40:07.907962+00:00"
   },
   {
     "event_id": "AA-1053",
@@ -13966,7 +13966,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.471586+00:00"
+    "processed_at": "2026-11-18T14:40:07.908155+00:00"
   },
   {
     "event_id": "AA-1058",
@@ -14011,7 +14011,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.471896+00:00"
+    "processed_at": "2026-11-18T14:40:07.908418+00:00"
   },
   {
     "event_id": "AA-1060",
@@ -14053,7 +14053,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.472010+00:00"
+    "processed_at": "2026-11-18T14:40:07.908501+00:00"
   },
   {
     "event_id": "AA-1063",
@@ -14099,7 +14099,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.472374+00:00"
+    "processed_at": "2026-11-18T14:40:07.908821+00:00"
   },
   {
     "event_id": "AA-1073",
@@ -14150,7 +14150,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.472580+00:00"
+    "processed_at": "2026-11-18T14:40:07.908997+00:00"
   },
   {
     "event_id": "AA-1075",
@@ -14195,7 +14195,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.472866+00:00"
+    "processed_at": "2026-11-18T14:40:07.909231+00:00"
   },
   {
     "event_id": "AA-1076",
@@ -14239,7 +14239,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.473066+00:00"
+    "processed_at": "2026-11-18T14:40:07.909376+00:00"
   },
   {
     "event_id": "AA-1082",
@@ -14284,7 +14284,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.473553+00:00"
+    "processed_at": "2026-11-18T14:40:07.909740+00:00"
   },
   {
     "event_id": "AA-1083",
@@ -14323,7 +14323,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.473883+00:00"
+    "processed_at": "2026-11-18T14:40:07.910031+00:00"
   },
   {
     "event_id": "AA-1084",
@@ -14372,7 +14372,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.474166+00:00"
+    "processed_at": "2026-11-18T14:40:07.910316+00:00"
   },
   {
     "event_id": "AA-1085",
@@ -14420,7 +14420,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.474342+00:00"
+    "processed_at": "2026-11-18T14:40:07.910499+00:00"
   },
   {
     "event_id": "AA-1093",
@@ -14462,7 +14462,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.474658+00:00"
+    "processed_at": "2026-11-18T14:40:07.910792+00:00"
   },
   {
     "event_id": "AA-1096",
@@ -14509,7 +14509,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.475081+00:00"
+    "processed_at": "2026-11-18T14:40:07.911162+00:00"
   },
   {
     "event_id": "AA-1103",
@@ -14548,7 +14548,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.475343+00:00"
+    "processed_at": "2026-11-18T14:40:07.911393+00:00"
   },
   {
     "event_id": "AA-1107",
@@ -14591,7 +14591,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.475787+00:00"
+    "processed_at": "2026-11-18T14:40:07.911757+00:00"
   },
   {
     "event_id": "AA-1108",
@@ -14629,7 +14629,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.475906+00:00"
+    "processed_at": "2026-11-18T14:40:07.911856+00:00"
   },
   {
     "event_id": "AA-1109",
@@ -14666,7 +14666,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.476124+00:00"
+    "processed_at": "2026-11-18T14:40:07.912011+00:00"
   },
   {
     "event_id": "AA-1110",
@@ -14703,7 +14703,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.476316+00:00"
+    "processed_at": "2026-11-18T14:40:07.912146+00:00"
   },
   {
     "event_id": "AA-1112",
@@ -14739,7 +14739,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.476419+00:00"
+    "processed_at": "2026-11-18T14:40:07.912224+00:00"
   },
   {
     "event_id": "AA-1113",
@@ -14778,7 +14778,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.476879+00:00"
+    "processed_at": "2026-11-18T14:40:07.912539+00:00"
   },
   {
     "event_id": "AA-1114",
@@ -14815,7 +14815,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.477109+00:00"
+    "processed_at": "2026-11-18T14:40:07.912692+00:00"
   },
   {
     "event_id": "AA-1115",
@@ -14861,7 +14861,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.477474+00:00"
+    "processed_at": "2026-11-18T14:40:07.912948+00:00"
   },
   {
     "event_id": "AA-1121",
@@ -14897,7 +14897,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.477594+00:00"
+    "processed_at": "2026-11-18T14:40:07.913043+00:00"
   },
   {
     "event_id": "AA-1122",
@@ -14939,7 +14939,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.477679+00:00"
+    "processed_at": "2026-11-18T14:40:07.913098+00:00"
   },
   {
     "event_id": "AA-1138",
@@ -14982,7 +14982,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.478103+00:00"
+    "processed_at": "2026-11-18T14:40:07.913400+00:00"
   },
   {
     "event_id": "AA-1139",
@@ -15031,7 +15031,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.478471+00:00"
+    "processed_at": "2026-11-18T14:40:07.913688+00:00"
   },
   {
     "event_id": "AA-1140",
@@ -15067,7 +15067,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.478581+00:00"
+    "processed_at": "2026-11-18T14:40:07.913773+00:00"
   },
   {
     "event_id": "AA-1143",
@@ -15110,7 +15110,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.478821+00:00"
+    "processed_at": "2026-11-18T14:40:07.913961+00:00"
   },
   {
     "event_id": "AA-1145",
@@ -15154,7 +15154,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.479209+00:00"
+    "processed_at": "2026-11-18T14:40:07.914241+00:00"
   },
   {
     "event_id": "AA-1150",
@@ -15198,7 +15198,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.479609+00:00"
+    "processed_at": "2026-11-18T14:40:07.914565+00:00"
   },
   {
     "event_id": "AA-1151",
@@ -15243,7 +15243,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.479867+00:00"
+    "processed_at": "2026-11-18T14:40:07.914763+00:00"
   },
   {
     "event_id": "AA-1152",
@@ -15285,7 +15285,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.480289+00:00"
+    "processed_at": "2026-11-18T14:40:07.915091+00:00"
   },
   {
     "event_id": "AA-1162",
@@ -15327,7 +15327,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.480375+00:00"
+    "processed_at": "2026-11-18T14:40:07.915155+00:00"
   },
   {
     "event_id": "AA-1171",
@@ -15369,7 +15369,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.480449+00:00"
+    "processed_at": "2026-11-18T14:40:07.915211+00:00"
   },
   {
     "event_id": "AA-1179",
@@ -15409,7 +15409,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.480528+00:00"
+    "processed_at": "2026-11-18T14:40:07.915278+00:00"
   },
   {
     "event_id": "AA-1180",
@@ -15459,7 +15459,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.480988+00:00"
+    "processed_at": "2026-11-18T14:40:07.915666+00:00"
   },
   {
     "event_id": "AA-1181",
@@ -15508,7 +15508,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.481213+00:00"
+    "processed_at": "2026-11-18T14:40:07.915846+00:00"
   },
   {
     "event_id": "AA-1182",
@@ -15544,7 +15544,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.481305+00:00"
+    "processed_at": "2026-11-18T14:40:07.915920+00:00"
   },
   {
     "event_id": "AA-1183",
@@ -15581,7 +15581,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.481497+00:00"
+    "processed_at": "2026-11-18T14:40:07.916069+00:00"
   },
   {
     "event_id": "AA-1184",
@@ -15623,7 +15623,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.481559+00:00"
+    "processed_at": "2026-11-18T14:40:07.916118+00:00"
   },
   {
     "event_id": "AA-1191",
@@ -15667,7 +15667,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.481996+00:00"
+    "processed_at": "2026-11-18T14:40:07.916463+00:00"
   },
   {
     "event_id": "AA-1192",
@@ -15709,7 +15709,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.482198+00:00"
+    "processed_at": "2026-11-18T14:40:07.916631+00:00"
   },
   {
     "event_id": "AA-1193",
@@ -15746,7 +15746,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.482259+00:00"
+    "processed_at": "2026-11-18T14:40:07.916680+00:00"
   },
   {
     "event_id": "AA-1194",
@@ -15783,7 +15783,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.482322+00:00"
+    "processed_at": "2026-11-18T14:40:07.916726+00:00"
   },
   {
     "event_id": "AA-1195",
@@ -15823,7 +15823,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.482555+00:00"
+    "processed_at": "2026-11-18T14:40:07.916929+00:00"
   },
   {
     "event_id": "AA-1196",
@@ -15868,7 +15868,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.482772+00:00"
+    "processed_at": "2026-11-18T14:40:07.917102+00:00"
   },
   {
     "event_id": "AA-1197",
@@ -15912,7 +15912,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.482847+00:00"
+    "processed_at": "2026-11-18T14:40:07.917168+00:00"
   },
   {
     "event_id": "AA-1198",
@@ -15958,7 +15958,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.483178+00:00"
+    "processed_at": "2026-11-18T14:40:07.917394+00:00"
   },
   {
     "event_id": "AA-1199",
@@ -15995,7 +15995,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.483410+00:00"
+    "processed_at": "2026-11-18T14:40:07.917580+00:00"
   },
   {
     "event_id": "AA-1201",
@@ -16040,7 +16040,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.483772+00:00"
+    "processed_at": "2026-11-18T14:40:07.917872+00:00"
   },
   {
     "event_id": "AA-1203",
@@ -16081,7 +16081,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.483901+00:00"
+    "processed_at": "2026-11-18T14:40:07.917960+00:00"
   },
   {
     "event_id": "AA-1210",
@@ -16122,7 +16122,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.484029+00:00"
+    "processed_at": "2026-11-18T14:40:07.918036+00:00"
   },
   {
     "event_id": "AA-1217",
@@ -16159,7 +16159,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.484171+00:00"
+    "processed_at": "2026-11-18T14:40:07.918136+00:00"
   },
   {
     "event_id": "AA-1219",
@@ -16199,7 +16199,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.484354+00:00"
+    "processed_at": "2026-11-18T14:40:07.918265+00:00"
   },
   {
     "event_id": "AA-1221",
@@ -16238,7 +16238,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.484435+00:00"
+    "processed_at": "2026-11-18T14:40:07.918324+00:00"
   },
   {
     "event_id": "AA-1222",
@@ -16264,7 +16264,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.484501+00:00"
+    "processed_at": "2026-11-18T14:40:07.918371+00:00"
   },
   {
     "event_id": "AA-1223",
@@ -16300,7 +16300,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.484772+00:00"
+    "processed_at": "2026-11-18T14:40:07.918590+00:00"
   },
   {
     "event_id": "AA-1225",
@@ -16340,7 +16340,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.484851+00:00"
+    "processed_at": "2026-11-18T14:40:07.918651+00:00"
   },
   {
     "event_id": "AA-1231",
@@ -16396,7 +16396,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.485270+00:00"
+    "processed_at": "2026-11-18T14:40:07.918931+00:00"
   },
   {
     "event_id": "AA-1232",
@@ -16449,7 +16449,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.485498+00:00"
+    "processed_at": "2026-11-18T14:40:07.919091+00:00"
   },
   {
     "event_id": "AA-1256",
@@ -16494,7 +16494,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.485645+00:00"
+    "processed_at": "2026-11-18T14:40:07.919196+00:00"
   },
   {
     "event_id": "AA-1257",
@@ -16539,7 +16539,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.485717+00:00"
+    "processed_at": "2026-11-18T14:40:07.919247+00:00"
   },
   {
     "event_id": "AA-1263",
@@ -16584,7 +16584,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.485791+00:00"
+    "processed_at": "2026-11-18T14:40:07.919307+00:00"
   },
   {
     "event_id": "AA-1273",
@@ -16629,7 +16629,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.485865+00:00"
+    "processed_at": "2026-11-18T14:40:07.919355+00:00"
   },
   {
     "event_id": "AA-1277",
@@ -16680,7 +16680,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.486123+00:00"
+    "processed_at": "2026-11-18T14:40:07.919552+00:00"
   },
   {
     "event_id": "AA-1281",
@@ -16729,7 +16729,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.486439+00:00"
+    "processed_at": "2026-11-18T14:40:07.919786+00:00"
   },
   {
     "event_id": "AA-1291",
@@ -16777,7 +16777,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.486709+00:00"
+    "processed_at": "2026-11-18T14:40:07.919984+00:00"
   },
   {
     "event_id": "AA-1296",
@@ -16805,7 +16805,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.486816+00:00"
+    "processed_at": "2026-11-18T14:40:07.920064+00:00"
   },
   {
     "event_id": "AA-1298",
@@ -16831,7 +16831,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.486889+00:00"
+    "processed_at": "2026-11-18T14:40:07.920110+00:00"
   },
   {
     "event_id": "AA-1303",
@@ -16878,7 +16878,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.487319+00:00"
+    "processed_at": "2026-11-18T14:40:07.920396+00:00"
   },
   {
     "event_id": "AA-1304",
@@ -16921,7 +16921,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.487493+00:00"
+    "processed_at": "2026-11-18T14:40:07.920485+00:00"
   },
   {
     "event_id": "AA-1305",
@@ -16957,7 +16957,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.487573+00:00"
+    "processed_at": "2026-11-18T14:40:07.920557+00:00"
   },
   {
     "event_id": "AA-1306",
@@ -16993,7 +16993,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.487652+00:00"
+    "processed_at": "2026-11-18T14:40:07.920673+00:00"
   },
   {
     "event_id": "AA-1316",
@@ -17029,7 +17029,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.487732+00:00"
+    "processed_at": "2026-11-18T14:40:07.920728+00:00"
   },
   {
     "event_id": "AA-1326",
@@ -17065,7 +17065,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.487805+00:00"
+    "processed_at": "2026-11-18T14:40:07.920775+00:00"
   },
   {
     "event_id": "AA-1336",
@@ -17101,7 +17101,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.487873+00:00"
+    "processed_at": "2026-11-18T14:40:07.920821+00:00"
   },
   {
     "event_id": "AA-1339",
@@ -17137,7 +17137,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.488085+00:00"
+    "processed_at": "2026-11-18T14:40:07.920968+00:00"
   },
   {
     "event_id": "AA-1340",
@@ -17173,7 +17173,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.488163+00:00"
+    "processed_at": "2026-11-18T14:40:07.921013+00:00"
   },
   {
     "event_id": "AA-1344",
@@ -17210,7 +17210,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.488254+00:00"
+    "processed_at": "2026-11-18T14:40:07.921080+00:00"
   },
   {
     "event_id": "AA-1352",
@@ -17247,7 +17247,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.488338+00:00"
+    "processed_at": "2026-11-18T14:40:07.921140+00:00"
   },
   {
     "event_id": "AA-1357",
@@ -17283,7 +17283,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.488426+00:00"
+    "processed_at": "2026-11-18T14:40:07.921202+00:00"
   },
   {
     "event_id": "AA-1361",
@@ -17309,7 +17309,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.488484+00:00"
+    "processed_at": "2026-11-18T14:40:07.921241+00:00"
   },
   {
     "event_id": "AA-1363",
@@ -17360,7 +17360,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.488683+00:00"
+    "processed_at": "2026-11-18T14:40:07.921392+00:00"
   },
   {
     "event_id": "AA-1364",
@@ -17405,7 +17405,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.488763+00:00"
+    "processed_at": "2026-11-18T14:40:07.921442+00:00"
   },
   {
     "event_id": "AA-1365",
@@ -17450,7 +17450,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.488834+00:00"
+    "processed_at": "2026-11-18T14:40:07.921486+00:00"
   },
   {
     "event_id": "AA-1367",
@@ -17495,7 +17495,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.488901+00:00"
+    "processed_at": "2026-11-18T14:40:07.921544+00:00"
   },
   {
     "event_id": "AA-1370",
@@ -17546,7 +17546,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.489153+00:00"
+    "processed_at": "2026-11-18T14:40:07.921716+00:00"
   },
   {
     "event_id": "AA-1372",
@@ -17572,7 +17572,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.489238+00:00"
+    "processed_at": "2026-11-18T14:40:07.921776+00:00"
   },
   {
     "event_id": "AA-1374",
@@ -17611,7 +17611,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.489325+00:00"
+    "processed_at": "2026-11-18T14:40:07.921837+00:00"
   },
   {
     "event_id": "AA-1376",
@@ -17647,7 +17647,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.489383+00:00"
+    "processed_at": "2026-11-18T14:40:07.921877+00:00"
   },
   {
     "event_id": "AA-1378",
@@ -17683,7 +17683,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.489505+00:00"
+    "processed_at": "2026-11-18T14:40:07.921969+00:00"
   },
   {
     "event_id": "AA-1379",
@@ -17719,7 +17719,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.489570+00:00"
+    "processed_at": "2026-11-18T14:40:07.922014+00:00"
   },
   {
     "event_id": "AA-1380",
@@ -17761,7 +17761,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.489916+00:00"
+    "processed_at": "2026-11-18T14:40:07.922297+00:00"
   },
   {
     "event_id": "AA-1381",
@@ -17803,7 +17803,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.490270+00:00"
+    "processed_at": "2026-11-18T14:40:07.922612+00:00"
   },
   {
     "event_id": "AA-1382",
@@ -17842,7 +17842,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.490381+00:00"
+    "processed_at": "2026-11-18T14:40:07.922705+00:00"
   },
   {
     "event_id": "AA-1383",
@@ -17868,7 +17868,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.490694+00:00"
+    "processed_at": "2026-11-18T14:40:07.922972+00:00"
   },
   {
     "event_id": "AA-1384",
@@ -17906,7 +17906,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.490773+00:00"
+    "processed_at": "2026-11-18T14:40:07.923033+00:00"
   },
   {
     "event_id": "AA-1385",
@@ -17950,7 +17950,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.490861+00:00"
+    "processed_at": "2026-11-18T14:40:07.923103+00:00"
   },
   {
     "event_id": "AA-1386",
@@ -17992,7 +17992,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.491172+00:00"
+    "processed_at": "2026-11-18T14:40:07.923360+00:00"
   },
   {
     "event_id": "AA-1387",
@@ -18043,7 +18043,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.491517+00:00"
+    "processed_at": "2026-11-18T14:40:07.923647+00:00"
   },
   {
     "event_id": "AA-1390",
@@ -18080,7 +18080,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.491793+00:00"
+    "processed_at": "2026-11-18T14:40:07.923865+00:00"
   },
   {
     "event_id": "AA-1393",
@@ -18133,7 +18133,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.492026+00:00"
+    "processed_at": "2026-11-18T14:40:07.924034+00:00"
   },
   {
     "event_id": "AA-1394",
@@ -18169,7 +18169,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.492149+00:00"
+    "processed_at": "2026-11-18T14:40:07.924110+00:00"
   },
   {
     "event_id": "AA-1403",
@@ -18217,7 +18217,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.492705+00:00"
+    "processed_at": "2026-11-18T14:40:07.924585+00:00"
   },
   {
     "event_id": "AA-1404",
@@ -18259,7 +18259,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.492888+00:00"
+    "processed_at": "2026-11-18T14:40:07.924736+00:00"
   },
   {
     "event_id": "AA-1405",
@@ -18306,7 +18306,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.493484+00:00"
+    "processed_at": "2026-11-18T14:40:07.925245+00:00"
   },
   {
     "event_id": "AA-1408",
@@ -18346,7 +18346,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.493794+00:00"
+    "processed_at": "2026-11-18T14:40:07.925498+00:00"
   },
   {
     "event_id": "AA-1410",
@@ -18391,7 +18391,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.493913+00:00"
+    "processed_at": "2026-11-18T14:40:07.925607+00:00"
   },
   {
     "event_id": "AA-1411",
@@ -18428,7 +18428,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.494021+00:00"
+    "processed_at": "2026-11-18T14:40:07.925679+00:00"
   },
   {
     "event_id": "AA-1416",
@@ -18473,7 +18473,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.494108+00:00"
+    "processed_at": "2026-11-18T14:40:07.925742+00:00"
   },
   {
     "event_id": "AA-1422",
@@ -18510,7 +18510,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.494175+00:00"
+    "processed_at": "2026-11-18T14:40:07.925786+00:00"
   },
   {
     "event_id": "AA-1424",
@@ -18555,7 +18555,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.494319+00:00"
+    "processed_at": "2026-11-18T14:40:07.925899+00:00"
   },
   {
     "event_id": "AA-1425",
@@ -18587,7 +18587,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.494400+00:00"
+    "processed_at": "2026-11-18T14:40:07.925963+00:00"
   },
   {
     "event_id": "AA-1426",
@@ -18613,7 +18613,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.494471+00:00"
+    "processed_at": "2026-11-18T14:40:07.926012+00:00"
   },
   {
     "event_id": "AA-1428",
@@ -18639,7 +18639,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.494518+00:00"
+    "processed_at": "2026-11-18T14:40:07.926045+00:00"
   },
   {
     "event_id": "AA-1430",
@@ -18665,7 +18665,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.494602+00:00"
+    "processed_at": "2026-11-18T14:40:07.926109+00:00"
   },
   {
     "event_id": "AA-1435",
@@ -18691,7 +18691,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.494655+00:00"
+    "processed_at": "2026-11-18T14:40:07.926143+00:00"
   },
   {
     "event_id": "AA-1440",
@@ -18724,7 +18724,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.494718+00:00"
+    "processed_at": "2026-11-18T14:40:07.926190+00:00"
   },
   {
     "event_id": "AA-1442",
@@ -18770,7 +18770,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.495159+00:00"
+    "processed_at": "2026-11-18T14:40:07.926553+00:00"
   },
   {
     "event_id": "AA-1444",
@@ -18807,7 +18807,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.495437+00:00"
+    "processed_at": "2026-11-18T14:40:07.926761+00:00"
   },
   {
     "event_id": "AA-1447",
@@ -18851,7 +18851,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.495528+00:00"
+    "processed_at": "2026-11-18T14:40:07.926832+00:00"
   },
   {
     "event_id": "AA-1449",
@@ -18898,7 +18898,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.495924+00:00"
+    "processed_at": "2026-11-18T14:40:07.927121+00:00"
   },
   {
     "event_id": "AA-1450",
@@ -18944,7 +18944,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.496060+00:00"
+    "processed_at": "2026-11-18T14:40:07.927204+00:00"
   },
   {
     "event_id": "AA-1451",
@@ -18980,7 +18980,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.496149+00:00"
+    "processed_at": "2026-11-18T14:40:07.927272+00:00"
   },
   {
     "event_id": "AA-1453",
@@ -19016,7 +19016,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.496231+00:00"
+    "processed_at": "2026-11-18T14:40:07.927329+00:00"
   },
   {
     "event_id": "AA-1455",
@@ -19061,7 +19061,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.496525+00:00"
+    "processed_at": "2026-11-18T14:40:07.927585+00:00"
   },
   {
     "event_id": "AA-1457",
@@ -19103,7 +19103,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.496768+00:00"
+    "processed_at": "2026-11-18T14:40:07.927797+00:00"
   },
   {
     "event_id": "AA-1458",
@@ -19129,7 +19129,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.496837+00:00"
+    "processed_at": "2026-11-18T14:40:07.927852+00:00"
   },
   {
     "event_id": "AA-1460",
@@ -19169,7 +19169,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.497085+00:00"
+    "processed_at": "2026-11-18T14:40:07.928039+00:00"
   },
   {
     "event_id": "AA-1468",
@@ -19209,7 +19209,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.497403+00:00"
+    "processed_at": "2026-11-18T14:40:07.928288+00:00"
   },
   {
     "event_id": "AA-1476",
@@ -19246,7 +19246,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.497633+00:00"
+    "processed_at": "2026-11-18T14:40:07.928461+00:00"
   },
   {
     "event_id": "AA-1484",
@@ -19272,7 +19272,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.497698+00:00"
+    "processed_at": "2026-11-18T14:40:07.928519+00:00"
   },
   {
     "event_id": "AA-1486",
@@ -19298,7 +19298,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.497742+00:00"
+    "processed_at": "2026-11-18T14:40:07.928557+00:00"
   },
   {
     "event_id": "AA-1488",
@@ -19342,7 +19342,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.497840+00:00"
+    "processed_at": "2026-11-18T14:40:07.928640+00:00"
   },
   {
     "event_id": "AA-1492",
@@ -19390,7 +19390,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.497924+00:00"
+    "processed_at": "2026-11-18T14:40:07.928702+00:00"
   },
   {
     "event_id": "AA-1495",
@@ -19426,7 +19426,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.498012+00:00"
+    "processed_at": "2026-11-18T14:40:07.928751+00:00"
   },
   {
     "event_id": "AA-1499",
@@ -19463,7 +19463,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.498137+00:00"
+    "processed_at": "2026-11-18T14:40:07.928801+00:00"
   },
   {
     "event_id": "AA-1501",
@@ -19499,7 +19499,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.498239+00:00"
+    "processed_at": "2026-11-18T14:40:07.928939+00:00"
   },
   {
     "event_id": "AA-1505",
@@ -19535,7 +19535,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.498325+00:00"
+    "processed_at": "2026-11-18T14:40:07.929025+00:00"
   },
   {
     "event_id": "AA-1506",
@@ -19571,7 +19571,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.498407+00:00"
+    "processed_at": "2026-11-18T14:40:07.929095+00:00"
   },
   {
     "event_id": "AA-1507",
@@ -19607,7 +19607,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.498487+00:00"
+    "processed_at": "2026-11-18T14:40:07.929154+00:00"
   },
   {
     "event_id": "AA-1508",
@@ -19633,7 +19633,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.498551+00:00"
+    "processed_at": "2026-11-18T14:40:07.929205+00:00"
   },
   {
     "event_id": "AA-1510",
@@ -19692,7 +19692,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.499143+00:00"
+    "processed_at": "2026-11-18T14:40:07.929738+00:00"
   },
   {
     "event_id": "AA-1514",
@@ -19729,7 +19729,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.499553+00:00"
+    "processed_at": "2026-11-18T14:40:07.930068+00:00"
   },
   {
     "event_id": "AA-1518",
@@ -19778,7 +19778,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.499706+00:00"
+    "processed_at": "2026-11-18T14:40:07.930188+00:00"
   },
   {
     "event_id": "AA-1520",
@@ -19825,7 +19825,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.499919+00:00"
+    "processed_at": "2026-11-18T14:40:07.930356+00:00"
   },
   {
     "event_id": "AA-1525",
@@ -19870,7 +19870,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.500098+00:00"
+    "processed_at": "2026-11-18T14:40:07.930481+00:00"
   },
   {
     "event_id": "AA-1526",
@@ -19914,7 +19914,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.500383+00:00"
+    "processed_at": "2026-11-18T14:40:07.930739+00:00"
   },
   {
     "event_id": "AA-1531",
@@ -19961,7 +19961,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.500589+00:00"
+    "processed_at": "2026-11-18T14:40:07.930911+00:00"
   },
   {
     "event_id": "AA-1541",
@@ -20006,7 +20006,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.500668+00:00"
+    "processed_at": "2026-11-18T14:40:07.930969+00:00"
   },
   {
     "event_id": "AA-1543",
@@ -20049,7 +20049,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.500753+00:00"
+    "processed_at": "2026-11-18T14:40:07.931038+00:00"
   },
   {
     "event_id": "AA-1546",
@@ -20086,7 +20086,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.500818+00:00"
+    "processed_at": "2026-11-18T14:40:07.931089+00:00"
   },
   {
     "event_id": "AA-1549",
@@ -20112,7 +20112,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.500876+00:00"
+    "processed_at": "2026-11-18T14:40:07.931131+00:00"
   },
   {
     "event_id": "AA-1551",
@@ -20157,7 +20157,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.501018+00:00"
+    "processed_at": "2026-11-18T14:40:07.931227+00:00"
   },
   {
     "event_id": "AA-1552",
@@ -20194,7 +20194,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.501112+00:00"
+    "processed_at": "2026-11-18T14:40:07.931297+00:00"
   },
   {
     "event_id": "AA-1553",
@@ -20220,7 +20220,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.501218+00:00"
+    "processed_at": "2026-11-18T14:40:07.931385+00:00"
   },
   {
     "event_id": "AA-1554",
@@ -20263,7 +20263,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.501332+00:00"
+    "processed_at": "2026-11-18T14:40:07.931469+00:00"
   },
   {
     "event_id": "AA-1555",
@@ -20308,7 +20308,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.501452+00:00"
+    "processed_at": "2026-11-18T14:40:07.931577+00:00"
   },
   {
     "event_id": "AA-1556",
@@ -20353,7 +20353,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.501530+00:00"
+    "processed_at": "2026-11-18T14:40:07.931642+00:00"
   },
   {
     "event_id": "AA-1562",
@@ -20398,7 +20398,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.501601+00:00"
+    "processed_at": "2026-11-18T14:40:07.931696+00:00"
   },
   {
     "event_id": "AA-1564",
@@ -20443,7 +20443,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.501674+00:00"
+    "processed_at": "2026-11-18T14:40:07.931751+00:00"
   },
   {
     "event_id": "AA-1566",
@@ -20469,7 +20469,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.501738+00:00"
+    "processed_at": "2026-11-18T14:40:07.931803+00:00"
   },
   {
     "event_id": "AA-1569",
@@ -20506,7 +20506,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.502056+00:00"
+    "processed_at": "2026-11-18T14:40:07.932071+00:00"
   },
   {
     "event_id": "AA-1570",
@@ -20532,7 +20532,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.502111+00:00"
+    "processed_at": "2026-11-18T14:40:07.932118+00:00"
   },
   {
     "event_id": "AA-1572",
@@ -20569,7 +20569,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.502287+00:00"
+    "processed_at": "2026-11-18T14:40:07.932257+00:00"
   },
   {
     "event_id": "AA-1573",
@@ -20606,7 +20606,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.502491+00:00"
+    "processed_at": "2026-11-18T14:40:07.932441+00:00"
   },
   {
     "event_id": "AA-1575",
@@ -20651,7 +20651,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.502599+00:00"
+    "processed_at": "2026-11-18T14:40:07.932536+00:00"
   },
   {
     "event_id": "AA-1581",
@@ -20688,7 +20688,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.502755+00:00"
+    "processed_at": "2026-11-18T14:40:07.932673+00:00"
   },
   {
     "event_id": "AA-1583",
@@ -20733,7 +20733,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.502914+00:00"
+    "processed_at": "2026-11-18T14:40:07.932799+00:00"
   },
   {
     "event_id": "AA-1584",
@@ -20775,7 +20775,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.503028+00:00"
+    "processed_at": "2026-11-18T14:40:07.932876+00:00"
   },
   {
     "event_id": "AA-1585",
@@ -20828,7 +20828,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.503310+00:00"
+    "processed_at": "2026-11-18T14:40:07.933095+00:00"
   },
   {
     "event_id": "AA-1595",
@@ -20865,7 +20865,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.503542+00:00"
+    "processed_at": "2026-11-18T14:40:07.933274+00:00"
   },
   {
     "event_id": "AA-1605",
@@ -20902,7 +20902,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.503628+00:00"
+    "processed_at": "2026-11-18T14:40:07.933347+00:00"
   },
   {
     "event_id": "AA-1606",
@@ -20947,7 +20947,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.503853+00:00"
+    "processed_at": "2026-11-18T14:40:07.933540+00:00"
   },
   {
     "event_id": "AA-1617",
@@ -20992,7 +20992,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.503940+00:00"
+    "processed_at": "2026-11-18T14:40:07.933609+00:00"
   },
   {
     "event_id": "AA-1623",
@@ -21037,7 +21037,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.504048+00:00"
+    "processed_at": "2026-11-18T14:40:07.933669+00:00"
   },
   {
     "event_id": "AA-1631",
@@ -21082,7 +21082,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.504132+00:00"
+    "processed_at": "2026-11-18T14:40:07.933720+00:00"
   },
   {
     "event_id": "AA-1639",
@@ -21127,7 +21127,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.504215+00:00"
+    "processed_at": "2026-11-18T14:40:07.933782+00:00"
   },
   {
     "event_id": "AA-1645",
@@ -21153,7 +21153,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.504314+00:00"
+    "processed_at": "2026-11-18T14:40:07.933860+00:00"
   },
   {
     "event_id": "AA-1651",
@@ -21204,7 +21204,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.504436+00:00"
+    "processed_at": "2026-11-18T14:40:07.933955+00:00"
   },
   {
     "event_id": "AA-1657",
@@ -21249,7 +21249,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.504519+00:00"
+    "processed_at": "2026-11-18T14:40:07.934013+00:00"
   },
   {
     "event_id": "AA-1660",
@@ -21300,7 +21300,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.504719+00:00"
+    "processed_at": "2026-11-18T14:40:07.934178+00:00"
   },
   {
     "event_id": "AA-1670",
@@ -21340,7 +21340,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.504907+00:00"
+    "processed_at": "2026-11-18T14:40:07.934328+00:00"
   },
   {
     "event_id": "AA-1680",
@@ -21379,7 +21379,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.505026+00:00"
+    "processed_at": "2026-11-18T14:40:07.934414+00:00"
   },
   {
     "event_id": "AA-1681",
@@ -21418,7 +21418,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.505129+00:00"
+    "processed_at": "2026-11-18T14:40:07.934498+00:00"
   },
   {
     "event_id": "AA-1682",
@@ -21457,7 +21457,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.505221+00:00"
+    "processed_at": "2026-11-18T14:40:07.934590+00:00"
   },
   {
     "event_id": "AA-1684",
@@ -21496,7 +21496,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.505350+00:00"
+    "processed_at": "2026-11-18T14:40:07.934700+00:00"
   },
   {
     "event_id": "AA-1685",
@@ -21532,7 +21532,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.505558+00:00"
+    "processed_at": "2026-11-18T14:40:07.934884+00:00"
   },
   {
     "event_id": "AA-1686",
@@ -21577,7 +21577,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.505820+00:00"
+    "processed_at": "2026-11-18T14:40:07.935127+00:00"
   },
   {
     "event_id": "AA-1696",
@@ -21624,7 +21624,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.506114+00:00"
+    "processed_at": "2026-11-18T14:40:07.935359+00:00"
   },
   {
     "event_id": "AA-1705",
@@ -21660,7 +21660,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.506214+00:00"
+    "processed_at": "2026-11-18T14:40:07.935444+00:00"
   },
   {
     "event_id": "AA-1707",
@@ -21696,7 +21696,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.506286+00:00"
+    "processed_at": "2026-11-18T14:40:07.935515+00:00"
   },
   {
     "event_id": "AA-1708",
@@ -21732,7 +21732,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.506365+00:00"
+    "processed_at": "2026-11-18T14:40:07.935586+00:00"
   },
   {
     "event_id": "AA-1718",
@@ -21768,7 +21768,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.506438+00:00"
+    "processed_at": "2026-11-18T14:40:07.935639+00:00"
   },
   {
     "event_id": "AA-1728",
@@ -21804,7 +21804,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.506510+00:00"
+    "processed_at": "2026-11-18T14:40:07.935688+00:00"
   },
   {
     "event_id": "AA-1738",
@@ -21840,7 +21840,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.506580+00:00"
+    "processed_at": "2026-11-18T14:40:07.935738+00:00"
   },
   {
     "event_id": "AA-1748",
@@ -21876,7 +21876,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.506645+00:00"
+    "processed_at": "2026-11-18T14:40:07.935786+00:00"
   },
   {
     "event_id": "AA-1758",
@@ -21902,7 +21902,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.506704+00:00"
+    "processed_at": "2026-11-18T14:40:07.935837+00:00"
   },
   {
     "event_id": "AA-1759",
@@ -21938,7 +21938,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.506786+00:00"
+    "processed_at": "2026-11-18T14:40:07.935901+00:00"
   },
   {
     "event_id": "AA-1762",
@@ -21976,7 +21976,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.506897+00:00"
+    "processed_at": "2026-11-18T14:40:07.936004+00:00"
   },
   {
     "event_id": "AA-1763",
@@ -22002,7 +22002,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.507039+00:00"
+    "processed_at": "2026-11-18T14:40:07.936057+00:00"
   },
   {
     "event_id": "AA-1764",
@@ -22047,7 +22047,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.507339+00:00"
+    "processed_at": "2026-11-18T14:40:07.936316+00:00"
   },
   {
     "event_id": "AA-1786",
@@ -22098,7 +22098,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.507531+00:00"
+    "processed_at": "2026-11-18T14:40:07.936554+00:00"
   },
   {
     "event_id": "AA-1787",
@@ -22124,7 +22124,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.507600+00:00"
+    "processed_at": "2026-11-18T14:40:07.936615+00:00"
   },
   {
     "event_id": "AA-1789",
@@ -22161,7 +22161,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.507751+00:00"
+    "processed_at": "2026-11-18T14:40:07.936744+00:00"
   },
   {
     "event_id": "AA-1790",
@@ -22187,7 +22187,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.507811+00:00"
+    "processed_at": "2026-11-18T14:40:07.936793+00:00"
   },
   {
     "event_id": "AA-1792",
@@ -22224,7 +22224,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.507860+00:00"
+    "processed_at": "2026-11-18T14:40:07.936834+00:00"
   },
   {
     "event_id": "AA-1796",
@@ -22260,7 +22260,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.507961+00:00"
+    "processed_at": "2026-11-18T14:40:07.936916+00:00"
   },
   {
     "event_id": "AA-1798",
@@ -22296,7 +22296,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.508075+00:00"
+    "processed_at": "2026-11-18T14:40:07.936992+00:00"
   },
   {
     "event_id": "AA-1800",
@@ -22349,7 +22349,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.508450+00:00"
+    "processed_at": "2026-11-18T14:40:07.937320+00:00"
   },
   {
     "event_id": "AA-1820",
@@ -22394,7 +22394,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.508730+00:00"
+    "processed_at": "2026-11-18T14:40:07.937578+00:00"
   },
   {
     "event_id": "AA-1825",
@@ -22443,7 +22443,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.509128+00:00"
+    "processed_at": "2026-11-18T14:40:07.937936+00:00"
   },
   {
     "event_id": "AA-1831",
@@ -22490,7 +22490,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.509315+00:00"
+    "processed_at": "2026-11-18T14:40:07.938101+00:00"
   },
   {
     "event_id": "AA-1832",
@@ -22537,7 +22537,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.509578+00:00"
+    "processed_at": "2026-11-18T14:40:07.938327+00:00"
   },
   {
     "event_id": "AA-1848",
@@ -22583,7 +22583,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.509830+00:00"
+    "processed_at": "2026-11-18T14:40:07.938544+00:00"
   },
   {
     "event_id": "AA-1854",
@@ -22630,7 +22630,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.510147+00:00"
+    "processed_at": "2026-11-18T14:40:07.938798+00:00"
   },
   {
     "event_id": "AA-1866",
@@ -22675,7 +22675,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.510236+00:00"
+    "processed_at": "2026-11-18T14:40:07.938866+00:00"
   },
   {
     "event_id": "AA-1876",
@@ -22720,7 +22720,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.510323+00:00"
+    "processed_at": "2026-11-18T14:40:07.938940+00:00"
   },
   {
     "event_id": "AA-1886",
@@ -22765,7 +22765,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.510397+00:00"
+    "processed_at": "2026-11-18T14:40:07.939001+00:00"
   },
   {
     "event_id": "AA-1891",
@@ -22810,7 +22810,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.510556+00:00"
+    "processed_at": "2026-11-18T14:40:07.939131+00:00"
   },
   {
     "event_id": "AA-1892",
@@ -22855,7 +22855,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.510654+00:00"
+    "processed_at": "2026-11-18T14:40:07.939203+00:00"
   },
   {
     "event_id": "AA-1902",
@@ -22900,7 +22900,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.510725+00:00"
+    "processed_at": "2026-11-18T14:40:07.939256+00:00"
   },
   {
     "event_id": "AA-1906",
@@ -22945,7 +22945,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.511050+00:00"
+    "processed_at": "2026-11-18T14:40:07.939525+00:00"
   },
   {
     "event_id": "AA-1908",
@@ -22990,7 +22990,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.511140+00:00"
+    "processed_at": "2026-11-18T14:40:07.939601+00:00"
   },
   {
     "event_id": "AA-1918",
@@ -23035,7 +23035,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.511223+00:00"
+    "processed_at": "2026-11-18T14:40:07.939669+00:00"
   },
   {
     "event_id": "AA-1927",
@@ -23080,7 +23080,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.511311+00:00"
+    "processed_at": "2026-11-18T14:40:07.939738+00:00"
   },
   {
     "event_id": "AA-1934",
@@ -23125,7 +23125,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.511434+00:00"
+    "processed_at": "2026-11-18T14:40:07.939811+00:00"
   },
   {
     "event_id": "AA-1938",
@@ -23170,7 +23170,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.511529+00:00"
+    "processed_at": "2026-11-18T14:40:07.939889+00:00"
   },
   {
     "event_id": "AA-1946",
@@ -23215,7 +23215,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.511807+00:00"
+    "processed_at": "2026-11-18T14:40:07.940125+00:00"
   },
   {
     "event_id": "AA-1956",
@@ -23260,7 +23260,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.511898+00:00"
+    "processed_at": "2026-11-18T14:40:07.940192+00:00"
   },
   {
     "event_id": "AA-1957",
@@ -23305,7 +23305,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.512114+00:00"
+    "processed_at": "2026-11-18T14:40:07.940354+00:00"
   },
   {
     "event_id": "AA-1976",
@@ -23355,7 +23355,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.512637+00:00"
+    "processed_at": "2026-11-18T14:40:07.940800+00:00"
   },
   {
     "event_id": "AA-1977",
@@ -23400,7 +23400,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.512837+00:00"
+    "processed_at": "2026-11-18T14:40:07.940967+00:00"
   },
   {
     "event_id": "AA-1981",
@@ -23445,7 +23445,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.513065+00:00"
+    "processed_at": "2026-11-18T14:40:07.941149+00:00"
   },
   {
     "event_id": "AA-2003",
@@ -23496,7 +23496,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.513298+00:00"
+    "processed_at": "2026-11-18T14:40:07.941337+00:00"
   },
   {
     "event_id": "AA-2019",
@@ -23541,7 +23541,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.513382+00:00"
+    "processed_at": "2026-11-18T14:40:07.941404+00:00"
   },
   {
     "event_id": "AA-2020",
@@ -23586,7 +23586,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.513462+00:00"
+    "processed_at": "2026-11-18T14:40:07.941468+00:00"
   },
   {
     "event_id": "AA-2027",
@@ -23631,7 +23631,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.513543+00:00"
+    "processed_at": "2026-11-18T14:40:07.941541+00:00"
   },
   {
     "event_id": "AA-2036",
@@ -23676,7 +23676,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.513797+00:00"
+    "processed_at": "2026-11-18T14:40:07.941770+00:00"
   },
   {
     "event_id": "AA-2042",
@@ -23727,7 +23727,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.514065+00:00"
+    "processed_at": "2026-11-18T14:40:07.941991+00:00"
   },
   {
     "event_id": "AA-2052",
@@ -23775,7 +23775,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.514522+00:00"
+    "processed_at": "2026-11-18T14:40:07.942421+00:00"
   },
   {
     "event_id": "AA-2071",
@@ -23820,7 +23820,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.514805+00:00"
+    "processed_at": "2026-11-18T14:40:07.942691+00:00"
   },
   {
     "event_id": "AA-2078",
@@ -23854,7 +23854,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.514919+00:00"
+    "processed_at": "2026-11-18T14:40:07.942786+00:00"
   },
   {
     "event_id": "AA-2087",
@@ -23898,7 +23898,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.515136+00:00"
+    "processed_at": "2026-11-18T14:40:07.942956+00:00"
   },
   {
     "event_id": "AA-2097",
@@ -23943,7 +23943,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.515339+00:00"
+    "processed_at": "2026-11-18T14:40:07.943122+00:00"
   },
   {
     "event_id": "AA-2133",
@@ -23996,7 +23996,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.515627+00:00"
+    "processed_at": "2026-11-18T14:40:07.943360+00:00"
   },
   {
     "event_id": "AA-2134",
@@ -24047,7 +24047,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.515841+00:00"
+    "processed_at": "2026-11-18T14:40:07.943560+00:00"
   },
   {
     "event_id": "AA-2136",
@@ -24090,7 +24090,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.515925+00:00"
+    "processed_at": "2026-11-18T14:40:07.943630+00:00"
   },
   {
     "event_id": "AA-2152",
@@ -24133,7 +24133,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.516021+00:00"
+    "processed_at": "2026-11-18T14:40:07.943695+00:00"
   },
   {
     "event_id": "AA-2159",
@@ -24165,7 +24165,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.516142+00:00"
+    "processed_at": "2026-11-18T14:40:07.943791+00:00"
   },
   {
     "event_id": "AA-2167",
@@ -24197,7 +24197,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.516207+00:00"
+    "processed_at": "2026-11-18T14:40:07.943848+00:00"
   },
   {
     "event_id": "AA-2177",
@@ -24241,7 +24241,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.516343+00:00"
+    "processed_at": "2026-11-18T14:40:07.943964+00:00"
   },
   {
     "event_id": "AA-2178",
@@ -24286,7 +24286,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.516476+00:00"
+    "processed_at": "2026-11-18T14:40:07.944078+00:00"
   },
   {
     "event_id": "AA-2179",
@@ -24317,7 +24317,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.516552+00:00"
+    "processed_at": "2026-11-18T14:40:07.944144+00:00"
   },
   {
     "event_id": "AA-2180",
@@ -24343,7 +24343,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.516623+00:00"
+    "processed_at": "2026-11-18T14:40:07.944199+00:00"
   },
   {
     "event_id": "AA-2182",
@@ -24388,7 +24388,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.516735+00:00"
+    "processed_at": "2026-11-18T14:40:07.944285+00:00"
   },
   {
     "event_id": "AA-2183",
@@ -24434,7 +24434,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.516960+00:00"
+    "processed_at": "2026-11-18T14:40:07.944467+00:00"
   },
   {
     "event_id": "AA-2224",
@@ -24482,7 +24482,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.517381+00:00"
+    "processed_at": "2026-11-18T14:40:07.944820+00:00"
   },
   {
     "event_id": "AA-2225",
@@ -24525,7 +24525,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.517470+00:00"
+    "processed_at": "2026-11-18T14:40:07.944896+00:00"
   },
   {
     "event_id": "AA-2226",
@@ -24568,7 +24568,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.517552+00:00"
+    "processed_at": "2026-11-18T14:40:07.944962+00:00"
   },
   {
     "event_id": "AA-2247",
@@ -24610,7 +24610,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.517641+00:00"
+    "processed_at": "2026-11-18T14:40:07.945038+00:00"
   },
   {
     "event_id": "AA-2250",
@@ -24641,7 +24641,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.517753+00:00"
+    "processed_at": "2026-11-18T14:40:07.945125+00:00"
   },
   {
     "event_id": "AA-2259",
@@ -24684,7 +24684,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.517839+00:00"
+    "processed_at": "2026-11-18T14:40:07.945192+00:00"
   },
   {
     "event_id": "AA-2260",
@@ -24720,7 +24720,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.518053+00:00"
+    "processed_at": "2026-11-18T14:40:07.945342+00:00"
   },
   {
     "event_id": "AA-2261",
@@ -24773,7 +24773,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.519776+00:00"
+    "processed_at": "2026-11-18T14:40:07.945768+00:00"
   },
   {
     "event_id": "AA-2283",
@@ -24819,7 +24819,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.519902+00:00"
+    "processed_at": "2026-11-18T14:40:07.945866+00:00"
   },
   {
     "event_id": "AA-2329",
@@ -24865,7 +24865,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.520013+00:00"
+    "processed_at": "2026-11-18T14:40:07.946009+00:00"
   },
   {
     "event_id": "AA-2341",
@@ -24910,7 +24910,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.520141+00:00"
+    "processed_at": "2026-11-18T14:40:07.946106+00:00"
   },
   {
     "event_id": "AA-2342",
@@ -24961,7 +24961,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.520272+00:00"
+    "processed_at": "2026-11-18T14:40:07.946204+00:00"
   },
   {
     "event_id": "AA-2343",
@@ -24993,7 +24993,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.520416+00:00"
+    "processed_at": "2026-11-18T14:40:07.946305+00:00"
   },
   {
     "event_id": "AA-2386",
@@ -25038,7 +25038,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.520507+00:00"
+    "processed_at": "2026-11-18T14:40:07.946365+00:00"
   },
   {
     "event_id": "AA-2387",
@@ -25088,7 +25088,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.520626+00:00"
+    "processed_at": "2026-11-18T14:40:07.946434+00:00"
   },
   {
     "event_id": "AA-2388",
@@ -25114,7 +25114,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.520725+00:00"
+    "processed_at": "2026-11-18T14:40:07.946485+00:00"
   },
   {
     "event_id": "AA-2392",
@@ -25151,7 +25151,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.520851+00:00"
+    "processed_at": "2026-11-18T14:40:07.946580+00:00"
   },
   {
     "event_id": "AA-2393",
@@ -25196,7 +25196,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.520931+00:00"
+    "processed_at": "2026-11-18T14:40:07.946635+00:00"
   },
   {
     "event_id": "AA-2398",
@@ -25241,7 +25241,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.521042+00:00"
+    "processed_at": "2026-11-18T14:40:07.946688+00:00"
   },
   {
     "event_id": "AA-2401",
@@ -25292,7 +25292,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.521223+00:00"
+    "processed_at": "2026-11-18T14:40:07.946809+00:00"
   },
   {
     "event_id": "AA-2402",
@@ -25343,7 +25343,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.521616+00:00"
+    "processed_at": "2026-11-18T14:40:07.947084+00:00"
   },
   {
     "event_id": "AA-2492",
@@ -25389,7 +25389,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.522284+00:00"
+    "processed_at": "2026-11-18T14:40:07.947580+00:00"
   },
   {
     "event_id": "AA-2524",
@@ -25434,7 +25434,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.522652+00:00"
+    "processed_at": "2026-11-18T14:40:07.947851+00:00"
   },
   {
     "event_id": "AA-2493",
@@ -25485,7 +25485,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.522929+00:00"
+    "processed_at": "2026-11-18T14:40:07.948038+00:00"
   },
   {
     "event_id": "AA-2532",
@@ -25537,7 +25537,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.523501+00:00"
+    "processed_at": "2026-11-18T14:40:07.948445+00:00"
   },
   {
     "event_id": "AA-2571",
@@ -25580,7 +25580,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.523855+00:00"
+    "processed_at": "2026-11-18T14:40:07.948721+00:00"
   },
   {
     "event_id": "AA-2542",
@@ -25631,7 +25631,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.524083+00:00"
+    "processed_at": "2026-11-18T14:40:07.948876+00:00"
   },
   {
     "event_id": "AA-2543",
@@ -25674,7 +25674,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.524176+00:00"
+    "processed_at": "2026-11-18T14:40:07.948946+00:00"
   },
   {
     "event_id": "AA-2576",
@@ -25700,7 +25700,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.524489+00:00"
+    "processed_at": "2026-11-18T14:40:07.949191+00:00"
   },
   {
     "event_id": "AA-2577",
@@ -25726,7 +25726,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.524762+00:00"
+    "processed_at": "2026-11-18T14:40:07.949397+00:00"
   },
   {
     "event_id": "AA-2578",
@@ -25762,7 +25762,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.525087+00:00"
+    "processed_at": "2026-11-18T14:40:07.949624+00:00"
   },
   {
     "event_id": "AA-2579",
@@ -25798,7 +25798,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.525176+00:00"
+    "processed_at": "2026-11-18T14:40:07.949689+00:00"
   },
   {
     "event_id": "AA-2580",
@@ -25824,7 +25824,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.525481+00:00"
+    "processed_at": "2026-11-18T14:40:07.949894+00:00"
   },
   {
     "event_id": "AA-2581",
@@ -25875,7 +25875,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.525950+00:00"
+    "processed_at": "2026-11-18T14:40:07.950219+00:00"
   },
   {
     "event_id": "AA-2592",
@@ -25919,7 +25919,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.526086+00:00"
+    "processed_at": "2026-11-18T14:40:07.950294+00:00"
   },
   {
     "event_id": "AA-2601",
@@ -25961,7 +25961,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.526642+00:00"
+    "processed_at": "2026-11-18T14:40:07.950741+00:00"
   },
   {
     "event_id": "AA-2625",
@@ -26005,7 +26005,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.527005+00:00"
+    "processed_at": "2026-11-18T14:40:07.950985+00:00"
   },
   {
     "event_id": "AA-2635",
@@ -26039,7 +26039,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.527096+00:00"
+    "processed_at": "2026-11-18T14:40:07.951050+00:00"
   },
   {
     "event_id": "AA-2637",
@@ -26084,7 +26084,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.527186+00:00"
+    "processed_at": "2026-11-18T14:40:07.951117+00:00"
   },
   {
     "event_id": "AA-2644",
@@ -26129,7 +26129,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.527272+00:00"
+    "processed_at": "2026-11-18T14:40:07.951173+00:00"
   },
   {
     "event_id": "AA-2615",
@@ -26173,7 +26173,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.527359+00:00"
+    "processed_at": "2026-11-18T14:40:07.951230+00:00"
   },
   {
     "event_id": "AA-2602",
@@ -26225,7 +26225,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.527628+00:00"
+    "processed_at": "2026-11-18T14:40:07.951420+00:00"
   },
   {
     "event_id": "AA-2646",
@@ -26251,7 +26251,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.75,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.527942+00:00"
+    "processed_at": "2026-11-18T14:40:07.951690+00:00"
   },
   {
     "event_id": "AA-2669",
@@ -26295,7 +26295,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.528296+00:00"
+    "processed_at": "2026-11-18T14:40:07.951919+00:00"
   },
   {
     "event_id": "AA-2672",
@@ -26339,7 +26339,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.528406+00:00"
+    "processed_at": "2026-11-18T14:40:07.951994+00:00"
   },
   {
     "event_id": "AA-2681",
@@ -26385,7 +26385,7 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.528486+00:00"
+    "processed_at": "2026-11-18T14:40:07.952047+00:00"
   },
   {
     "event_id": "AA-2648",
@@ -26438,6 +26438,6 @@
     "is_actor_claim": true,
     "extraction_confidence": 0.92,
     "extraction_model": "lexical_rule_engine_v1",
-    "processed_at": "2026-11-18T00:05:18.528788+00:00"
+    "processed_at": "2026-11-18T14:40:07.952263+00:00"
   }
 ]
