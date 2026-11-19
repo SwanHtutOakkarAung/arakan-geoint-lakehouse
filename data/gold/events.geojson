@@ -1,8 +1,8 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "generated_at": "2026-11-19T04:42:18.290742+00:00",
-    "total_features": 681,
+    "generated_at": "2026-11-19T14:47:09.807839+00:00",
+    "total_features": 683,
     "data_layer": "Gold Incident Layer"
   },
   "features": [
@@ -21114,6 +21114,68 @@
         "corridor_dist_km": 23.6,
         "within_5km": false,
         "within_25km": true,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.34,
+          18.435
+        ]
+      },
+      "properties": {
+        "event_id": "AA-2685",
+        "source_message_id": 2685,
+        "source_url": "https://t.me/aainfodesk/2685",
+        "incident_date": "2026-11-19",
+        "category": "AIRSTRIKE",
+        "township": "Thandwe",
+        "mimu_pcode": "MMR012015",
+        "location_accuracy": "village_centroid",
+        "has_explicit_coords": true,
+        "headline": "ဖက်ဆစ် အကြမ်းဖက် စစ်ကော်မရှင်မှ အာရက္ခပြည်၊ သံတွဲမြို့နယ်ရှိ စစ်ရေးနှင့်မသက်ဆိုင်သော နေရာများအား ထပ်မံအကြမ်းဖက် ဗုံးကြဲတိုက်ခိုက် ၂၀၂၆ ခုနှစ်၊ နိုဝင်ဘာလ (၁၉) ရက် ၂၀၂၆ ခုနှစ်၊ နိုဝင်ဘာလ (၁၈) ရက်နေ့တွင်",
+        "summary": "Reported Airstrike in ငပလီ (Thandwe) involving SAC Military Junta (4 claimed KIA). Source: AA official communique.",
+        "opposing_actors": "SAC Military Junta",
+        "kia_reported": 4,
+        "wounded_reported": 0,
+        "nearest_corridor": "China-Myanmar Oil & Gas Pipelines (CMEC)",
+        "corridor_dist_km": 133.09,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.58,
+          17.5833
+        ]
+      },
+      "properties": {
+        "event_id": "AA-2690",
+        "source_message_id": 2690,
+        "source_url": "https://t.me/aainfodesk/2690",
+        "incident_date": "2026-11-19",
+        "category": "ARTILLERY_SHELLING",
+        "township": "Gwa",
+        "mimu_pcode": "MMR012017",
+        "location_accuracy": "township_centroid",
+        "has_explicit_coords": true,
+        "headline": "၁၉/၁၁ - ဇာခါလေ့သင့် မမိပါ။ ကရို့၏ မဟာမိတ်ဖြစ်ပနာ အာရက္ခတပ်တော် သန္ဓေတည်စတင်အခြီချရာ ကချင်လွတ်လပ်ရေးအဖွဲ့ KIO/KIA ဌာနချုပ်နယ်မြီအတွင်းဟိ \"ဝေကြိုင်ဘွမ်\" ဗိုလ်သင်တန်းကျောင်း၌ စစ်ပညာသင်ယူနီကတ်သော အာရက္ခတပ",
+        "summary": "Reported Artillery Shelling in Gwa involving SAC Military Junta. Source: AA official communique.",
+        "opposing_actors": "SAC Military Junta",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": "China-Myanmar Oil & Gas Pipelines (CMEC)",
+        "corridor_dist_km": 228.2,
+        "within_5km": false,
+        "within_25km": false,
         "is_actor_claim": true
       }
     }
