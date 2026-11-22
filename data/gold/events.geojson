@@ -1,8 +1,8 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "generated_at": "2026-11-22T13:40:29.207098+00:00",
-    "total_features": 683,
+    "generated_at": "2026-11-22T22:53:50.343619+00:00",
+    "total_features": 686,
     "data_layer": "Gold Incident Layer"
   },
   "features": [
@@ -21174,6 +21174,99 @@
         "wounded_reported": 0,
         "nearest_corridor": "China-Myanmar Oil & Gas Pipelines (CMEC)",
         "corridor_dist_km": 228.2,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8969,
+          20.1444
+        ]
+      },
+      "properties": {
+        "event_id": "AA-2692",
+        "source_message_id": 2692,
+        "source_url": "https://t.me/aainfodesk/2692",
+        "incident_date": "2026-11-22",
+        "category": "AIRSTRIKE",
+        "township": "Rakhine Theater (General)",
+        "mimu_pcode": "THEATER",
+        "location_accuracy": "theater_wide",
+        "has_explicit_coords": false,
+        "headline": "၂၀၂၆ ခုနှစ်၊ နိုဝင်ဘာလ (၂၂) ရက်နေ့၊ နံနက် (၈) နာရီခွဲအချိန်ခန့်တွင် ဝီရဌာနေမြို့နယ်၊ နန်းတက်ကျွန်းကျေးရွာအား ဖက်ဆစ် အကြမ်းဖက် စစ်ကော်မရှင်မှ ဂျက်တိုက်လေယာဉ် (၁) စီးဖြင့် လာရောက် ဗုံးကြဲတိုက်ခိုက်ခဲ့သေ",
+        "summary": "Reported Airstrike in Rakhine Theater involving SAC Military Junta. Source: AA official communique.",
+        "opposing_actors": "SAC Military Junta",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": null,
+        "corridor_dist_km": null,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8969,
+          20.1444
+        ]
+      },
+      "properties": {
+        "event_id": "AA-2702",
+        "source_message_id": 2702,
+        "source_url": "https://t.me/aainfodesk/2702",
+        "incident_date": "2026-11-22",
+        "category": "AIRSTRIKE",
+        "township": "Rakhine Theater (General)",
+        "mimu_pcode": "THEATER",
+        "location_accuracy": "theater_wide",
+        "has_explicit_coords": false,
+        "headline": "၂၀၂၆ ခုနှစ်၊ နိုဝင်ဘာလ (၂၀) ရက်နေ့၊ ညသန်းခေါင် (၁၂) နာရီအချိန်ခန့်တွင် ဝီရဌာနေမြို့နယ်၊ သဝင်ချောင်းကျေးရွာအား ဖက်ဆစ် အကြမ်းဖက် စစ်ကော်မရှင်မှ ဂျက်တိုက်လေယာဉ် (၂) စီးဖြင့် လာရောက် ဗုံးကြဲတိုက်ခိုက်ခဲ့သ",
+        "summary": "Reported Airstrike in Rakhine Theater involving SAC Military Junta. Source: AA official communique.",
+        "opposing_actors": "SAC Military Junta",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": null,
+        "corridor_dist_km": null,
+        "within_5km": false,
+        "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.1897,
+          20.5975
+        ]
+      },
+      "properties": {
+        "event_id": "AA-2691",
+        "source_message_id": 2691,
+        "source_url": "https://t.me/aainfodesk/2691",
+        "incident_date": "2026-11-22",
+        "category": "AIRSTRIKE",
+        "township": "Mrauk-U",
+        "mimu_pcode": "MMR012003",
+        "location_accuracy": "township_centroid",
+        "has_explicit_coords": true,
+        "headline": "ဖက်ဆစ် အကြမ်းဖက် စစ်ကော်မရှင်မှ ဝီရဌာနေမြို့နယ်ရှိ စစ်ရေးနှင့်မသက်ဆိုင်သော အပြစ်မဲ့အရပ်သားပြည်သူများနေထိုင်ရာနေရာများကို ဆက်တိုက်ဗုံးကြဲတိုက်ခိုက်နေပြီး စစ်ရာဇဝတ်မှုများကို ထပ်မံကျူးလွန်နေ ၂၀၂၆ ခုနှစ်",
+        "summary": "Reported Airstrike in Mrauk-U involving SAC Military Junta, Myanmar Military Air Force. Source: AA official communique.",
+        "opposing_actors": "SAC Military Junta,Myanmar Military Air Force",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": "Kaladan Multi-Modal Transit Transport Project",
+        "corridor_dist_km": 58.91,
         "within_5km": false,
         "within_25km": false,
         "is_actor_claim": true
