@@ -1,8 +1,8 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "generated_at": "2026-11-24T16:34:25.239816+00:00",
-    "total_features": 686,
+    "generated_at": "2026-11-25T01:40:47.794905+00:00",
+    "total_features": 687,
     "data_layer": "Gold Incident Layer"
   },
   "features": [
@@ -21269,6 +21269,37 @@
         "corridor_dist_km": 58.91,
         "within_5km": false,
         "within_25km": false,
+        "is_actor_claim": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.0,
+          20.3333
+        ]
+      },
+      "properties": {
+        "event_id": "AA-2712",
+        "source_message_id": 2712,
+        "source_url": "https://t.me/aainfodesk/2712",
+        "incident_date": "2026-11-24",
+        "category": "AIRSTRIKE",
+        "township": "Ponnagyun",
+        "mimu_pcode": "MMR012002",
+        "location_accuracy": "township_centroid",
+        "has_explicit_coords": true,
+        "headline": "ဖက်ဆစ် အကြမ်းဖက် စစ်ကော်မရှင်မှ ပုဏ္ဏားကျွန်းမြို့နယ်၊ ယိုးတရုတ် နှင့် အောင်ဖြူပြင် ကျေးရွာတို့အား အကြမ်းဖက် ဗုံးကြဲတိုက်ခိုက်၊ အပြစ်မဲ့အရပ်သားပြည်သူ (၂) ဦးသေ (၁) ဦး ဒဏ်ရာရ ၂၀၂၆ ခုနှစ်၊ နိုဝင်ဘာလ (၂၄)",
+        "summary": "Reported Airstrike in Ponnagyun involving SAC Military Junta, Myanmar Military Air Force. Source: AA official communique.",
+        "opposing_actors": "SAC Military Junta,Myanmar Military Air Force",
+        "kia_reported": 0,
+        "wounded_reported": 0,
+        "nearest_corridor": "Kaladan Multi-Modal Transit Transport Project",
+        "corridor_dist_km": 23.6,
+        "within_5km": false,
+        "within_25km": true,
         "is_actor_claim": true
       }
     }
